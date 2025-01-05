@@ -6,10 +6,12 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from modelado.classEspacios import Espacios
 from modelado.classHabitabilidad import Habitabilidad
 
-# Aqui hay un rpoblema con habitabilidad, ya que es una clase que no se puede serializar, por lo que 
-# yo creo que se puede referenciar mejor una instancia de habitabilidad en lugar de un objeto habitabilidad
-# ya que json, no acepta eso, y es mucho mas facil ver un objeto en json que una clase(bkl), osea poner id_habitabilidad y ya fue
-# creamos todos los objetos en json
+"""
+Aqui hay un rpoblema con habitabilidad, ya que es una clase que no se puede serializar, por lo que 
+yo creo que se puede referenciar mejor una instancia de habitabilidad en lugar de un objeto habitabilidad
+ya que json, no acepta eso, y es mucho mas facil ver un objeto en json que una clase(bkl), osea poner id_habitabilidad y ya fue
+creamos todos los objetos en json
+"""
 
 # Crear una instancia de la clase Habitabilidad
 habitabilidad = Habitabilidad(
@@ -23,7 +25,8 @@ espacio = Espacios(
     id_espacio=1,
     nombre="Sala de Conferencias",
     actividad="Reuniones",
-    habitabilidad=habitabilidad,
+    habitabilidad=0.35,
+    # habitabilidad=habitabilidad,
     cantidad_personas=50,
     flujo_luminoso=5000.0,
     area=100.0,
@@ -35,7 +38,7 @@ espacio = Espacios(
 espacio.set_id_espacio(1)
 espacio.set_nombre("Sala de Conferencias")
 espacio.set_actividad("Reuniones")
-espacio.set_habitabilidad(habitabilidad)
+# espacio.set_habitabilidad(habitabilidad)
 espacio.set_cantidad_personas(50)
 espacio.set_flujo_luminoso(5000.0)
 espacio.set_area(100.0)
