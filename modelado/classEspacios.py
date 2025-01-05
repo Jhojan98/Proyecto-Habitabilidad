@@ -1,5 +1,9 @@
+import classHabitabilidad as Habitabilidad
+
 class Espacios:
-    def __init__(self, id_espacio, nombre, actividad, habitabilidad, cantidad_personas,flujo_luminoso,area, coeficiente_utilizacion_luz, reduccion_luminosidad):
+    def __init__(self, id_espacio, nombre, actividad, habitabilidad:Habitabilidad,
+                 cantidad_personas,flujo_luminoso,area, coeficiente_utilizacion_luz,
+                 reduccion_luminosidad):
         self.id_espacio = id_espacio
         self.nombre = nombre
         self.actividad = actividad

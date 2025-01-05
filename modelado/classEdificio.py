@@ -1,5 +1,8 @@
+import classPared as Pared
+import classEspacios as Espacios
+
 class Edificio:
-    def __init__(self, habitaciones, paredes, matrizConexiones, matrizVecindad, informacionNodos):
+    def __init__(self, habitaciones:Espacios, paredes:Pared, matrizConexiones, matrizVecindad, informacionNodos):
         self.habitaciones = habitaciones
         self.paredes = paredes
         self.matrizConexiones = matrizConexiones
