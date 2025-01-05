@@ -8,7 +8,8 @@ from modelado.classHabitabilidad import Habitabilidad
 
 # Aqui hay un rpoblema con habitabilidad, ya que es una clase que no se puede serializar, por lo que 
 # yo creo que se puede referenciar mejor una instancia de habitabilidad en lugar de un objeto habitabilidad
-# ya que json, no acepta eso, y es mucho mas facil ver un objeto en json que una clase(bkl)
+# ya que json, no acepta eso, y es mucho mas facil ver un objeto en json que una clase(bkl), osea poner id_habitabilidad y ya fue
+# creamos todos los objetos en json
 
 # Crear una instancia de la clase Habitabilidad
 habitabilidad = Habitabilidad(
