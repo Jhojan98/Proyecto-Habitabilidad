@@ -1,4 +1,4 @@
-import classHabitabilidad as Habitabilidad
+from modelado.classHabitabilidad import Habitabilidad
 
 class Espacios:
     def __init__(self, id_espacio: int, nombre: str, actividad: str, habitabilidad: Habitabilidad,
@@ -11,7 +11,7 @@ class Espacios:
         self.cantidad_personas = cantidad_personas
         self.flujo_luminoso = flujo_luminoso
         self.area = area
-        self.coeficiente_utilzacion_luz = coeficiente_utilizacion_luz
+        self.coeficiente_utilizacion_luz = coeficiente_utilizacion_luz
         self.reduccion_luminosidad = reduccion_luminosidad
 
     def obtener_luz_total(self) -> float:
@@ -64,10 +64,10 @@ class Espacios:
         self.area = area
 
     def get_coeficiente_utilizacion_luz(self) -> float:
-        return self.coeficiente_utilzacion_luz
+        return self.coeficiente_utilizacion_luz
 
     def set_coeficiente_utilizacion_luz(self, coeficiente_utilizacion_luz: float):
-        self.coeficiente_utilzacion_luz = coeficiente_utilizacion_luz
+        self.coeficiente_utilizacion_luz = coeficiente_utilizacion_luz
 
     def get_reduccion_luminosidad(self) -> float:
         return self.reduccion_luminosidad

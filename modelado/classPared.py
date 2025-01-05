@@ -1,5 +1,5 @@
-import classMaterial as Material
-import classEspacios as Espacios
+from modelado.classMaterial import Material
+from modelado.classEspacios import Espacios
 
 class Pared:
     def __init__(self, material:Material, espacio_1:Espacios ,espacio_2:Espacios):

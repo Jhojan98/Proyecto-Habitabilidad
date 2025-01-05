@@ -1,5 +1,5 @@
-import classPared as Pared
-import classEspacios as Espacios
+from modelado.classPared import Pared
+from modelado.classEspacios import Espacios
 
 class Edificio:
     def __init__(self, habitaciones: Espacios, paredes: Pared, matrizConexiones: list, matrizVecindad: list, informacionNodos: str):
