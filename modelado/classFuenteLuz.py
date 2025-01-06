@@ -1,8 +1,9 @@
 class FuenteLuz:
 
-    def __init__(self,tipo_fuente_luz:str,
-                 interna:bool,iluminacion_promedio:float,temperatura_emitida:float,
-                 intensidad:float,lumens:int):
+    def __init__(self, id_fuente_luz: int, tipo_fuente_luz: str,
+                 interna: bool, iluminacion_promedio: float, temperatura_emitida: float,
+                 intensidad: float, lumens: int):
+        self.id_fuente_luz = id_fuente_luz
         self.tipo_fuente = tipo_fuente_luz
         self.interna = interna
         self.iluminacion_promedio = iluminacion_promedio
@@ -17,6 +18,12 @@ class FuenteLuz:
         pass
 
     # Getters y Setters
+    def get_id_fuente_luz(self) -> int:
+        return self.id_fuente_luz
+
+    def set_id_fuente_luz(self, id_fuente_luz: int):
+        self.id_fuente_luz = id_fuente_luz
+
     def get_tipo_fuente_luz(self) -> str:
         return self.get_tipo_fuente_luz
     

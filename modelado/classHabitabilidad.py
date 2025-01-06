@@ -1,5 +1,6 @@
 class Habitabilidad:
-    def __init__(self, luz_recomendada:str,nivel_habitabilidad:int,flujo_luminoso:float):
+    def __init__(self, id_habitabilidad: int, luz_recomendada: str, nivel_habitabilidad: int, flujo_luminoso: float):
+        self.id_habitabilidad = id_habitabilidad
         self.luz_recomendada = luz_recomendada
         self.nivel_habitabilidad = nivel_habitabilidad
         self.flujo_luminoso = flujo_luminoso
@@ -10,6 +11,12 @@ class Habitabilidad:
         """
         pass
     # Getters y Setters
+    def get_id_habitabilidad(self) -> int:
+        return self.id_habitabilidad
+
+    def set_id_habitabilidad(self, id_habitabilidad: int):
+        self.id_habitabilidad = id_habitabilidad
+
     def get_luz_recomendada(self) -> str:
         return self.luz_recomendada
     

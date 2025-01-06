@@ -1,0 +1,9 @@
+{
+    "id_fuente_luz": 1,
+    "tipo_fuente": "LED",
+    "interna": true,
+    "iluminacion_promedio": 300.0,
+    "temperatura_emitida": 3500.0,
+    "intensidad": 0.8,
+    "lumens": 800
+}

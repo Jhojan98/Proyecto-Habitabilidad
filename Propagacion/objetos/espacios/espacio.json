@@ -2,7 +2,11 @@
     "id_espacio": 1,
     "nombre": "Sala de Conferencias",
     "actividad": "Reuniones",
-    "habitabilidad": 0.35,
+    "id_habitabilidad": 1,
+    "ids_fuentes_luz": [
+        1,
+        2
+    ],
     "cantidad_personas": 50,
     "flujo_luminoso": 5000.0,
     "area": 100.0,

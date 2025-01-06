@@ -1,0 +1,9 @@
+{
+    "id_fuente_luz": 2,
+    "tipo_fuente": "Halogena",
+    "interna": false,
+    "iluminacion_promedio": 500.0,
+    "temperatura_emitida": 2700.0,
+    "intensidad": 1.2,
+    "lumens": 1200
+}
