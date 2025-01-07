@@ -1,0 +1,14 @@
+{
+    "id_espacio": 26,
+    "nombre": "Salón de Clase 4",
+    "actividad": "Salón de Clase",
+    "id_habitabilidad": 2,
+    "ids_fuentes_luz": [
+        1
+    ],
+    "cantidad_personas": 40,
+    "flujo_luminoso": 3000.0,
+    "area": 80.0,
+    "coeficiente_utilizacion_luz": 0.85,
+    "reduccion_luminosidad": 0.05
+}

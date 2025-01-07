@@ -1,0 +1,10 @@
+{
+    "material": {
+        "id_material": 3,
+        "nombre": "Vidrio",
+        "resistencia_luz": 2,
+        "tipo_material": "Transparente"
+    },
+    "id_espacio_1": 3,
+    "id_espacio_2": 4
+}

@@ -1,0 +1,9 @@
+{
+    "id_fuente_luz": 3,
+    "tipo_fuente": "Fluorescente",
+    "interna": true,
+    "iluminacion_promedio": 400.0,
+    "temperatura_emitida": 3000.0,
+    "intensidad": 1.0,
+    "lumens": 1000
+}

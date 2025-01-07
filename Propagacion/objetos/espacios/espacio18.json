@@ -1,0 +1,14 @@
+{
+    "id_espacio": 18,
+    "nombre": "Área de Almacenamiento y Taller de Mantenimiento Electrónico",
+    "actividad": "Área de Almacenamiento",
+    "id_habitabilidad": 2,
+    "ids_fuentes_luz": [
+        1
+    ],
+    "cantidad_personas": 10,
+    "flujo_luminoso": 2000.0,
+    "area": 50.0,
+    "coeficiente_utilizacion_luz": 0.8,
+    "reduccion_luminosidad": 0.05
+}

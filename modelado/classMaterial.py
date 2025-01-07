@@ -11,7 +11,13 @@ class Material:
         """
 
         pass
-
+    def to_dict(self):
+        return {
+            "id_material": self.id_material,
+            "nombre": self.nombre,
+            "resistencia_luz": self.resistencia_luz,
+            "tipo_material": self.tipo_material
+        }
     # Getters y Setters
     
     def set_nombre(self, nombre: str):

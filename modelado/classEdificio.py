@@ -2,7 +2,7 @@ from modelado.classPared import Pared
 from modelado.classEspacios import Espacios
 
 class Edificio:
-    def __init__(self, habitaciones: Espacios, paredes: Pared, matrizConexiones: list, matrizVecindad: list, informacionNodos: str):
+    def __init__(self, habitaciones: list, paredes: list, matrizConexiones: list, matrizVecindad: list, informacionNodos: str):
         self.habitaciones = habitaciones
         self.paredes = paredes
         self.matrizConexiones = matrizConexiones
@@ -17,16 +17,16 @@ class Edificio:
         return False
     
     # Getters y Setters
-    def get_habitaciones(self) -> Espacios:
+    def get_habitaciones(self) -> list:
         return self.habitaciones
 
-    def set_habitaciones(self, habitaciones: Espacios):
+    def set_habitaciones(self, habitaciones: list):
         self.habitaciones = habitaciones
 
-    def get_paredes(self) -> Pared:
+    def get_paredes(self) -> list:
         return self.paredes
 
-    def set_paredes(self, paredes: Pared):
+    def set_paredes(self, paredes: list):
         self.paredes = paredes
 
     def get_matrizConexiones(self) -> list:

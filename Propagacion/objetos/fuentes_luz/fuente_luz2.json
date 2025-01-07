@@ -1,6 +1,6 @@
 {
     "id_fuente_luz": 2,
-    "tipo_fuente": "Hal\u00f3gena",
+    "tipo_fuente": "Halógena",
     "interna": false,
     "iluminacion_promedio": 500.0,
     "temperatura_emitida": 2700.0,

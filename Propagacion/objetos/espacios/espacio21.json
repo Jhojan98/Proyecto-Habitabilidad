@@ -1,6 +1,6 @@
 {
-    "id_espacio": 2,
-    "nombre": "Laboratorio de Redes Inalámbricas",
+    "id_espacio": 21,
+    "nombre": "Laboratorio de Telecomunicaciones",
     "actividad": "Laboratorio",
     "id_habitabilidad": 1,
     "ids_fuentes_luz": [

@@ -1,6 +1,6 @@
 {
-    "id_espacio": 2,
-    "nombre": "Laboratorio de Redes Inalámbricas",
+    "id_espacio": 3,
+    "nombre": "Sala de Informática 1",
     "actividad": "Laboratorio",
     "id_habitabilidad": 1,
     "ids_fuentes_luz": [

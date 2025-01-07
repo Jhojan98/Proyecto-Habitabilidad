@@ -1,0 +1,10 @@
+{
+    "material": {
+        "id_material": 2,
+        "nombre": "Madera",
+        "resistencia_luz": 3,
+        "tipo_material": "Orgánico"
+    },
+    "id_espacio_1": 15,
+    "id_espacio_2": 16
+}
