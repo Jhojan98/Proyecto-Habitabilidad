@@ -1,0 +1,272 @@
+{
+    "1": {
+        "material": {
+            "id_material": 1,
+            "nombre": "Concreto",
+            "resistencia_luz": 5,
+            "tipo_material": "Sólido"
+        },
+        "id_espacio_1": 1,
+        "id_espacio_2": 2
+    },
+    "2": {
+        "material": {
+            "id_material": 2,
+            "nombre": "Madera",
+            "resistencia_luz": 3,
+            "tipo_material": "Orgánico"
+        },
+        "id_espacio_1": 2,
+        "id_espacio_2": 3
+    },
+    "3": {
+        "material": {
+            "id_material": 3,
+            "nombre": "Vidrio",
+            "resistencia_luz": 2,
+            "tipo_material": "Transparente"
+        },
+        "id_espacio_1": 3,
+        "id_espacio_2": 4
+    },
+    "4": {
+        "material": {
+            "id_material": 1,
+            "nombre": "Concreto",
+            "resistencia_luz": 5,
+            "tipo_material": "Sólido"
+        },
+        "id_espacio_1": 4,
+        "id_espacio_2": 5
+    },
+    "5": {
+        "material": {
+            "id_material": 2,
+            "nombre": "Madera",
+            "resistencia_luz": 3,
+            "tipo_material": "Orgánico"
+        },
+        "id_espacio_1": 5,
+        "id_espacio_2": 6
+    },
+    "6": {
+        "material": {
+            "id_material": 3,
+            "nombre": "Vidrio",
+            "resistencia_luz": 2,
+            "tipo_material": "Transparente"
+        },
+        "id_espacio_1": 6,
+        "id_espacio_2": 7
+    },
+    "7": {
+        "material": {
+            "id_material": 1,
+            "nombre": "Concreto",
+            "resistencia_luz": 5,
+            "tipo_material": "Sólido"
+        },
+        "id_espacio_1": 7,
+        "id_espacio_2": 8
+    },
+    "8": {
+        "material": {
+            "id_material": 2,
+            "nombre": "Madera",
+            "resistencia_luz": 3,
+            "tipo_material": "Orgánico"
+        },
+        "id_espacio_1": 8,
+        "id_espacio_2": 9
+    },
+    "9": {
+        "material": {
+            "id_material": 3,
+            "nombre": "Vidrio",
+            "resistencia_luz": 2,
+            "tipo_material": "Transparente"
+        },
+        "id_espacio_1": 9,
+        "id_espacio_2": 10
+    },
+    "10": {
+        "material": {
+            "id_material": 1,
+            "nombre": "Concreto",
+            "resistencia_luz": 5,
+            "tipo_material": "Sólido"
+        },
+        "id_espacio_1": 10,
+        "id_espacio_2": 11
+    },
+    "11": {
+        "material": {
+            "id_material": 2,
+            "nombre": "Madera",
+            "resistencia_luz": 3,
+            "tipo_material": "Orgánico"
+        },
+        "id_espacio_1": 11,
+        "id_espacio_2": 12
+    },
+    "12": {
+        "material": {
+            "id_material": 3,
+            "nombre": "Vidrio",
+            "resistencia_luz": 2,
+            "tipo_material": "Transparente"
+        },
+        "id_espacio_1": 13,
+        "id_espacio_2": 14
+    },
+    "13": {
+        "material": {
+            "id_material": 1,
+            "nombre": "Concreto",
+            "resistencia_luz": 5,
+            "tipo_material": "Sólido"
+        },
+        "id_espacio_1": 14,
+        "id_espacio_2": 15
+    },
+    "14": {
+        "material": {
+            "id_material": 2,
+            "nombre": "Madera",
+            "resistencia_luz": 3,
+            "tipo_material": "Orgánico"
+        },
+        "id_espacio_1": 15,
+        "id_espacio_2": 16
+    },
+    "15": {
+        "material": {
+            "id_material": 3,
+            "nombre": "Vidrio",
+            "resistencia_luz": 2,
+            "tipo_material": "Transparente"
+        },
+        "id_espacio_1": 16,
+        "id_espacio_2": 17
+    },
+    "16": {
+        "material": {
+            "id_material": 1,
+            "nombre": "Concreto",
+            "resistencia_luz": 5,
+            "tipo_material": "Sólido"
+        },
+        "id_espacio_1": 17,
+        "id_espacio_2": 18
+    },
+    "17": {
+        "material": {
+            "id_material": 2,
+            "nombre": "Madera",
+            "resistencia_luz": 3,
+            "tipo_material": "Orgánico"
+        },
+        "id_espacio_1": 18,
+        "id_espacio_2": 19
+    },
+    "18": {
+        "material": {
+            "id_material": 3,
+            "nombre": "Vidrio",
+            "resistencia_luz": 2,
+            "tipo_material": "Transparente"
+        },
+        "id_espacio_1": 19,
+        "id_espacio_2": 20
+    },
+    "19": {
+        "material": {
+            "id_material": 1,
+            "nombre": "Concreto",
+            "resistencia_luz": 5,
+            "tipo_material": "Sólido"
+        },
+        "id_espacio_1": 20,
+        "id_espacio_2": 21
+    },
+    "20": {
+        "material": {
+            "id_material": 2,
+            "nombre": "Madera",
+            "resistencia_luz": 3,
+            "tipo_material": "Orgánico"
+        },
+        "id_espacio_1": 21,
+        "id_espacio_2": 22
+    },
+    "21": {
+        "material": {
+            "id_material": 3,
+            "nombre": "Vidrio",
+            "resistencia_luz": 2,
+            "tipo_material": "Transparente"
+        },
+        "id_espacio_1": 23,
+        "id_espacio_2": 24
+    },
+    "22": {
+        "material": {
+            "id_material": 1,
+            "nombre": "Concreto",
+            "resistencia_luz": 5,
+            "tipo_material": "Sólido"
+        },
+        "id_espacio_1": 24,
+        "id_espacio_2": 25
+    },
+    "23": {
+        "material": {
+            "id_material": 2,
+            "nombre": "Madera",
+            "resistencia_luz": 3,
+            "tipo_material": "Orgánico"
+        },
+        "id_espacio_1": 25,
+        "id_espacio_2": 26
+    },
+    "24": {
+        "material": {
+            "id_material": 3,
+            "nombre": "Vidrio",
+            "resistencia_luz": 2,
+            "tipo_material": "Transparente"
+        },
+        "id_espacio_1": 26,
+        "id_espacio_2": 27
+    },
+    "25": {
+        "material": {
+            "id_material": 1,
+            "nombre": "Concreto",
+            "resistencia_luz": 5,
+            "tipo_material": "Sólido"
+        },
+        "id_espacio_1": 27,
+        "id_espacio_2": 28
+    },
+    "26": {
+        "material": {
+            "id_material": 2,
+            "nombre": "Madera",
+            "resistencia_luz": 3,
+            "tipo_material": "Orgánico"
+        },
+        "id_espacio_1": 28,
+        "id_espacio_2": 29
+    },
+    "27": {
+        "material": {
+            "id_material": 3,
+            "nombre": "Vidrio",
+            "resistencia_luz": 2,
+            "tipo_material": "Transparente"
+        },
+        "id_espacio_1": 29,
+        "id_espacio_2": 30
+    }
+}

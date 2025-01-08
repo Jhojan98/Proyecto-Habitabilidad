@@ -1,0 +1,559 @@
+{
+    "1": {
+        "id_espacio": 1,
+        "nombre": "Laboratorio de Redes y Telemática",
+        "actividad": "Laboratorio",
+        "habitabilidad": {
+            "id_habitabilidad": 1,
+            "luz_recomendada": "500 lux",
+            "nivel_habitabilidad": 85,
+            "flujo_luminoso": 5000.0,
+            "coeficiente_utilizacion_luz": 0.75,
+            "reduccion_luminosidad": 0.1
+        },
+        "ids_fuentes_luz": [
+            1,
+            2
+        ],
+        "cantidad_personas": 30,
+        "area": 100.0
+    },
+    "2": {
+        "id_espacio": 2,
+        "nombre": "Laboratorio de Redes Inalámbricas",
+        "actividad": "Laboratorio",
+        "habitabilidad": {
+            "id_habitabilidad": 1,
+            "luz_recomendada": "500 lux",
+            "nivel_habitabilidad": 85,
+            "flujo_luminoso": 5000.0,
+            "coeficiente_utilizacion_luz": 0.75,
+            "reduccion_luminosidad": 0.1
+        },
+        "ids_fuentes_luz": [
+            1,
+            2
+        ],
+        "cantidad_personas": 30,
+        "area": 100.0
+    },
+    "3": {
+        "id_espacio": 3,
+        "nombre": "Sala de Informática 1",
+        "actividad": "Laboratorio",
+        "habitabilidad": {
+            "id_habitabilidad": 1,
+            "luz_recomendada": "500 lux",
+            "nivel_habitabilidad": 85,
+            "flujo_luminoso": 5000.0,
+            "coeficiente_utilizacion_luz": 0.75,
+            "reduccion_luminosidad": 0.1
+        },
+        "ids_fuentes_luz": [
+            1,
+            2
+        ],
+        "cantidad_personas": 30,
+        "area": 100.0
+    },
+    "4": {
+        "id_espacio": 4,
+        "nombre": "Sala de Informática 2",
+        "actividad": "Laboratorio",
+        "habitabilidad": {
+            "id_habitabilidad": 1,
+            "luz_recomendada": "500 lux",
+            "nivel_habitabilidad": 85,
+            "flujo_luminoso": 5000.0,
+            "coeficiente_utilizacion_luz": 0.75,
+            "reduccion_luminosidad": 0.1
+        },
+        "ids_fuentes_luz": [
+            1,
+            2
+        ],
+        "cantidad_personas": 30,
+        "area": 100.0
+    },
+    "5": {
+        "id_espacio": 5,
+        "nombre": "Sala de Informática 3",
+        "actividad": "Laboratorio",
+        "habitabilidad": {
+            "id_habitabilidad": 1,
+            "luz_recomendada": "500 lux",
+            "nivel_habitabilidad": 85,
+            "flujo_luminoso": 5000.0,
+            "coeficiente_utilizacion_luz": 0.75,
+            "reduccion_luminosidad": 0.1
+        },
+        "ids_fuentes_luz": [
+            1,
+            2
+        ],
+        "cantidad_personas": 30,
+        "area": 100.0
+    },
+    "6": {
+        "id_espacio": 6,
+        "nombre": "Sala de Informática 4",
+        "actividad": "Laboratorio",
+        "habitabilidad": {
+            "id_habitabilidad": 1,
+            "luz_recomendada": "500 lux",
+            "nivel_habitabilidad": 85,
+            "flujo_luminoso": 5000.0,
+            "coeficiente_utilizacion_luz": 0.75,
+            "reduccion_luminosidad": 0.1
+        },
+        "ids_fuentes_luz": [
+            1,
+            2
+        ],
+        "cantidad_personas": 30,
+        "area": 100.0
+    },
+    "7": {
+        "id_espacio": 7,
+        "nombre": "Sala de Informática 5",
+        "actividad": "Laboratorio",
+        "habitabilidad": {
+            "id_habitabilidad": 1,
+            "luz_recomendada": "500 lux",
+            "nivel_habitabilidad": 85,
+            "flujo_luminoso": 5000.0,
+            "coeficiente_utilizacion_luz": 0.75,
+            "reduccion_luminosidad": 0.1
+        },
+        "ids_fuentes_luz": [
+            1,
+            2
+        ],
+        "cantidad_personas": 30,
+        "area": 100.0
+    },
+    "8": {
+        "id_espacio": 8,
+        "nombre": "Sala de Informática 6",
+        "actividad": "Laboratorio",
+        "habitabilidad": {
+            "id_habitabilidad": 1,
+            "luz_recomendada": "500 lux",
+            "nivel_habitabilidad": 85,
+            "flujo_luminoso": 5000.0,
+            "coeficiente_utilizacion_luz": 0.75,
+            "reduccion_luminosidad": 0.1
+        },
+        "ids_fuentes_luz": [
+            1,
+            2
+        ],
+        "cantidad_personas": 30,
+        "area": 100.0
+    },
+    "9": {
+        "id_espacio": 9,
+        "nombre": "Sala de Informática 7",
+        "actividad": "Laboratorio",
+        "habitabilidad": {
+            "id_habitabilidad": 1,
+            "luz_recomendada": "500 lux",
+            "nivel_habitabilidad": 85,
+            "flujo_luminoso": 5000.0,
+            "coeficiente_utilizacion_luz": 0.75,
+            "reduccion_luminosidad": 0.1
+        },
+        "ids_fuentes_luz": [
+            1,
+            2
+        ],
+        "cantidad_personas": 30,
+        "area": 100.0
+    },
+    "10": {
+        "id_espacio": 10,
+        "nombre": "Oficina de Sistemas",
+        "actividad": "Oficina",
+        "habitabilidad": {
+            "id_habitabilidad": 2,
+            "luz_recomendada": "300 lux",
+            "nivel_habitabilidad": 70,
+            "flujo_luminoso": 3000.0,
+            "coeficiente_utilizacion_luz": 0.8,
+            "reduccion_luminosidad": 0.05
+        },
+        "ids_fuentes_luz": [
+            1
+        ],
+        "cantidad_personas": 10,
+        "area": 50.0
+    },
+    "11": {
+        "id_espacio": 11,
+        "nombre": "Área de Soporte Técnico y Almacén",
+        "actividad": "Área de Soporte",
+        "habitabilidad": {
+            "id_habitabilidad": 2,
+            "luz_recomendada": "300 lux",
+            "nivel_habitabilidad": 70,
+            "flujo_luminoso": 3000.0,
+            "coeficiente_utilizacion_luz": 0.8,
+            "reduccion_luminosidad": 0.05
+        },
+        "ids_fuentes_luz": [
+            1
+        ],
+        "cantidad_personas": 10,
+        "area": 50.0
+    },
+    "12": {
+        "id_espacio": 12,
+        "nombre": "Cuarto de Monitoreo",
+        "actividad": "Monitoreo",
+        "habitabilidad": {
+            "id_habitabilidad": 3,
+            "luz_recomendada": "700 lux",
+            "nivel_habitabilidad": 90,
+            "flujo_luminoso": 7000.0,
+            "coeficiente_utilizacion_luz": 0.9,
+            "reduccion_luminosidad": 0.02
+        },
+        "ids_fuentes_luz": [
+            1
+        ],
+        "cantidad_personas": 5,
+        "area": 25.0
+    },
+    "13": {
+        "id_espacio": 13,
+        "nombre": "Laboratorio de Electromagnetismo",
+        "actividad": "Laboratorio",
+        "habitabilidad": {
+            "id_habitabilidad": 1,
+            "luz_recomendada": "500 lux",
+            "nivel_habitabilidad": 85,
+            "flujo_luminoso": 5000.0,
+            "coeficiente_utilizacion_luz": 0.75,
+            "reduccion_luminosidad": 0.1
+        },
+        "ids_fuentes_luz": [
+            1,
+            2
+        ],
+        "cantidad_personas": 30,
+        "area": 100.0
+    },
+    "14": {
+        "id_espacio": 14,
+        "nombre": "Laboratorio de Circuitos Eléctricos",
+        "actividad": "Laboratorio",
+        "habitabilidad": {
+            "id_habitabilidad": 1,
+            "luz_recomendada": "500 lux",
+            "nivel_habitabilidad": 85,
+            "flujo_luminoso": 5000.0,
+            "coeficiente_utilizacion_luz": 0.75,
+            "reduccion_luminosidad": 0.1
+        },
+        "ids_fuentes_luz": [
+            1,
+            2
+        ],
+        "cantidad_personas": 30,
+        "area": 100.0
+    },
+    "15": {
+        "id_espacio": 15,
+        "nombre": "Laboratorio de Electrónica 1",
+        "actividad": "Laboratorio",
+        "habitabilidad": {
+            "id_habitabilidad": 1,
+            "luz_recomendada": "500 lux",
+            "nivel_habitabilidad": 85,
+            "flujo_luminoso": 5000.0,
+            "coeficiente_utilizacion_luz": 0.75,
+            "reduccion_luminosidad": 0.1
+        },
+        "ids_fuentes_luz": [
+            1,
+            2
+        ],
+        "cantidad_personas": 30,
+        "area": 100.0
+    },
+    "16": {
+        "id_espacio": 16,
+        "nombre": "Laboratorio de Electrónica 2",
+        "actividad": "Laboratorio",
+        "habitabilidad": {
+            "id_habitabilidad": 1,
+            "luz_recomendada": "500 lux",
+            "nivel_habitabilidad": 85,
+            "flujo_luminoso": 5000.0,
+            "coeficiente_utilizacion_luz": 0.75,
+            "reduccion_luminosidad": 0.1
+        },
+        "ids_fuentes_luz": [
+            1,
+            2
+        ],
+        "cantidad_personas": 30,
+        "area": 100.0
+    },
+    "17": {
+        "id_espacio": 17,
+        "nombre": "Laboratorio de Electrónica 3",
+        "actividad": "Laboratorio",
+        "habitabilidad": {
+            "id_habitabilidad": 1,
+            "luz_recomendada": "500 lux",
+            "nivel_habitabilidad": 85,
+            "flujo_luminoso": 5000.0,
+            "coeficiente_utilizacion_luz": 0.75,
+            "reduccion_luminosidad": 0.1
+        },
+        "ids_fuentes_luz": [
+            1,
+            2
+        ],
+        "cantidad_personas": 30,
+        "area": 100.0
+    },
+    "18": {
+        "id_espacio": 18,
+        "nombre": "Área de Almacenamiento y Taller de Mantenimiento Electrónico",
+        "actividad": "Área de Almacenamiento",
+        "habitabilidad": {
+            "id_habitabilidad": 2,
+            "luz_recomendada": "300 lux",
+            "nivel_habitabilidad": 70,
+            "flujo_luminoso": 3000.0,
+            "coeficiente_utilizacion_luz": 0.8,
+            "reduccion_luminosidad": 0.05
+        },
+        "ids_fuentes_luz": [
+            1
+        ],
+        "cantidad_personas": 10,
+        "area": 50.0
+    },
+    "19": {
+        "id_espacio": 19,
+        "nombre": "Cuarto de Atención a Estudiantes",
+        "actividad": "Atención a Estudiantes",
+        "habitabilidad": {
+            "id_habitabilidad": 2,
+            "luz_recomendada": "300 lux",
+            "nivel_habitabilidad": 70,
+            "flujo_luminoso": 3000.0,
+            "coeficiente_utilizacion_luz": 0.8,
+            "reduccion_luminosidad": 0.05
+        },
+        "ids_fuentes_luz": [
+            1
+        ],
+        "cantidad_personas": 10,
+        "area": 50.0
+    },
+    "20": {
+        "id_espacio": 20,
+        "nombre": "Laboratorio de Circuitos Impresos",
+        "actividad": "Laboratorio",
+        "habitabilidad": {
+            "id_habitabilidad": 1,
+            "luz_recomendada": "500 lux",
+            "nivel_habitabilidad": 85,
+            "flujo_luminoso": 5000.0,
+            "coeficiente_utilizacion_luz": 0.75,
+            "reduccion_luminosidad": 0.1
+        },
+        "ids_fuentes_luz": [
+            1,
+            2
+        ],
+        "cantidad_personas": 30,
+        "area": 100.0
+    },
+    "21": {
+        "id_espacio": 21,
+        "nombre": "Laboratorio de Telecomunicaciones",
+        "actividad": "Laboratorio",
+        "habitabilidad": {
+            "id_habitabilidad": 1,
+            "luz_recomendada": "500 lux",
+            "nivel_habitabilidad": 85,
+            "flujo_luminoso": 5000.0,
+            "coeficiente_utilizacion_luz": 0.75,
+            "reduccion_luminosidad": 0.1
+        },
+        "ids_fuentes_luz": [
+            1,
+            2
+        ],
+        "cantidad_personas": 30,
+        "area": 100.0
+    },
+    "22": {
+        "id_espacio": 22,
+        "nombre": "Laboratorio Especializado de Control",
+        "actividad": "Laboratorio",
+        "habitabilidad": {
+            "id_habitabilidad": 1,
+            "luz_recomendada": "500 lux",
+            "nivel_habitabilidad": 85,
+            "flujo_luminoso": 5000.0,
+            "coeficiente_utilizacion_luz": 0.75,
+            "reduccion_luminosidad": 0.1
+        },
+        "ids_fuentes_luz": [
+            1,
+            2
+        ],
+        "cantidad_personas": 30,
+        "area": 100.0
+    },
+    "23": {
+        "id_espacio": 23,
+        "nombre": "Salón de Clase 1",
+        "actividad": "Salón de Clase",
+        "habitabilidad": {
+            "id_habitabilidad": 2,
+            "luz_recomendada": "300 lux",
+            "nivel_habitabilidad": 70,
+            "flujo_luminoso": 3000.0,
+            "coeficiente_utilizacion_luz": 0.8,
+            "reduccion_luminosidad": 0.05
+        },
+        "ids_fuentes_luz": [
+            1
+        ],
+        "cantidad_personas": 40,
+        "area": 80.0
+    },
+    "24": {
+        "id_espacio": 24,
+        "nombre": "Salón de Clase 2",
+        "actividad": "Salón de Clase",
+        "habitabilidad": {
+            "id_habitabilidad": 2,
+            "luz_recomendada": "300 lux",
+            "nivel_habitabilidad": 70,
+            "flujo_luminoso": 3000.0,
+            "coeficiente_utilizacion_luz": 0.8,
+            "reduccion_luminosidad": 0.05
+        },
+        "ids_fuentes_luz": [
+            1
+        ],
+        "cantidad_personas": 40,
+        "area": 80.0
+    },
+    "25": {
+        "id_espacio": 25,
+        "nombre": "Salón de Clase 3",
+        "actividad": "Salón de Clase",
+        "habitabilidad": {
+            "id_habitabilidad": 2,
+            "luz_recomendada": "300 lux",
+            "nivel_habitabilidad": 70,
+            "flujo_luminoso": 3000.0,
+            "coeficiente_utilizacion_luz": 0.8,
+            "reduccion_luminosidad": 0.05
+        },
+        "ids_fuentes_luz": [
+            1
+        ],
+        "cantidad_personas": 40,
+        "area": 80.0
+    },
+    "26": {
+        "id_espacio": 26,
+        "nombre": "Salón de Clase 4",
+        "actividad": "Salón de Clase",
+        "habitabilidad": {
+            "id_habitabilidad": 2,
+            "luz_recomendada": "300 lux",
+            "nivel_habitabilidad": 70,
+            "flujo_luminoso": 3000.0,
+            "coeficiente_utilizacion_luz": 0.8,
+            "reduccion_luminosidad": 0.05
+        },
+        "ids_fuentes_luz": [
+            1
+        ],
+        "cantidad_personas": 40,
+        "area": 80.0
+    },
+    "27": {
+        "id_espacio": 27,
+        "nombre": "Salón de Clase 5",
+        "actividad": "Salón de Clase",
+        "habitabilidad": {
+            "id_habitabilidad": 2,
+            "luz_recomendada": "300 lux",
+            "nivel_habitabilidad": 70,
+            "flujo_luminoso": 3000.0,
+            "coeficiente_utilizacion_luz": 0.8,
+            "reduccion_luminosidad": 0.05
+        },
+        "ids_fuentes_luz": [
+            1
+        ],
+        "cantidad_personas": 40,
+        "area": 80.0
+    },
+    "28": {
+        "id_espacio": 28,
+        "nombre": "Salón de Clase 6",
+        "actividad": "Salón de Clase",
+        "habitabilidad": {
+            "id_habitabilidad": 2,
+            "luz_recomendada": "300 lux",
+            "nivel_habitabilidad": 70,
+            "flujo_luminoso": 3000.0,
+            "coeficiente_utilizacion_luz": 0.8,
+            "reduccion_luminosidad": 0.05
+        },
+        "ids_fuentes_luz": [
+            1
+        ],
+        "cantidad_personas": 40,
+        "area": 80.0
+    },
+    "29": {
+        "id_espacio": 29,
+        "nombre": "Salón de Clase 7",
+        "actividad": "Salón de Clase",
+        "habitabilidad": {
+            "id_habitabilidad": 2,
+            "luz_recomendada": "300 lux",
+            "nivel_habitabilidad": 70,
+            "flujo_luminoso": 3000.0,
+            "coeficiente_utilizacion_luz": 0.8,
+            "reduccion_luminosidad": 0.05
+        },
+        "ids_fuentes_luz": [
+            1
+        ],
+        "cantidad_personas": 40,
+        "area": 80.0
+    },
+    "30": {
+        "id_espacio": 30,
+        "nombre": "Salón de Clase 8",
+        "actividad": "Salón de Clase",
+        "habitabilidad": {
+            "id_habitabilidad": 2,
+            "luz_recomendada": "300 lux",
+            "nivel_habitabilidad": 70,
+            "flujo_luminoso": 3000.0,
+            "coeficiente_utilizacion_luz": 0.8,
+            "reduccion_luminosidad": 0.05
+        },
+        "ids_fuentes_luz": [
+            1
+        ],
+        "cantidad_personas": 40,
+        "area": 80.0
+    }
+}
