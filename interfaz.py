@@ -56,46 +56,46 @@ for edges in [edges_piso_1, edges_piso_2, edges_piso_3, edges_verticales]:
 pos = {**nodes_piso_1, **nodes_piso_2, **nodes_piso_3} 
 
 # Crear replica de los pisos 1, 2 y 3
-def replicar_pisos(original_nodes, original_edges, desplazamiento_z, total_nodes):
-    nuevos_nodos = {}
-    nuevos_edges = []
-    nuevo_id = list(G.nodes())[-1]
-    for coords in original_nodes.values():
-        nuevo_id += 1
-        nuevos_nodos[nuevo_id] = (coords[0], coords[1], coords[2] + desplazamiento_z)
+# def replicar_pisos(original_nodes, original_edges, desplazamiento_z, total_nodes):
+#     nuevos_nodos = {}
+#     nuevos_edges = []
+#     nuevo_id = list(G.nodes())[-1]
+#     for coords in original_nodes.values():
+#         nuevo_id += 1
+#         nuevos_nodos[nuevo_id] = (coords[0], coords[1], coords[2] + desplazamiento_z)
 
-    for edge in original_edges:
-        nuevo_edge = (
-            edge[0] + total_nodes,
-            edge[1] + total_nodes
-        )
-        nuevos_edges.append(nuevo_edge)
+#     for edge in original_edges:
+#         nuevo_edge = (
+#             edge[0] + total_nodes,
+#             edge[1] + total_nodes
+#         )
+#         nuevos_edges.append(nuevo_edge)
 
-    G.add_nodes_from(nuevos_nodos.keys())
-    G.add_edges_from(nuevos_edges)
-    pos.update(nuevos_nodos)
+#     G.add_nodes_from(nuevos_nodos.keys())
+#     G.add_edges_from(nuevos_edges)
+#     pos.update(nuevos_nodos)
 
-def replicar_edges(original_edges, total_nodes):
-    nuevos_edges = []
-    for edge in original_edges:
-        nuevo_edge = (
-            edge[0] + total_nodes,
-            edge[1] + total_nodes
-        )
-        nuevos_edges.append(nuevo_edge)
+# def replicar_edges(original_edges, total_nodes):
+#     nuevos_edges = []
+#     for edge in original_edges:
+#         nuevo_edge = (
+#             edge[0] + total_nodes,
+#             edge[1] + total_nodes
+#         )
+#         nuevos_edges.append(nuevo_edge)
 
-    G.add_edges_from(nuevos_edges)
+#     G.add_edges_from(nuevos_edges)
 
 # Generar replicas de nodos y aristas
 desplazamiento_z = 3
 total_nodes = len(G.nodes())
 
-replicar_pisos(nodes_piso_1, edges_piso_1, desplazamiento_z, total_nodes)
-replicar_pisos(nodes_piso_2, edges_piso_2, desplazamiento_z, total_nodes)
-replicar_pisos(nodes_piso_3, edges_piso_3, desplazamiento_z, total_nodes)
+# replicar_pisos(nodes_piso_1, edges_piso_1, desplazamiento_z, total_nodes)
+# replicar_pisos(nodes_piso_2, edges_piso_2, desplazamiento_z, total_nodes)
+# replicar_pisos(nodes_piso_3, edges_piso_3, desplazamiento_z, total_nodes)
 
-replicar_edges(edges_verticales, total_nodes)
-G.add_edges_from(edges_verticales_no_replicados)
+# replicar_edges(edges_verticales, total_nodes)
+# G.add_edges_from(edges_verticales_no_replicados)
 
 # Crear las trazas para los nuevos nodos y aristas en Plotly
 edge_x = []
