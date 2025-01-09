@@ -1,13 +1,14 @@
 from modelado.classHabitabilidad import Habitabilidad
+from modelado.classFuenteLuz import FuenteLuz
 
 class Espacios:
-    def __init__(self, id_espacio: int, nombre: str, actividad: str, habitabilidad: Habitabilidad, ids_fuentes_luz: list,
+    def __init__(self, id_espacio: int, nombre: str, actividad: str, habitabilidad: Habitabilidad, fuentes_luz: dict,
                  cantidad_personas: int, area: float):
         self.id_espacio = id_espacio
         self.nombre = nombre
         self.actividad = actividad
         self.habitabilidad = Habitabilidad(**habitabilidad) if isinstance(habitabilidad, dict) else habitabilidad
-        self.ids_fuentes_luz = ids_fuentes_luz
+        self.fuentes_luz = {k: FuenteLuz(**v) if isinstance(v, dict) else v for k, v in fuentes_luz.items()}
         self.cantidad_personas = cantidad_personas
         self.area = area
 
@@ -23,7 +24,7 @@ class Espacios:
             "nombre": self.nombre,
             "actividad": self.actividad,
             "habitabilidad": self.habitabilidad.to_dict(),
-            "ids_fuentes_luz": self.ids_fuentes_luz,
+            "fuentes_luz": {k: v.__dict__ for k, v in self.fuentes_luz.items()},
             "cantidad_personas": self.cantidad_personas,
             "area": self.area
         }
@@ -53,11 +54,11 @@ class Espacios:
     def set_habitabilidad(self, habitabilidad: Habitabilidad):
         self.habitabilidad = habitabilidad
 
-    def get_ids_fuentes_luz(self) -> list:
-        return self.ids_fuentes_luz
+    def get_fuentes_luz(self) -> dict:
+        return self.fuentes_luz
 
-    def set_ids_fuentes_luz(self, ids_fuentes_luz: list):
-        self.ids_fuentes_luz = ids_fuentes_luz
+    def set_fuentes_luz(self, fuentes_luz: dict):
+        self.fuentes_luz = fuentes_luz
 
     def get_cantidad_personas(self) -> int:
         return self.cantidad_personas

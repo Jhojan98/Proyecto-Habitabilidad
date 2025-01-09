@@ -7,14 +7,32 @@
             "id_habitabilidad": 1,
             "luz_recomendada": "500 lux",
             "nivel_habitabilidad": 85,
-            "flujo_luminoso": 5000.0,
+            "flujo_luminoso": 26400,
             "coeficiente_utilizacion_luz": 0.75,
-            "reduccion_luminosidad": 0.1
+            "reduccion_luminosidad": 0.1,
+            "iluminancia_prom": 158.4,
+            "uniformidad_iluminancia": 0.0
         },
-        "ids_fuentes_luz": [
-            1,
-            2
-        ],
+        "fuentes_luz": {
+            "8": {
+                "id_fuente_luz": 1,
+                "tipo_fuente": "LED",
+                "interna": true,
+                "iluminacion_promedio": 300.0,
+                "temperatura_emitida": 3500.0,
+                "intensidad": 0.8,
+                "lumens": 3000
+            },
+            "2": {
+                "id_fuente_luz": 2,
+                "tipo_fuente": "Halógena",
+                "interna": false,
+                "iluminacion_promedio": 500.0,
+                "temperatura_emitida": 2700.0,
+                "intensidad": 1.2,
+                "lumens": 1200
+            }
+        },
         "cantidad_personas": 30,
         "area": 100.0
     },
@@ -26,14 +44,32 @@
             "id_habitabilidad": 1,
             "luz_recomendada": "500 lux",
             "nivel_habitabilidad": 85,
-            "flujo_luminoso": 5000.0,
+            "flujo_luminoso": 20400,
             "coeficiente_utilizacion_luz": 0.75,
-            "reduccion_luminosidad": 0.1
+            "reduccion_luminosidad": 0.1,
+            "iluminancia_prom": 122.4,
+            "uniformidad_iluminancia": 0.0
         },
-        "ids_fuentes_luz": [
-            1,
-            2
-        ],
+        "fuentes_luz": {
+            "6": {
+                "id_fuente_luz": 1,
+                "tipo_fuente": "LED",
+                "interna": true,
+                "iluminacion_promedio": 300.0,
+                "temperatura_emitida": 3500.0,
+                "intensidad": 0.8,
+                "lumens": 3000
+            },
+            "2": {
+                "id_fuente_luz": 2,
+                "tipo_fuente": "Halógena",
+                "interna": false,
+                "iluminacion_promedio": 500.0,
+                "temperatura_emitida": 2700.0,
+                "intensidad": 1.2,
+                "lumens": 1200
+            }
+        },
         "cantidad_personas": 30,
         "area": 100.0
     },
@@ -45,16 +81,34 @@
             "id_habitabilidad": 1,
             "luz_recomendada": "500 lux",
             "nivel_habitabilidad": 85,
-            "flujo_luminoso": 5000.0,
+            "flujo_luminoso": 20400,
             "coeficiente_utilizacion_luz": 0.75,
-            "reduccion_luminosidad": 0.1
+            "reduccion_luminosidad": 0.1,
+            "iluminancia_prom": 163.2,
+            "uniformidad_iluminancia": 0.0
         },
-        "ids_fuentes_luz": [
-            1,
-            2
-        ],
+        "fuentes_luz": {
+            "6": {
+                "id_fuente_luz": 1,
+                "tipo_fuente": "LED",
+                "interna": true,
+                "iluminacion_promedio": 300.0,
+                "temperatura_emitida": 3500.0,
+                "intensidad": 0.8,
+                "lumens": 3000
+            },
+            "2": {
+                "id_fuente_luz": 2,
+                "tipo_fuente": "Halógena",
+                "interna": false,
+                "iluminacion_promedio": 500.0,
+                "temperatura_emitida": 2700.0,
+                "intensidad": 1.2,
+                "lumens": 1200
+            }
+        },
         "cantidad_personas": 30,
-        "area": 100.0
+        "area": 75.0
     },
     "4": {
         "id_espacio": 4,
@@ -64,14 +118,32 @@
             "id_habitabilidad": 1,
             "luz_recomendada": "500 lux",
             "nivel_habitabilidad": 85,
-            "flujo_luminoso": 5000.0,
+            "flujo_luminoso": 26400,
             "coeficiente_utilizacion_luz": 0.75,
-            "reduccion_luminosidad": 0.1
+            "reduccion_luminosidad": 0.1,
+            "iluminancia_prom": 158.4,
+            "uniformidad_iluminancia": 0.0
         },
-        "ids_fuentes_luz": [
-            1,
-            2
-        ],
+        "fuentes_luz": {
+            "8": {
+                "id_fuente_luz": 1,
+                "tipo_fuente": "LED",
+                "interna": true,
+                "iluminacion_promedio": 300.0,
+                "temperatura_emitida": 3500.0,
+                "intensidad": 0.8,
+                "lumens": 3000
+            },
+            "2": {
+                "id_fuente_luz": 2,
+                "tipo_fuente": "Halógena",
+                "interna": false,
+                "iluminacion_promedio": 500.0,
+                "temperatura_emitida": 2700.0,
+                "intensidad": 1.2,
+                "lumens": 1200
+            }
+        },
         "cantidad_personas": 30,
         "area": 100.0
     },
@@ -83,14 +155,32 @@
             "id_habitabilidad": 1,
             "luz_recomendada": "500 lux",
             "nivel_habitabilidad": 85,
-            "flujo_luminoso": 5000.0,
+            "flujo_luminoso": 26400,
             "coeficiente_utilizacion_luz": 0.75,
-            "reduccion_luminosidad": 0.1
+            "reduccion_luminosidad": 0.1,
+            "iluminancia_prom": 158.4,
+            "uniformidad_iluminancia": 0.0
         },
-        "ids_fuentes_luz": [
-            1,
-            2
-        ],
+        "fuentes_luz": {
+            "8": {
+                "id_fuente_luz": 1,
+                "tipo_fuente": "LED",
+                "interna": true,
+                "iluminacion_promedio": 300.0,
+                "temperatura_emitida": 3500.0,
+                "intensidad": 0.8,
+                "lumens": 3000
+            },
+            "2": {
+                "id_fuente_luz": 2,
+                "tipo_fuente": "Halógena",
+                "interna": false,
+                "iluminacion_promedio": 500.0,
+                "temperatura_emitida": 2700.0,
+                "intensidad": 1.2,
+                "lumens": 1200
+            }
+        },
         "cantidad_personas": 30,
         "area": 100.0
     },
@@ -102,14 +192,32 @@
             "id_habitabilidad": 1,
             "luz_recomendada": "500 lux",
             "nivel_habitabilidad": 85,
-            "flujo_luminoso": 5000.0,
+            "flujo_luminoso": 26400,
             "coeficiente_utilizacion_luz": 0.75,
-            "reduccion_luminosidad": 0.1
+            "reduccion_luminosidad": 0.1,
+            "iluminancia_prom": 158.4,
+            "uniformidad_iluminancia": 0.0
         },
-        "ids_fuentes_luz": [
-            1,
-            2
-        ],
+        "fuentes_luz": {
+            "8": {
+                "id_fuente_luz": 1,
+                "tipo_fuente": "LED",
+                "interna": true,
+                "iluminacion_promedio": 300.0,
+                "temperatura_emitida": 3500.0,
+                "intensidad": 0.8,
+                "lumens": 3000
+            },
+            "2": {
+                "id_fuente_luz": 2,
+                "tipo_fuente": "Halógena",
+                "interna": false,
+                "iluminacion_promedio": 500.0,
+                "temperatura_emitida": 2700.0,
+                "intensidad": 1.2,
+                "lumens": 1200
+            }
+        },
         "cantidad_personas": 30,
         "area": 100.0
     },
@@ -121,14 +229,32 @@
             "id_habitabilidad": 1,
             "luz_recomendada": "500 lux",
             "nivel_habitabilidad": 85,
-            "flujo_luminoso": 5000.0,
+            "flujo_luminoso": 26400,
             "coeficiente_utilizacion_luz": 0.75,
-            "reduccion_luminosidad": 0.1
+            "reduccion_luminosidad": 0.1,
+            "iluminancia_prom": 158.4,
+            "uniformidad_iluminancia": 0.0
         },
-        "ids_fuentes_luz": [
-            1,
-            2
-        ],
+        "fuentes_luz": {
+            "8": {
+                "id_fuente_luz": 1,
+                "tipo_fuente": "LED",
+                "interna": true,
+                "iluminacion_promedio": 300.0,
+                "temperatura_emitida": 3500.0,
+                "intensidad": 0.8,
+                "lumens": 3000
+            },
+            "2": {
+                "id_fuente_luz": 2,
+                "tipo_fuente": "Halógena",
+                "interna": false,
+                "iluminacion_promedio": 500.0,
+                "temperatura_emitida": 2700.0,
+                "intensidad": 1.2,
+                "lumens": 1200
+            }
+        },
         "cantidad_personas": 30,
         "area": 100.0
     },
@@ -140,14 +266,32 @@
             "id_habitabilidad": 1,
             "luz_recomendada": "500 lux",
             "nivel_habitabilidad": 85,
-            "flujo_luminoso": 5000.0,
+            "flujo_luminoso": 26400,
             "coeficiente_utilizacion_luz": 0.75,
-            "reduccion_luminosidad": 0.1
+            "reduccion_luminosidad": 0.1,
+            "iluminancia_prom": 158.4,
+            "uniformidad_iluminancia": 0.0
         },
-        "ids_fuentes_luz": [
-            1,
-            2
-        ],
+        "fuentes_luz": {
+            "8": {
+                "id_fuente_luz": 1,
+                "tipo_fuente": "LED",
+                "interna": true,
+                "iluminacion_promedio": 300.0,
+                "temperatura_emitida": 3500.0,
+                "intensidad": 0.8,
+                "lumens": 3000
+            },
+            "2": {
+                "id_fuente_luz": 2,
+                "tipo_fuente": "Halógena",
+                "interna": false,
+                "iluminacion_promedio": 500.0,
+                "temperatura_emitida": 2700.0,
+                "intensidad": 1.2,
+                "lumens": 1200
+            }
+        },
         "cantidad_personas": 30,
         "area": 100.0
     },
@@ -159,14 +303,32 @@
             "id_habitabilidad": 1,
             "luz_recomendada": "500 lux",
             "nivel_habitabilidad": 85,
-            "flujo_luminoso": 5000.0,
+            "flujo_luminoso": 26400,
             "coeficiente_utilizacion_luz": 0.75,
-            "reduccion_luminosidad": 0.1
+            "reduccion_luminosidad": 0.1,
+            "iluminancia_prom": 158.4,
+            "uniformidad_iluminancia": 0.0
         },
-        "ids_fuentes_luz": [
-            1,
-            2
-        ],
+        "fuentes_luz": {
+            "8": {
+                "id_fuente_luz": 1,
+                "tipo_fuente": "LED",
+                "interna": true,
+                "iluminacion_promedio": 300.0,
+                "temperatura_emitida": 3500.0,
+                "intensidad": 0.8,
+                "lumens": 3000
+            },
+            "2": {
+                "id_fuente_luz": 2,
+                "tipo_fuente": "Halógena",
+                "interna": false,
+                "iluminacion_promedio": 500.0,
+                "temperatura_emitida": 2700.0,
+                "intensidad": 1.2,
+                "lumens": 1200
+            }
+        },
         "cantidad_personas": 30,
         "area": 100.0
     },
@@ -178,13 +340,23 @@
             "id_habitabilidad": 2,
             "luz_recomendada": "300 lux",
             "nivel_habitabilidad": 70,
-            "flujo_luminoso": 3000.0,
+            "flujo_luminoso": 3000,
             "coeficiente_utilizacion_luz": 0.8,
-            "reduccion_luminosidad": 0.05
+            "reduccion_luminosidad": 0.05,
+            "iluminancia_prom": 38.4,
+            "uniformidad_iluminancia": 0.0
         },
-        "ids_fuentes_luz": [
-            1
-        ],
+        "fuentes_luz": {
+            "1": {
+                "id_fuente_luz": 1,
+                "tipo_fuente": "LED",
+                "interna": true,
+                "iluminacion_promedio": 300.0,
+                "temperatura_emitida": 3500.0,
+                "intensidad": 0.8,
+                "lumens": 3000
+            }
+        },
         "cantidad_personas": 10,
         "area": 50.0
     },
@@ -196,13 +368,23 @@
             "id_habitabilidad": 2,
             "luz_recomendada": "300 lux",
             "nivel_habitabilidad": 70,
-            "flujo_luminoso": 3000.0,
+            "flujo_luminoso": 3000,
             "coeficiente_utilizacion_luz": 0.8,
-            "reduccion_luminosidad": 0.05
+            "reduccion_luminosidad": 0.05,
+            "iluminancia_prom": 38.4,
+            "uniformidad_iluminancia": 0.0
         },
-        "ids_fuentes_luz": [
-            1
-        ],
+        "fuentes_luz": {
+            "1": {
+                "id_fuente_luz": 1,
+                "tipo_fuente": "LED",
+                "interna": true,
+                "iluminacion_promedio": 300.0,
+                "temperatura_emitida": 3500.0,
+                "intensidad": 0.8,
+                "lumens": 3000
+            }
+        },
         "cantidad_personas": 10,
         "area": 50.0
     },
@@ -214,13 +396,23 @@
             "id_habitabilidad": 3,
             "luz_recomendada": "700 lux",
             "nivel_habitabilidad": 90,
-            "flujo_luminoso": 7000.0,
+            "flujo_luminoso": 3000,
             "coeficiente_utilizacion_luz": 0.9,
-            "reduccion_luminosidad": 0.02
+            "reduccion_luminosidad": 0.02,
+            "iluminancia_prom": 86.4,
+            "uniformidad_iluminancia": 0.0
         },
-        "ids_fuentes_luz": [
-            1
-        ],
+        "fuentes_luz": {
+            "1": {
+                "id_fuente_luz": 1,
+                "tipo_fuente": "LED",
+                "interna": true,
+                "iluminacion_promedio": 300.0,
+                "temperatura_emitida": 3500.0,
+                "intensidad": 0.8,
+                "lumens": 3000
+            }
+        },
         "cantidad_personas": 5,
         "area": 25.0
     },
@@ -232,14 +424,32 @@
             "id_habitabilidad": 1,
             "luz_recomendada": "500 lux",
             "nivel_habitabilidad": 85,
-            "flujo_luminoso": 5000.0,
+            "flujo_luminoso": 26400,
             "coeficiente_utilizacion_luz": 0.75,
-            "reduccion_luminosidad": 0.1
+            "reduccion_luminosidad": 0.1,
+            "iluminancia_prom": 158.4,
+            "uniformidad_iluminancia": 0.0
         },
-        "ids_fuentes_luz": [
-            1,
-            2
-        ],
+        "fuentes_luz": {
+            "8": {
+                "id_fuente_luz": 1,
+                "tipo_fuente": "LED",
+                "interna": true,
+                "iluminacion_promedio": 300.0,
+                "temperatura_emitida": 3500.0,
+                "intensidad": 0.8,
+                "lumens": 3000
+            },
+            "2": {
+                "id_fuente_luz": 2,
+                "tipo_fuente": "Halógena",
+                "interna": false,
+                "iluminacion_promedio": 500.0,
+                "temperatura_emitida": 2700.0,
+                "intensidad": 1.2,
+                "lumens": 1200
+            }
+        },
         "cantidad_personas": 30,
         "area": 100.0
     },
@@ -251,14 +461,32 @@
             "id_habitabilidad": 1,
             "luz_recomendada": "500 lux",
             "nivel_habitabilidad": 85,
-            "flujo_luminoso": 5000.0,
+            "flujo_luminoso": 26400,
             "coeficiente_utilizacion_luz": 0.75,
-            "reduccion_luminosidad": 0.1
+            "reduccion_luminosidad": 0.1,
+            "iluminancia_prom": 158.4,
+            "uniformidad_iluminancia": 0.0
         },
-        "ids_fuentes_luz": [
-            1,
-            2
-        ],
+        "fuentes_luz": {
+            "8": {
+                "id_fuente_luz": 1,
+                "tipo_fuente": "LED",
+                "interna": true,
+                "iluminacion_promedio": 300.0,
+                "temperatura_emitida": 3500.0,
+                "intensidad": 0.8,
+                "lumens": 3000
+            },
+            "2": {
+                "id_fuente_luz": 2,
+                "tipo_fuente": "Halógena",
+                "interna": false,
+                "iluminacion_promedio": 500.0,
+                "temperatura_emitida": 2700.0,
+                "intensidad": 1.2,
+                "lumens": 1200
+            }
+        },
         "cantidad_personas": 30,
         "area": 100.0
     },
@@ -270,14 +498,32 @@
             "id_habitabilidad": 1,
             "luz_recomendada": "500 lux",
             "nivel_habitabilidad": 85,
-            "flujo_luminoso": 5000.0,
+            "flujo_luminoso": 26400,
             "coeficiente_utilizacion_luz": 0.75,
-            "reduccion_luminosidad": 0.1
+            "reduccion_luminosidad": 0.1,
+            "iluminancia_prom": 158.4,
+            "uniformidad_iluminancia": 0.0
         },
-        "ids_fuentes_luz": [
-            1,
-            2
-        ],
+        "fuentes_luz": {
+            "8": {
+                "id_fuente_luz": 1,
+                "tipo_fuente": "LED",
+                "interna": true,
+                "iluminacion_promedio": 300.0,
+                "temperatura_emitida": 3500.0,
+                "intensidad": 0.8,
+                "lumens": 3000
+            },
+            "2": {
+                "id_fuente_luz": 2,
+                "tipo_fuente": "Halógena",
+                "interna": false,
+                "iluminacion_promedio": 500.0,
+                "temperatura_emitida": 2700.0,
+                "intensidad": 1.2,
+                "lumens": 1200
+            }
+        },
         "cantidad_personas": 30,
         "area": 100.0
     },
@@ -289,14 +535,32 @@
             "id_habitabilidad": 1,
             "luz_recomendada": "500 lux",
             "nivel_habitabilidad": 85,
-            "flujo_luminoso": 5000.0,
+            "flujo_luminoso": 23400,
             "coeficiente_utilizacion_luz": 0.75,
-            "reduccion_luminosidad": 0.1
+            "reduccion_luminosidad": 0.1,
+            "iluminancia_prom": 140.4,
+            "uniformidad_iluminancia": 0.0
         },
-        "ids_fuentes_luz": [
-            1,
-            2
-        ],
+        "fuentes_luz": {
+            "7": {
+                "id_fuente_luz": 1,
+                "tipo_fuente": "LED",
+                "interna": true,
+                "iluminacion_promedio": 300.0,
+                "temperatura_emitida": 3500.0,
+                "intensidad": 0.8,
+                "lumens": 3000
+            },
+            "2": {
+                "id_fuente_luz": 2,
+                "tipo_fuente": "Halógena",
+                "interna": false,
+                "iluminacion_promedio": 500.0,
+                "temperatura_emitida": 2700.0,
+                "intensidad": 1.2,
+                "lumens": 1200
+            }
+        },
         "cantidad_personas": 30,
         "area": 100.0
     },
@@ -308,14 +572,32 @@
             "id_habitabilidad": 1,
             "luz_recomendada": "500 lux",
             "nivel_habitabilidad": 85,
-            "flujo_luminoso": 5000.0,
+            "flujo_luminoso": 20400,
             "coeficiente_utilizacion_luz": 0.75,
-            "reduccion_luminosidad": 0.1
+            "reduccion_luminosidad": 0.1,
+            "iluminancia_prom": 122.4,
+            "uniformidad_iluminancia": 0.0
         },
-        "ids_fuentes_luz": [
-            1,
-            2
-        ],
+        "fuentes_luz": {
+            "6": {
+                "id_fuente_luz": 1,
+                "tipo_fuente": "LED",
+                "interna": true,
+                "iluminacion_promedio": 300.0,
+                "temperatura_emitida": 3500.0,
+                "intensidad": 0.8,
+                "lumens": 3000
+            },
+            "2": {
+                "id_fuente_luz": 2,
+                "tipo_fuente": "Halógena",
+                "interna": false,
+                "iluminacion_promedio": 500.0,
+                "temperatura_emitida": 2700.0,
+                "intensidad": 1.2,
+                "lumens": 1200
+            }
+        },
         "cantidad_personas": 30,
         "area": 100.0
     },
@@ -327,13 +609,23 @@
             "id_habitabilidad": 2,
             "luz_recomendada": "300 lux",
             "nivel_habitabilidad": 70,
-            "flujo_luminoso": 3000.0,
+            "flujo_luminoso": 27000,
             "coeficiente_utilizacion_luz": 0.8,
-            "reduccion_luminosidad": 0.05
+            "reduccion_luminosidad": 0.05,
+            "iluminancia_prom": 345.6,
+            "uniformidad_iluminancia": 0.0
         },
-        "ids_fuentes_luz": [
-            1
-        ],
+        "fuentes_luz": {
+            "9": {
+                "id_fuente_luz": 1,
+                "tipo_fuente": "LED",
+                "interna": true,
+                "iluminacion_promedio": 300.0,
+                "temperatura_emitida": 3500.0,
+                "intensidad": 0.8,
+                "lumens": 3000
+            }
+        },
         "cantidad_personas": 10,
         "area": 50.0
     },
@@ -345,13 +637,23 @@
             "id_habitabilidad": 2,
             "luz_recomendada": "300 lux",
             "nivel_habitabilidad": 70,
-            "flujo_luminoso": 3000.0,
+            "flujo_luminoso": 15000,
             "coeficiente_utilizacion_luz": 0.8,
-            "reduccion_luminosidad": 0.05
+            "reduccion_luminosidad": 0.05,
+            "iluminancia_prom": 192.0,
+            "uniformidad_iluminancia": 0.0
         },
-        "ids_fuentes_luz": [
-            1
-        ],
+        "fuentes_luz": {
+            "5": {
+                "id_fuente_luz": 1,
+                "tipo_fuente": "LED",
+                "interna": true,
+                "iluminacion_promedio": 300.0,
+                "temperatura_emitida": 3500.0,
+                "intensidad": 0.8,
+                "lumens": 3000
+            }
+        },
         "cantidad_personas": 10,
         "area": 50.0
     },
@@ -363,14 +665,32 @@
             "id_habitabilidad": 1,
             "luz_recomendada": "500 lux",
             "nivel_habitabilidad": 85,
-            "flujo_luminoso": 5000.0,
+            "flujo_luminoso": 20400,
             "coeficiente_utilizacion_luz": 0.75,
-            "reduccion_luminosidad": 0.1
+            "reduccion_luminosidad": 0.1,
+            "iluminancia_prom": 122.4,
+            "uniformidad_iluminancia": 0.0
         },
-        "ids_fuentes_luz": [
-            1,
-            2
-        ],
+        "fuentes_luz": {
+            "6": {
+                "id_fuente_luz": 1,
+                "tipo_fuente": "LED",
+                "interna": true,
+                "iluminacion_promedio": 300.0,
+                "temperatura_emitida": 3500.0,
+                "intensidad": 0.8,
+                "lumens": 3000
+            },
+            "2": {
+                "id_fuente_luz": 2,
+                "tipo_fuente": "Halógena",
+                "interna": false,
+                "iluminacion_promedio": 500.0,
+                "temperatura_emitida": 2700.0,
+                "intensidad": 1.2,
+                "lumens": 1200
+            }
+        },
         "cantidad_personas": 30,
         "area": 100.0
     },
@@ -382,14 +702,32 @@
             "id_habitabilidad": 1,
             "luz_recomendada": "500 lux",
             "nivel_habitabilidad": 85,
-            "flujo_luminoso": 5000.0,
+            "flujo_luminoso": 26400,
             "coeficiente_utilizacion_luz": 0.75,
-            "reduccion_luminosidad": 0.1
+            "reduccion_luminosidad": 0.1,
+            "iluminancia_prom": 158.4,
+            "uniformidad_iluminancia": 0.0
         },
-        "ids_fuentes_luz": [
-            1,
-            2
-        ],
+        "fuentes_luz": {
+            "8": {
+                "id_fuente_luz": 1,
+                "tipo_fuente": "LED",
+                "interna": true,
+                "iluminacion_promedio": 300.0,
+                "temperatura_emitida": 3500.0,
+                "intensidad": 0.8,
+                "lumens": 3000
+            },
+            "2": {
+                "id_fuente_luz": 2,
+                "tipo_fuente": "Halógena",
+                "interna": false,
+                "iluminacion_promedio": 500.0,
+                "temperatura_emitida": 2700.0,
+                "intensidad": 1.2,
+                "lumens": 1200
+            }
+        },
         "cantidad_personas": 30,
         "area": 100.0
     },
@@ -401,14 +739,32 @@
             "id_habitabilidad": 1,
             "luz_recomendada": "500 lux",
             "nivel_habitabilidad": 85,
-            "flujo_luminoso": 5000.0,
+            "flujo_luminoso": 29400,
             "coeficiente_utilizacion_luz": 0.75,
-            "reduccion_luminosidad": 0.1
+            "reduccion_luminosidad": 0.1,
+            "iluminancia_prom": 176.4,
+            "uniformidad_iluminancia": 0.0
         },
-        "ids_fuentes_luz": [
-            1,
-            2
-        ],
+        "fuentes_luz": {
+            "9": {
+                "id_fuente_luz": 1,
+                "tipo_fuente": "LED",
+                "interna": true,
+                "iluminacion_promedio": 300.0,
+                "temperatura_emitida": 3500.0,
+                "intensidad": 0.8,
+                "lumens": 3000
+            },
+            "2": {
+                "id_fuente_luz": 2,
+                "tipo_fuente": "Halógena",
+                "interna": false,
+                "iluminacion_promedio": 500.0,
+                "temperatura_emitida": 2700.0,
+                "intensidad": 1.2,
+                "lumens": 1200
+            }
+        },
         "cantidad_personas": 30,
         "area": 100.0
     },
@@ -420,13 +776,23 @@
             "id_habitabilidad": 2,
             "luz_recomendada": "300 lux",
             "nivel_habitabilidad": 70,
-            "flujo_luminoso": 3000.0,
+            "flujo_luminoso": 21000,
             "coeficiente_utilizacion_luz": 0.8,
-            "reduccion_luminosidad": 0.05
+            "reduccion_luminosidad": 0.05,
+            "iluminancia_prom": 168.0,
+            "uniformidad_iluminancia": 0.0
         },
-        "ids_fuentes_luz": [
-            1
-        ],
+        "fuentes_luz": {
+            "7": {
+                "id_fuente_luz": 1,
+                "tipo_fuente": "LED",
+                "interna": true,
+                "iluminacion_promedio": 300.0,
+                "temperatura_emitida": 3500.0,
+                "intensidad": 0.8,
+                "lumens": 3000
+            }
+        },
         "cantidad_personas": 40,
         "area": 80.0
     },
@@ -438,13 +804,23 @@
             "id_habitabilidad": 2,
             "luz_recomendada": "300 lux",
             "nivel_habitabilidad": 70,
-            "flujo_luminoso": 3000.0,
+            "flujo_luminoso": 21000,
             "coeficiente_utilizacion_luz": 0.8,
-            "reduccion_luminosidad": 0.05
+            "reduccion_luminosidad": 0.05,
+            "iluminancia_prom": 168.0,
+            "uniformidad_iluminancia": 0.0
         },
-        "ids_fuentes_luz": [
-            1
-        ],
+        "fuentes_luz": {
+            "7": {
+                "id_fuente_luz": 1,
+                "tipo_fuente": "LED",
+                "interna": true,
+                "iluminacion_promedio": 300.0,
+                "temperatura_emitida": 3500.0,
+                "intensidad": 0.8,
+                "lumens": 3000
+            }
+        },
         "cantidad_personas": 40,
         "area": 80.0
     },
@@ -456,13 +832,23 @@
             "id_habitabilidad": 2,
             "luz_recomendada": "300 lux",
             "nivel_habitabilidad": 70,
-            "flujo_luminoso": 3000.0,
+            "flujo_luminoso": 21000,
             "coeficiente_utilizacion_luz": 0.8,
-            "reduccion_luminosidad": 0.05
+            "reduccion_luminosidad": 0.05,
+            "iluminancia_prom": 168.0,
+            "uniformidad_iluminancia": 0.0
         },
-        "ids_fuentes_luz": [
-            1
-        ],
+        "fuentes_luz": {
+            "7": {
+                "id_fuente_luz": 1,
+                "tipo_fuente": "LED",
+                "interna": true,
+                "iluminacion_promedio": 300.0,
+                "temperatura_emitida": 3500.0,
+                "intensidad": 0.8,
+                "lumens": 3000
+            }
+        },
         "cantidad_personas": 40,
         "area": 80.0
     },
@@ -474,13 +860,23 @@
             "id_habitabilidad": 2,
             "luz_recomendada": "300 lux",
             "nivel_habitabilidad": 70,
-            "flujo_luminoso": 3000.0,
+            "flujo_luminoso": 21000,
             "coeficiente_utilizacion_luz": 0.8,
-            "reduccion_luminosidad": 0.05
+            "reduccion_luminosidad": 0.05,
+            "iluminancia_prom": 168.0,
+            "uniformidad_iluminancia": 0.0
         },
-        "ids_fuentes_luz": [
-            1
-        ],
+        "fuentes_luz": {
+            "7": {
+                "id_fuente_luz": 1,
+                "tipo_fuente": "LED",
+                "interna": true,
+                "iluminacion_promedio": 300.0,
+                "temperatura_emitida": 3500.0,
+                "intensidad": 0.8,
+                "lumens": 3000
+            }
+        },
         "cantidad_personas": 40,
         "area": 80.0
     },
@@ -492,13 +888,23 @@
             "id_habitabilidad": 2,
             "luz_recomendada": "300 lux",
             "nivel_habitabilidad": 70,
-            "flujo_luminoso": 3000.0,
+            "flujo_luminoso": 21000,
             "coeficiente_utilizacion_luz": 0.8,
-            "reduccion_luminosidad": 0.05
+            "reduccion_luminosidad": 0.05,
+            "iluminancia_prom": 168.0,
+            "uniformidad_iluminancia": 0.0
         },
-        "ids_fuentes_luz": [
-            1
-        ],
+        "fuentes_luz": {
+            "7": {
+                "id_fuente_luz": 1,
+                "tipo_fuente": "LED",
+                "interna": true,
+                "iluminacion_promedio": 300.0,
+                "temperatura_emitida": 3500.0,
+                "intensidad": 0.8,
+                "lumens": 3000
+            }
+        },
         "cantidad_personas": 40,
         "area": 80.0
     },
@@ -510,13 +916,23 @@
             "id_habitabilidad": 2,
             "luz_recomendada": "300 lux",
             "nivel_habitabilidad": 70,
-            "flujo_luminoso": 3000.0,
+            "flujo_luminoso": 21000,
             "coeficiente_utilizacion_luz": 0.8,
-            "reduccion_luminosidad": 0.05
+            "reduccion_luminosidad": 0.05,
+            "iluminancia_prom": 168.0,
+            "uniformidad_iluminancia": 0.0
         },
-        "ids_fuentes_luz": [
-            1
-        ],
+        "fuentes_luz": {
+            "7": {
+                "id_fuente_luz": 1,
+                "tipo_fuente": "LED",
+                "interna": true,
+                "iluminacion_promedio": 300.0,
+                "temperatura_emitida": 3500.0,
+                "intensidad": 0.8,
+                "lumens": 3000
+            }
+        },
         "cantidad_personas": 40,
         "area": 80.0
     },
@@ -528,13 +944,23 @@
             "id_habitabilidad": 2,
             "luz_recomendada": "300 lux",
             "nivel_habitabilidad": 70,
-            "flujo_luminoso": 3000.0,
+            "flujo_luminoso": 21000,
             "coeficiente_utilizacion_luz": 0.8,
-            "reduccion_luminosidad": 0.05
+            "reduccion_luminosidad": 0.05,
+            "iluminancia_prom": 168.0,
+            "uniformidad_iluminancia": 0.0
         },
-        "ids_fuentes_luz": [
-            1
-        ],
+        "fuentes_luz": {
+            "7": {
+                "id_fuente_luz": 1,
+                "tipo_fuente": "LED",
+                "interna": true,
+                "iluminacion_promedio": 300.0,
+                "temperatura_emitida": 3500.0,
+                "intensidad": 0.8,
+                "lumens": 3000
+            }
+        },
         "cantidad_personas": 40,
         "area": 80.0
     },
@@ -546,13 +972,23 @@
             "id_habitabilidad": 2,
             "luz_recomendada": "300 lux",
             "nivel_habitabilidad": 70,
-            "flujo_luminoso": 3000.0,
+            "flujo_luminoso": 21000,
             "coeficiente_utilizacion_luz": 0.8,
-            "reduccion_luminosidad": 0.05
+            "reduccion_luminosidad": 0.05,
+            "iluminancia_prom": 168.0,
+            "uniformidad_iluminancia": 0.0
         },
-        "ids_fuentes_luz": [
-            1
-        ],
+        "fuentes_luz": {
+            "7": {
+                "id_fuente_luz": 1,
+                "tipo_fuente": "LED",
+                "interna": true,
+                "iluminacion_promedio": 300.0,
+                "temperatura_emitida": 3500.0,
+                "intensidad": 0.8,
+                "lumens": 3000
+            }
+        },
         "cantidad_personas": 40,
         "area": 80.0
     }
