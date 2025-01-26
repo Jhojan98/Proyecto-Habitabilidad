@@ -1,14 +1,15 @@
 from modelado.classHabitabilidad import Habitabilidad
 from modelado.classFuenteLuz import FuenteLuz
+from typing import List, Tuple
 
 class Espacios:
-    def __init__(self, id_espacio: int, nombre: str, actividad: str, habitabilidad: Habitabilidad, fuentes_luz: dict,
-                 cantidad_personas: int, area: float):
+    def __init__(self, id_espacio: int, nombre: str, actividad: str, habitabilidad: Habitabilidad, 
+                 fuentes_luz: List[Tuple[FuenteLuz, int]], cantidad_personas: int, area: float):
         self.id_espacio = id_espacio
         self.nombre = nombre
         self.actividad = actividad
         self.habitabilidad = Habitabilidad(**habitabilidad) if isinstance(habitabilidad, dict) else habitabilidad
-        self.fuentes_luz = {k: FuenteLuz(**v) if isinstance(v, dict) else v for k, v in fuentes_luz.items()}
+        self.fuentes_luz = [(FuenteLuz(**f) if isinstance(f, dict) else f, q) for f, q in fuentes_luz]
         self.cantidad_personas = cantidad_personas
         self.area = area
 
@@ -24,7 +25,7 @@ class Espacios:
             "nombre": self.nombre,
             "actividad": self.actividad,
             "habitabilidad": self.habitabilidad.to_dict(),
-            "fuentes_luz": {k: v.__dict__ for k, v in self.fuentes_luz.items()},
+            "fuentes_luz": [(fuente.__dict__, cantidad) for fuente, cantidad in self.fuentes_luz],
             "cantidad_personas": self.cantidad_personas,
             "area": self.area
         }
@@ -54,10 +55,10 @@ class Espacios:
     def set_habitabilidad(self, habitabilidad: Habitabilidad):
         self.habitabilidad = habitabilidad
 
-    def get_fuentes_luz(self) -> dict:
+    def get_fuentes_luz(self) -> List[Tuple[FuenteLuz, int]]:
         return self.fuentes_luz
 
-    def set_fuentes_luz(self, fuentes_luz: dict):
+    def set_fuentes_luz(self, fuentes_luz: List[Tuple[FuenteLuz, int]]):
         self.fuentes_luz = fuentes_luz
 
     def get_cantidad_personas(self) -> int:

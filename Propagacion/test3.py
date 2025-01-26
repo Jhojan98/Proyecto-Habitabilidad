@@ -16,7 +16,8 @@ for key, espacio_data in espacios_data.items():
     habitabilidad_data = espacio_data.pop('habitabilidad')
     habitabilidad = Habitabilidad(**habitabilidad_data)
     fuentes_luz_data = espacio_data.pop('fuentes_luz')
-    fuentes_luz = {k: FuenteLuz(**v) for k, v in fuentes_luz_data.items()}
+    # Convert the list of tuples where first element is a dict to list of tuples with FuenteLuz objects
+    fuentes_luz = [(FuenteLuz(**fuente_dict), cantidad) for fuente_dict, cantidad in fuentes_luz_data]
     espacio = Espacios(habitabilidad=habitabilidad, fuentes_luz=fuentes_luz, **espacio_data)
     espacios.append(espacio)
 
@@ -24,6 +25,7 @@ for key, espacio_data in espacios_data.items():
 for espacio in espacios:
     espacio.habitabilidad.calcular_flujo_luminoso(espacio.get_fuentes_luz())
     espacio.habitabilidad.calcular_iluminancia_prom(factor_mantenimiento=0.8, area=espacio.get_area())
+    espacio.habitabilidad.calcular_nivel_habitabilidad(espacio.get_area())
     print(f"Espacio: {espacio.nombre}, Habitabilidad: {espacio.habitabilidad.nivel_habitabilidad}")
 
 # Guardar las instancias modificadas en el archivo JSON
