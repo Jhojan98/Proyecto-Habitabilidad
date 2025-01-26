@@ -1,6 +1,8 @@
 import sys
 import os
 import json
+import pandas as pd
+import numpy as np
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 from modelado.classEspacios import Espacios
@@ -150,36 +152,49 @@ espacios_piso3 = [
     Espacios(30, "Salón de Clase 8", "Salón de Clase", habitabilidad2, [(fuente_luz1, 7)], 40, 80.0)
 ]
 
-# Crear instancias de la clase Pared
-paredes = [
-    Pared(material1, 1, 2),
-    Pared(material2, 2, 3),
-    Pared(material3, 3, 4),
-    Pared(material1, 4, 5),
-    Pared(material2, 5, 6),
-    Pared(material3, 6, 7),
-    Pared(material1, 7, 8),
-    Pared(material2, 8, 9),
-    Pared(material3, 9, 10),
-    Pared(material1, 10, 11),
-    Pared(material2, 11, 12),
-    Pared(material3, 13, 14),
-    Pared(material1, 14, 15),
-    Pared(material2, 15, 16),
-    Pared(material3, 16, 17),
-    Pared(material1, 17, 18),
-    Pared(material2, 18, 19),
-    Pared(material3, 19, 20),
-    Pared(material1, 20, 21),
-    Pared(material2, 21, 22),
-    Pared(material3, 23, 24),
-    Pared(material1, 24, 25),
-    Pared(material2, 25, 26),
-    Pared(material3, 26, 27),
-    Pared(material1, 27, 28),
-    Pared(material2, 28, 29),
-    Pared(material3, 29, 30)
-]
+# Crear instancias de la clase Pared basadas en la matriz de adyacencia
+matriz_adyacencia = pd.read_csv('objetos/adjacency_matrix.csv', header=None).values
+
+def obtener_piso(id_espacio):
+    if 1 <= id_espacio <= 12:
+        return 1
+    elif 13 <= id_espacio <= 22:
+        return 2
+    else:
+        return 3
+
+def seleccionar_material(id_espacio1, id_espacio2):
+    piso1 = obtener_piso(id_espacio1)
+    piso2 = obtener_piso(id_espacio2)
+    
+    # Si los espacios están en pisos diferentes, no deberían tener pared
+    if piso1 != piso2:
+        return None
+    
+    # Para espacios del mismo piso
+    if piso1 == piso2:
+        # Si alguno de los espacios es un laboratorio, usar vidrio para permitir luz natural
+        espacio1 = next((e for e in espacios_piso1 + espacios_piso2 + espacios_piso3 if e.id_espacio == id_espacio1), None)
+        espacio2 = next((e for e in espacios_piso1 + espacios_piso2 + espacios_piso3 if e.id_espacio == id_espacio2), None)
+        
+        if espacio1 and espacio2:
+            if "Laboratorio" in espacio1.actividad or "Laboratorio" in espacio2.actividad:
+                return material3  # Vidrio para laboratorios
+        
+        return material1  # Concreto por defecto para el mismo piso
+
+# Crear paredes basadas en la matriz de adyacencia
+paredes = []
+for i in range(len(matriz_adyacencia)):
+    for j in range(i + 1, len(matriz_adyacencia)):  # Solo la mitad superior de la matriz
+        if matriz_adyacencia[i][j] == 1:
+            material = seleccionar_material(i + 1, j + 1)
+            if material:  # Solo crear la pared si el material no es None
+                paredes.append(Pared(material, i + 1, j + 1))
+
+print(f"\nParedes creadas basadas en la matriz de adyacencia:")
+for pared in paredes:
+    print(f"Pared entre espacios {pared.id_espacio_1} y {pared.id_espacio_2} - Material: {pared.material.nombre}")
 
 # Guardar las instancias en diccionarios
 fuentes_luz_dict = {fuente_luz.id_fuente_luz: fuente_luz.__dict__ for fuente_luz in [fuente_luz1, fuente_luz2, fuente_luz3]}

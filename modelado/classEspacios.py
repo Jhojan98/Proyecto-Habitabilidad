@@ -14,7 +14,10 @@ class Espacios:
         self.area = area
 
     def obtener_luz_total(self) -> float:
-        return False
+        """Retorna la iluminancia total del espacio usando los cálculos de habitabilidad."""
+        
+        
+        return self.habitabilidad.iluminancia_prom
 
     def movilizar_actividad(self) -> bool:
         return False

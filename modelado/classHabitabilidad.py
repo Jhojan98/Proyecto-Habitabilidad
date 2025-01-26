@@ -47,9 +47,9 @@ class Habitabilidad:
         iluminancia = (self.flujo_luminoso * 
                     self.coeficiente_utilizacion_luz * 
                     factor_mantenimiento) / area
-        
+        self.iluminancia_prom = iluminancia
         luz_recomendada_valor = float(self.luz_recomendada.split()[0])  # Extract numeric value from "500 lux"
-        print(f'flujo_luminoso: {self.flujo_luminoso} coeficiente_utilizacion_luz: {self.coeficiente_utilizacion_luz} iluminancia: {iluminancia} luz_recomendada: {luz_recomendada_valor} area: {area} factor_mantenimiento: {factor_mantenimiento} ')
+        #print(f'flujo_luminoso: {self.flujo_luminoso} coeficiente_utilizacion_luz: {self.coeficiente_utilizacion_luz} iluminancia: {iluminancia} luz_recomendada: {luz_recomendada_valor} area: {area} factor_mantenimiento: {factor_mantenimiento} ')
         if iluminancia >= luz_recomendada_valor * 1.2:  # 20% above recommended
             self.nivel_habitabilidad = 100  # Very good
         elif iluminancia >= luz_recomendada_valor * 0.8:  # Within 20% of recommended

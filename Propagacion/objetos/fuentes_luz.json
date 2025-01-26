@@ -1,0 +1,29 @@
+{
+    "1": {
+        "id_fuente_luz": 1,
+        "tipo_fuente": "LED",
+        "interna": true,
+        "iluminacion_promedio": 300.0,
+        "temperatura_emitida": 3500.0,
+        "intensidad": 0.8,
+        "lumens": 5000
+    },
+    "2": {
+        "id_fuente_luz": 2,
+        "tipo_fuente": "Halógena",
+        "interna": false,
+        "iluminacion_promedio": 500.0,
+        "temperatura_emitida": 2700.0,
+        "intensidad": 1.2,
+        "lumens": 3000
+    },
+    "3": {
+        "id_fuente_luz": 3,
+        "tipo_fuente": "Fluorescente",
+        "interna": true,
+        "iluminacion_promedio": 400.0,
+        "temperatura_emitida": 3000.0,
+        "intensidad": 1.0,
+        "lumens": 1000
+    }
+}
