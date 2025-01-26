@@ -82,21 +82,30 @@ material1 = Material(
     id_material=1,
     nombre="Concreto",
     resistencia_luz=5,
-    tipo_material="Sólido"
+    tipo_material="Sólido",
+    opacidad=0.95,    # Alta opacidad para concreto
+    reflexion=0.3,    # Reflexión moderada
+    transmision=0.0   # No transmite luz
 )
 
 material2 = Material(
     id_material=2,
     nombre="Madera",
     resistencia_luz=3,
-    tipo_material="Orgánico"
+    tipo_material="Orgánico",
+    opacidad=0.8,     # Opacidad moderada-alta
+    reflexion=0.2,    # Baja reflexión
+    transmision=0.0   # No transmite luz
 )
 
 material3 = Material(
     id_material=3,
     nombre="Vidrio",
     resistencia_luz=2,
-    tipo_material="Transparente"
+    tipo_material="Transparente",
+    opacidad=0.1,     # Baja opacidad
+    reflexion=0.1,    # Baja reflexión
+    transmision=0.8   # Alta transmisión de luz
 )
 
 # Crear instancias de la clase Espacios para el Piso 1

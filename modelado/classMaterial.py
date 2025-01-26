@@ -1,9 +1,13 @@
 class Material:
-    def __init__(self,id_material:int,nombre:str,resistencia_luz:int,tipo_material:str):
+    def __init__(self,id_material:int,nombre:str,resistencia_luz:int,tipo_material:str,
+                 opacidad: float = 0.0, reflexion: float = 0.0, transmision: float = 0.0):
         self.id_material = id_material
         self.nombre = nombre
         self.resistencia_luz = resistencia_luz
         self.tipo_material = tipo_material
+        self.opacidad = opacidad
+        self.reflexion = reflexion
+        self.transmision = transmision
 
     def evaluar_resistencia():
         """
@@ -16,7 +20,10 @@ class Material:
             "id_material": self.id_material,
             "nombre": self.nombre,
             "resistencia_luz": self.resistencia_luz,
-            "tipo_material": self.tipo_material
+            "tipo_material": self.tipo_material,
+            "opacidad": self.opacidad,
+            "reflexion": self.reflexion,
+            "transmision": self.transmision
         }
     # Getters y Setters
     
@@ -45,3 +52,21 @@ class Material:
 
     def set_tipo_material(self, tipo_material: str):
         self.tipo_material = tipo_material
+
+    def get_opacidad(self) -> float:
+        return self.opacidad
+
+    def set_opacidad(self, opacidad: float):
+        self.opacidad = opacidad
+
+    def get_reflexion(self) -> float:
+        return self.reflexion
+
+    def set_reflexion(self, reflexion: float):
+        self.reflexion = reflexion
+
+    def get_transmision(self) -> float:
+        return self.transmision
+
+    def set_transmision(self, transmision: float):
+        self.transmision = transmision
