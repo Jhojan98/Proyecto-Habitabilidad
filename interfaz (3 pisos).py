@@ -5,6 +5,23 @@ import dash
 from dash import dcc, html
 from dash.dependencies import Input, Output
 
+# ------ OBTENCION DE DATOS ------
+# listas para agrupar la info sacada del json
+nodes_names = []
+nodes_activities = []
+nodes_lvl_habitability = []
+nodes_colors = []
+colors_time = ['white', 'black', '#e3e6ff']
+
+# Leer el json con la info de los nodos
+with open('Propagacion/objetos/espacios.json', encoding="utf-8") as json_file:
+    data = json.load(json_file)
+    for item in data.items():
+        nodes_names.append(item[1]['nombre'])
+        nodes_activities.append(item[1]['actividad'])
+        nodes_lvl_habitability.append(item[1]['habitabilidad']['nivel_habitabilidad'])
+
+# ------ CREACION DEL GRAFO ------
 # Crear el grafo
 G = nx.Graph()
 
@@ -25,6 +42,7 @@ nodes_piso_3 = {
 # Agregar nodos al grafo
 for nodes in [nodes_piso_1, nodes_piso_2, nodes_piso_3]:
     G.add_nodes_from(nodes.keys())
+# nodes_colors = ['blue'] * len(G.nodes())
 
 # Agregar aristas por piso
 edges_piso_1 = [
@@ -90,19 +108,6 @@ def create_figure(node_colors):
         hoverinfo='none'
     ))
 
-    # listas para agrupar la info sacada del json
-    nodes_names = []
-    nodes_activities = []
-    nodes_lvl_habitability = []
-
-    # Leer el json con la info de los nodos
-    with open('Propagacion/objetos/espacios.json', encoding="utf-8") as json_file:
-        data = json.load(json_file)
-        for item in data.items():
-            nodes_names.append(item[1]['nombre'])
-            nodes_activities.append(item[1]['actividad'])
-            nodes_lvl_habitability.append(item[1]['habitabilidad']['nivel_habitabilidad'])
-
     # Crear texto para la interfaz
     hover_text = [f"Node: {n_node} <br>Nombre: {name} <br>Actividad: {activity} <br>Nivel Habitabilidad: {habitability}" for n_node, name, activity, habitability in zip(G.nodes(), nodes_names, nodes_activities, nodes_lvl_habitability)]
 
@@ -117,60 +122,88 @@ def create_figure(node_colors):
 
     # Configurar layout
     fig.update_layout(
+        paper_bgcolor= colors_time[0],  
+        font_color=colors_time[1], 
         scene=dict(
             xaxis_title='X',
             yaxis_title='Y',
             zaxis_title='',
             xaxis_visible=False,
             yaxis_visible=False,
-            zaxis=dict(showticklabels=False),
+            # zaxis_visible=False,
+            zaxis=dict(showgrid=False, showticklabels=False, zeroline=False, backgroundcolor=colors_time[2]),
             # xaxis=dict(nticks=4),
             # yaxis=dict(nticks=6),
             # zaxis=dict(nticks=4),
         ),
-        title='Simulación 3D, Habitabilidad y propagación de Luz, basado en el Edificio Techné UD, 6 Pisos',
+        title='Simulación 3D, Habitabilidad y propagación de Luz, basado en el Edificio Techné UD, 3 Pisos',
         showlegend=False
     )
 
     # fig.show()
     return fig
 
+# ------ BOTONES Y LLAMADO DE FUNCIONES  ------
 # Crear la app de Dash para poder insertar html
 app = dash.Dash(__name__)   
 
+button_style = {
+    'backgroundColor':'#5485ff',
+    'color': 'white', 
+    'border': 'none',
+    'padding': '15px 32px', 
+    'textAlign': 'center',
+    'fontSize': '16px', 
+    'margin': '10px 10px', 
+    'cursor': 'pointer',
+    'borderRadius': '12px',
+}
+
 app.layout = html.Div([
-    dcc.Graph(id='graph', figure=create_figure(['green'] * len(G.nodes())), style={'height': '80vh'}),
-    html.Div(
-        children=[
-            html.Button('Cambiar Color', id='change-color-button', n_clicks=0,
-                        style={
-                            'backgroundColor':'#5485ff',
-                            'color': 'white', 
-                            'border': 'none',
-                            'padding': '15px 32px', 
-                            'textAlign': 'center',
-                            'fontSize': '16px', 
-                            'margin': '10px auto', 
-                            'cursor': 'pointer',
-                            'borderRadius': '12px',
-                        })
-        ],
-        style={'textAlign': 'center', 'padding': '20px'}
-    )
-])
+        dcc.Graph(id='graph', figure=create_figure(['blue'] * len(G.nodes())), style={'height': '80vh'}),
+        html.Div(
+            children=[
+                html.Button('Recalcular habitabilidad', id='change-color-button', n_clicks=0, style=button_style),
+                html.Button('Cambiar tiempo', id='change-time', n_clicks=0, style=button_style)
+            ],
+            style={'textAlign': 'center', 'padding': '20px'}
+        )
+    ]
+)
 
 # Callback que manda el boton para cambiar el color del nodo dinámicamente
 @app.callback(
-    Output('graph', 'figure'),  # componente que se va a actualizar
+    Output('graph', 'figure', allow_duplicate=True),  # componente que se va a actualizar
     Input('change-color-button', 'n_clicks'), # componente que dispara la actualización
     prevent_initial_call=True
 )
 # funcion llamada por el boton
 def update_color(n_clicks):
-    colors = ['green'] * len(G.nodes())
-    if n_clicks % 2 == 1:
-        colors = ['green', 'red'] * (len(G.nodes())//2)
-    return create_figure(colors)
+    # global nodes_colors
+    for lvl_habitability in nodes_lvl_habitability:
+        if lvl_habitability == 50:
+            nodes_colors.append('red')
+        elif lvl_habitability == 75:
+            nodes_colors.append('orange')
+        elif lvl_habitability == 100:
+            nodes_colors.append('green')
+    return create_figure(nodes_colors)
+
+# Callback para cambiar el texto del botón 'Cambiar tiempo'
+@app.callback(
+    # Output('change-time', 'children'),  # componente que se va a actualizar
+    Output('graph', 'figure', allow_duplicate=True),
+    Input('change-time', 'n_clicks'), 
+    prevent_initial_call=True
+)
+def update_button_text(n_clicks):
+    global colors_time
+    if n_clicks % 2 == 0:
+        colors_time = ['white', 'black', '#e3e6ff']
+    else:
+        colors_time = ['#2b2e47', 'white', '#4f5582']
+    
+    return create_figure(['blue'] * len(G.nodes()))
 
 # Correr la app
 if __name__ == '__main__':
