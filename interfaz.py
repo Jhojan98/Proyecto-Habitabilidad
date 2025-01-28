@@ -1,6 +1,27 @@
+import json
 import networkx as nx
 import plotly.graph_objects as go
+import dash
+from dash import dcc, html
+from dash.dependencies import Input, Output
 
+# ------ OBTENCION DE DATOS ------
+# listas para agrupar la info sacada del json
+nodes_names = []
+nodes_activities = []
+nodes_lvl_habitability = []
+nodes_colors = []
+colors_time = ['white', 'black', '#e3e6ff']
+
+# Leer el json con la info de los nodos
+with open('Propagacion/objetos/espacios.json', encoding="utf-8") as json_file:
+    data = json.load(json_file)
+    for item in data.items():
+        nodes_names.append(item[1]['nombre'])
+        nodes_activities.append(item[1]['actividad'])
+        nodes_lvl_habitability.append(item[1]['habitabilidad']['nivel_habitabilidad'])
+
+# ------ CREACION DEL GRAFO ------
 # Crear el grafo
 G = nx.Graph()
 
@@ -21,6 +42,7 @@ nodes_piso_3 = {
 # Agregar nodos al grafo
 for nodes in [nodes_piso_1, nodes_piso_2, nodes_piso_3]:
     G.add_nodes_from(nodes.keys())
+# nodes_colors = ['blue'] * len(G.nodes())
 
 # Agregar aristas por piso
 edges_piso_1 = [
@@ -42,11 +64,6 @@ edges_verticales = [
     (13, 23), (17, 27), (14, 24), (18, 28), (15, 25), (19, 29), (16, 26),
     (20, 30), (21, 30), (22, 30)
 ]
-# edges_verticales_no_replicados = [
-#     (23,31),(23,32),(27,36),(27,37),
-#     (24,33),(28,38),(25,34),(29,39),(26,35),
-#     (30,40),(30,41),(30,42)
-# ]
 
 # Agregar aristas al grafo
 for edges in [edges_piso_1, edges_piso_2, edges_piso_3, edges_verticales]:
@@ -55,103 +72,139 @@ for edges in [edges_piso_1, edges_piso_2, edges_piso_3, edges_verticales]:
 # Posiciones 3D de los nodos
 pos = {**nodes_piso_1, **nodes_piso_2, **nodes_piso_3} 
 
-# Crear replica de los pisos 1, 2 y 3
-# def replicar_pisos(original_nodes, original_edges, desplazamiento_z, total_nodes):
-#     nuevos_nodos = {}
-#     nuevos_edges = []
-#     nuevo_id = list(G.nodes())[-1]
-#     for coords in original_nodes.values():
-#         nuevo_id += 1
-#         nuevos_nodos[nuevo_id] = (coords[0], coords[1], coords[2] + desplazamiento_z)
-
-#     for edge in original_edges:
-#         nuevo_edge = (
-#             edge[0] + total_nodes,
-#             edge[1] + total_nodes
-#         )
-#         nuevos_edges.append(nuevo_edge)
-
-#     G.add_nodes_from(nuevos_nodos.keys())
-#     G.add_edges_from(nuevos_edges)
-#     pos.update(nuevos_nodos)
-
-# def replicar_edges(original_edges, total_nodes):
-#     nuevos_edges = []
-#     for edge in original_edges:
-#         nuevo_edge = (
-#             edge[0] + total_nodes,
-#             edge[1] + total_nodes
-#         )
-#         nuevos_edges.append(nuevo_edge)
-
-#     G.add_edges_from(nuevos_edges)
-
 # Generar replicas de nodos y aristas
 desplazamiento_z = 3
 total_nodes = len(G.nodes())
 
-# replicar_pisos(nodes_piso_1, edges_piso_1, desplazamiento_z, total_nodes)
-# replicar_pisos(nodes_piso_2, edges_piso_2, desplazamiento_z, total_nodes)
-# replicar_pisos(nodes_piso_3, edges_piso_3, desplazamiento_z, total_nodes)
-
-# replicar_edges(edges_verticales, total_nodes)
-# G.add_edges_from(edges_verticales_no_replicados)
-
 # Crear las trazas para los nuevos nodos y aristas en Plotly
-edge_x = []
-edge_y = []
-edge_z = []
-for edge in G.edges():
-    x0, y0, z0 = pos[edge[0]]
-    x1, y1, z1 = pos[edge[1]]
-    edge_x += [x0, x1, None]
-    edge_y += [y0, y1, None]
-    edge_z += [z0, z1, None]
+def create_figure(node_colors):
+    edge_x = []
+    edge_y = []
+    edge_z = []
+    for edge in G.edges():
+        x0, y0, z0 = pos[edge[0]]
+        x1, y1, z1 = pos[edge[1]]
+        edge_x += [x0, x1, None]
+        edge_y += [y0, y1, None]
+        edge_z += [z0, z1, None]
 
-node_x = []
-node_y = []
-node_z = []
-for node in G.nodes():
-    x, y, z = pos[node]
-    node_x.append(x)
-    node_y.append(y)
-    node_z.append(z)
+    node_x = []
+    node_y = []
+    node_z = []
+    for node in G.nodes():
+        x, y, z = pos[node]
+        node_x.append(x)
+        node_y.append(y)
+        node_z.append(z)
 
-# Crear figura con Plotly
-fig = go.Figure()
+    # Crear figura con Plotly
+    fig = go.Figure()
 
-# Agregar aristas
-fig.add_trace(go.Scatter3d(
-    x=edge_x, y=edge_y, z=edge_z,
-    mode='lines',
-    line=dict(color='gray', width=2),
-    hoverinfo='none'
-))
+    # Agregar aristas
+    fig.add_trace(go.Scatter3d(
+        x=edge_x, y=edge_y, z=edge_z,
+        mode='lines',
+        line=dict(color='gray', width=2),
+        hoverinfo='none'
+    ))
 
-# Agregar nodos
-fig.add_trace(go.Scatter3d(
-    x=node_x, y=node_y, z=node_z,
-    mode='markers',
-    marker=dict(size=6, color='green'),
-    text=list(G.nodes()),
-    hoverinfo='text'
-))
+    # Crear texto para la interfaz
+    hover_text = [f"Node: {n_node} <br>Nombre: {name} <br>Actividad: {activity} <br>Nivel Habitabilidad: {habitability}" for n_node, name, activity, habitability in zip(G.nodes(), nodes_names, nodes_activities, nodes_lvl_habitability)]
 
-# Configurar layout
-fig.update_layout(
-    scene=dict(
-        xaxis_title='X',
-        yaxis_title='Y',
-        zaxis_title='',
-        xaxis_visible=False,
-        yaxis_visible=False,
-        zaxis=dict(showticklabels=False),
-        # xaxis=dict(nticks=4),
-        # yaxis=dict(nticks=6),
-        # zaxis=dict(nticks=4),
-    ),
-    title='Simulación 3D, Habitabilidad y propagación de Luz, basado en el Edificio Techné UD, 6 Pisos',
-    showlegend=False
+    # Agregar nodos
+    fig.add_trace(go.Scatter3d(
+        x=node_x, y=node_y, z=node_z,
+        mode='markers',
+        marker=dict(size=6, color=node_colors),
+        text=hover_text,
+        hoverinfo='text',
+    ))
+
+    # Configurar layout
+    fig.update_layout(
+        paper_bgcolor= colors_time[0],  
+        font_color=colors_time[1], 
+        scene=dict(
+            xaxis_title='X',
+            yaxis_title='Y',
+            zaxis_title='',
+            xaxis_visible=False,
+            yaxis_visible=False,
+            # zaxis_visible=False,
+            zaxis=dict(showgrid=False, showticklabels=False, zeroline=False, backgroundcolor=colors_time[2]),
+            # xaxis=dict(nticks=4),
+            # yaxis=dict(nticks=6),
+            # zaxis=dict(nticks=4),
+        ),
+        title='Simulación 3D, Habitabilidad y propagación de Luz, basado en el Edificio Techné UD, 3 Pisos',
+        showlegend=False
+    )
+
+    # fig.show()
+    return fig
+
+# ------ BOTONES Y LLAMADO DE FUNCIONES  ------
+# Crear la app de Dash para poder insertar html
+app = dash.Dash(__name__)   
+
+button_style = {
+    'backgroundColor':'#5485ff',
+    'color': 'white', 
+    'border': 'none',
+    'padding': '15px 32px', 
+    'textAlign': 'center',
+    'fontSize': '16px', 
+    'margin': '10px 10px', 
+    'cursor': 'pointer',
+    'borderRadius': '12px',
+}
+
+app.layout = html.Div([
+        dcc.Graph(id='graph', figure=create_figure(['blue'] * len(G.nodes())), style={'height': '80vh'}),
+        html.Div(
+            children=[
+                html.Button('Recalcular habitabilidad', id='change-color-button', n_clicks=0, style=button_style),
+                html.Button('Cambiar tiempo', id='change-time', n_clicks=0, style=button_style)
+            ],
+            style={'textAlign': 'center', 'padding': '20px'}
+        )
+    ]
 )
 
-fig.show()
+# Callback que manda el boton para cambiar el color del nodo dinámicamente
+@app.callback(
+    Output('graph', 'figure', allow_duplicate=True),  # componente que se va a actualizar
+    Input('change-color-button', 'n_clicks'), # componente que dispara la actualización
+    prevent_initial_call=True
+)
+# funcion llamada por el boton
+def update_color(n_clicks):
+    # global nodes_colors
+    for lvl_habitability in nodes_lvl_habitability:
+        if lvl_habitability == 50:
+            nodes_colors.append('red')
+        elif lvl_habitability == 75:
+            nodes_colors.append('orange')
+        elif lvl_habitability == 100:
+            nodes_colors.append('green')
+    return create_figure(nodes_colors)
+
+# Callback para cambiar el texto del botón 'Cambiar tiempo'
+@app.callback(
+    # Output('change-time', 'children'),  # componente que se va a actualizar
+    Output('graph', 'figure', allow_duplicate=True),
+    Input('change-time', 'n_clicks'), 
+    prevent_initial_call=True
+)
+def update_button_text(n_clicks):
+    global colors_time
+    if n_clicks % 2 == 0:
+        colors_time = ['white', 'black', '#e3e6ff']
+    else:
+        colors_time = ['#2b2e47', 'white', '#4f5582']
+    
+    return create_figure(['blue'] * len(G.nodes()))
+
+# Correr la app
+if __name__ == '__main__':
+    app.run_server(debug=True)
