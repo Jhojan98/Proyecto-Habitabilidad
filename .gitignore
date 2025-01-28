@@ -1,3 +1,6 @@
 .venv
 Apuntes.txt
 __pycache__
+.env/
+venv/
+env/
