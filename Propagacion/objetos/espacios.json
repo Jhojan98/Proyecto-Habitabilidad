@@ -6,7 +6,7 @@
         "habitabilidad": {
             "id_habitabilidad": 1,
             "luz_recomendada": "500 lux",
-            "nivel_habitabilidad": 50,
+            "nivel_habitabilidad": 75,
             "flujo_luminoso": 46000,
             "coeficiente_utilizacion_luz": 0.75,
             "reduccion_luminosidad": 0.1,
@@ -92,7 +92,7 @@
         "habitabilidad": {
             "id_habitabilidad": 1,
             "luz_recomendada": "500 lux",
-            "nivel_habitabilidad": 50,
+            "nivel_habitabilidad": 75,
             "flujo_luminoso": 39000,
             "coeficiente_utilizacion_luz": 0.75,
             "reduccion_luminosidad": 0.1,
@@ -135,7 +135,7 @@
         "habitabilidad": {
             "id_habitabilidad": 1,
             "luz_recomendada": "500 lux",
-            "nivel_habitabilidad": 50,
+            "nivel_habitabilidad": 75,
             "flujo_luminoso": 46000,
             "coeficiente_utilizacion_luz": 0.75,
             "reduccion_luminosidad": 0.1,
@@ -178,7 +178,7 @@
         "habitabilidad": {
             "id_habitabilidad": 1,
             "luz_recomendada": "500 lux",
-            "nivel_habitabilidad": 50,
+            "nivel_habitabilidad": 75,
             "flujo_luminoso": 52000,
             "coeficiente_utilizacion_luz": 0.75,
             "reduccion_luminosidad": 0.1,
@@ -307,7 +307,7 @@
         "habitabilidad": {
             "id_habitabilidad": 1,
             "luz_recomendada": "500 lux",
-            "nivel_habitabilidad": 50,
+            "nivel_habitabilidad": 75,
             "flujo_luminoso": 52000,
             "coeficiente_utilizacion_luz": 0.75,
             "reduccion_luminosidad": 0.1,
@@ -350,7 +350,7 @@
         "habitabilidad": {
             "id_habitabilidad": 1,
             "luz_recomendada": "500 lux",
-            "nivel_habitabilidad": 50,
+            "nivel_habitabilidad": 75,
             "flujo_luminoso": 46000,
             "coeficiente_utilizacion_luz": 0.75,
             "reduccion_luminosidad": 0.1,
@@ -486,7 +486,7 @@
         "habitabilidad": {
             "id_habitabilidad": 1,
             "luz_recomendada": "500 lux",
-            "nivel_habitabilidad": 50,
+            "nivel_habitabilidad": 75,
             "flujo_luminoso": 46000,
             "coeficiente_utilizacion_luz": 0.75,
             "reduccion_luminosidad": 0.1,
@@ -529,7 +529,7 @@
         "habitabilidad": {
             "id_habitabilidad": 1,
             "luz_recomendada": "500 lux",
-            "nivel_habitabilidad": 50,
+            "nivel_habitabilidad": 75,
             "flujo_luminoso": 46000,
             "coeficiente_utilizacion_luz": 0.75,
             "reduccion_luminosidad": 0.1,
@@ -572,7 +572,7 @@
         "habitabilidad": {
             "id_habitabilidad": 1,
             "luz_recomendada": "500 lux",
-            "nivel_habitabilidad": 50,
+            "nivel_habitabilidad": 75,
             "flujo_luminoso": 46000,
             "coeficiente_utilizacion_luz": 0.75,
             "reduccion_luminosidad": 0.1,
@@ -615,7 +615,7 @@
         "habitabilidad": {
             "id_habitabilidad": 1,
             "luz_recomendada": "500 lux",
-            "nivel_habitabilidad": 50,
+            "nivel_habitabilidad": 75,
             "flujo_luminoso": 41000,
             "coeficiente_utilizacion_luz": 0.75,
             "reduccion_luminosidad": 0.1,
@@ -763,7 +763,7 @@
         "habitabilidad": {
             "id_habitabilidad": 1,
             "luz_recomendada": "500 lux",
-            "nivel_habitabilidad": 50,
+            "nivel_habitabilidad": 75,
             "flujo_luminoso": 36000,
             "coeficiente_utilizacion_luz": 0.75,
             "reduccion_luminosidad": 0.1,
@@ -806,7 +806,7 @@
         "habitabilidad": {
             "id_habitabilidad": 1,
             "luz_recomendada": "500 lux",
-            "nivel_habitabilidad": 50,
+            "nivel_habitabilidad": 75,
             "flujo_luminoso": 46000,
             "coeficiente_utilizacion_luz": 0.75,
             "reduccion_luminosidad": 0.1,
@@ -849,7 +849,7 @@
         "habitabilidad": {
             "id_habitabilidad": 1,
             "luz_recomendada": "500 lux",
-            "nivel_habitabilidad": 50,
+            "nivel_habitabilidad": 75,
             "flujo_luminoso": 51000,
             "coeficiente_utilizacion_luz": 0.75,
             "reduccion_luminosidad": 0.1,
@@ -892,7 +892,7 @@
         "habitabilidad": {
             "id_habitabilidad": 2,
             "luz_recomendada": "300 lux",
-            "nivel_habitabilidad": 75,
+            "nivel_habitabilidad": 100,
             "flujo_luminoso": 35000,
             "coeficiente_utilizacion_luz": 0.8,
             "reduccion_luminosidad": 0.05,
@@ -923,7 +923,7 @@
         "habitabilidad": {
             "id_habitabilidad": 2,
             "luz_recomendada": "300 lux",
-            "nivel_habitabilidad": 75,
+            "nivel_habitabilidad": 100,
             "flujo_luminoso": 35000,
             "coeficiente_utilizacion_luz": 0.8,
             "reduccion_luminosidad": 0.05,
@@ -954,7 +954,7 @@
         "habitabilidad": {
             "id_habitabilidad": 2,
             "luz_recomendada": "300 lux",
-            "nivel_habitabilidad": 75,
+            "nivel_habitabilidad": 100,
             "flujo_luminoso": 35000,
             "coeficiente_utilizacion_luz": 0.8,
             "reduccion_luminosidad": 0.05,
@@ -985,7 +985,7 @@
         "habitabilidad": {
             "id_habitabilidad": 2,
             "luz_recomendada": "300 lux",
-            "nivel_habitabilidad": 75,
+            "nivel_habitabilidad": 100,
             "flujo_luminoso": 35000,
             "coeficiente_utilizacion_luz": 0.8,
             "reduccion_luminosidad": 0.05,
@@ -1016,7 +1016,7 @@
         "habitabilidad": {
             "id_habitabilidad": 2,
             "luz_recomendada": "300 lux",
-            "nivel_habitabilidad": 75,
+            "nivel_habitabilidad": 100,
             "flujo_luminoso": 35000,
             "coeficiente_utilizacion_luz": 0.8,
             "reduccion_luminosidad": 0.05,
@@ -1047,7 +1047,7 @@
         "habitabilidad": {
             "id_habitabilidad": 2,
             "luz_recomendada": "300 lux",
-            "nivel_habitabilidad": 75,
+            "nivel_habitabilidad": 100,
             "flujo_luminoso": 35000,
             "coeficiente_utilizacion_luz": 0.8,
             "reduccion_luminosidad": 0.05,
@@ -1078,7 +1078,7 @@
         "habitabilidad": {
             "id_habitabilidad": 2,
             "luz_recomendada": "300 lux",
-            "nivel_habitabilidad": 75,
+            "nivel_habitabilidad": 100,
             "flujo_luminoso": 35000,
             "coeficiente_utilizacion_luz": 0.8,
             "reduccion_luminosidad": 0.05,
@@ -1109,7 +1109,7 @@
         "habitabilidad": {
             "id_habitabilidad": 2,
             "luz_recomendada": "300 lux",
-            "nivel_habitabilidad": 75,
+            "nivel_habitabilidad": 100,
             "flujo_luminoso": 35000,
             "coeficiente_utilizacion_luz": 0.8,
             "reduccion_luminosidad": 0.05,

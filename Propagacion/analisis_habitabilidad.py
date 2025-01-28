@@ -12,17 +12,17 @@ from modelado.classMaterial import Material
 from propagacion import PropagacionLuz
 
 # Cargar el archivo JSON
-with open('c:/Users/jhoja/Documents/GitHub/Proyecto-Habitabilidad/Propagacion/objetos/espacios.json', 'r', encoding="utf-8") as f:
+with open('Propagacion/objetos/espacios.json', 'r', encoding="utf-8") as f:
     espacios_data = json.load(f)
 
 # Cargar la matriz de adyacencia desde el archivo CSV
-matriz_adyacencia_cargada = pd.read_csv('c:/Users/jhoja/Documents/GitHub/Proyecto-Habitabilidad/Propagacion/objetos/adjacency_matrix.csv', header=None).values
+matriz_adyacencia_cargada = pd.read_csv('Propagacion/objetos/adjacency_matrix.csv', header=None).values
 
 # Cargar las paredes y materiales
-with open('c:/Users/jhoja/Documents/GitHub/Proyecto-Habitabilidad/Propagacion/objetos/paredes.json', 'r', encoding="utf-8") as f:
+with open('Propagacion/objetos/paredes.json', 'r', encoding="utf-8") as f:
     paredes_data = json.load(f)
 
-with open('c:/Users/jhoja/Documents/GitHub/Proyecto-Habitabilidad/Propagacion/objetos/materiales.json', 'r', encoding="utf-8") as f:
+with open('Propagacion/objetos/materiales.json', 'r', encoding="utf-8") as f:
     materiales_data = json.load(f)
 
 # Crear instancias de Espacios y Habitabilidad
@@ -70,5 +70,5 @@ for espacio in espacios:
 
 # Guardar las instancias modificadas en el archivo JSON
 espacios_dict = {espacio.id_espacio: espacio.to_dict() for espacio in espacios}
-with open('c:/Users/jhoja/Documents/GitHub/Proyecto-Habitabilidad/Propagacion/objetos/espacios.json', 'w', encoding="utf-8") as f:
+with open('Propagacion/objetos/espacios.json', 'w', encoding="utf-8") as f:
     json.dump(espacios_dict, f, indent=4, ensure_ascii=False)
