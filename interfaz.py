@@ -5,25 +5,33 @@ import dash
 from dash import dcc, html
 from dash.dependencies import Input, Output
 
+from Propagacion.analisis_habitabilidad import calcular_habitabilidad
+
 # ------ OBTENCION DE DATOS ------
 # listas para agrupar la info sacada del json
 nodes_names = []
 nodes_activities = []
 nodes_lvl_habitability = []
 nodes_colors = []
+
+# Variables globales
 colors_time = ['white', 'black', '#e3e6ff']
-
-# Variables globales para el estado del tiempo y luz solar
 is_night = False  # False = día, True = noche
-luz_solar_activa = 1
 
-# Leer el json con la info de los nodos
-with open('Propagacion/objetos/espacios.json', encoding="utf-8") as json_file:
-    data = json.load(json_file)
-    for item in data.items():
-        nodes_names.append(item[1]['nombre'])
-        nodes_activities.append(item[1]['actividad'])
-        nodes_lvl_habitability.append(item[1]['habitabilidad']['nivel_habitabilidad'])
+# Leer el json y obtener los datos de los espacios
+def get_data():
+    nodes_names.clear()
+    nodes_activities.clear()
+    nodes_lvl_habitability.clear()
+
+    with open('Propagacion/objetos/espacios.json', encoding="utf-8") as json_file:
+        data = json.load(json_file)
+        for item in data.items():
+            nodes_names.append(item[1]['nombre'])
+            nodes_activities.append(item[1]['actividad'])
+            nodes_lvl_habitability.append(item[1]['habitabilidad']['nivel_habitabilidad'])
+
+get_data()
 
 # ------ CREACION DEL GRAFO ------
 # Crear el grafo
@@ -164,12 +172,12 @@ button_style = {
 }
 
 app.layout = html.Div([
+        dcc.Location(id='url', refresh=True),  # Añadir dcc.Location
         dcc.Graph(id='graph', figure=create_figure(['blue'] * len(G.nodes())), style={'height': '80vh'}),
         html.Div(
             children=[
                 html.Button('Recalcular habitabilidad', id='change-color-button', n_clicks=0, style=button_style),
-                html.Button('Cambiar tiempo', id='change-time', n_clicks=0, style=button_style),
-                
+                html.Button('Cambiar tiempo', id='change-time', n_clicks=0, style=button_style)
             ],
             style={'textAlign': 'center', 'padding': '20px'}
         )
@@ -178,36 +186,25 @@ app.layout = html.Div([
 
 # Callback que manda el boton para cambiar el color del nodo dinámicamente
 @app.callback(
-    Output('graph', 'figure', allow_duplicate=True),
-    Input('change-color-button', 'n_clicks'),
+    Output('graph', 'figure', allow_duplicate=True), # componente que se va a actualizar
+    Input('change-color-button', 'n_clicks'), # componente que dispara la actualización
     prevent_initial_call=True
 )
+
+# funcion llamada por el boton
 def update_color(n_clicks):
-    nodes_colors = []
-    with open('Propagacion/objetos/espacios.json', encoding="utf-8") as json_file:
-        data = json.load(json_file)
-        for item in data.items():
-            total_lumens = 0
-            for fuente, cantidad in item[1]['fuentes_luz']:
-                # Si es de noche (is_night=True), la luz solar se multiplica por 0
-                factor = 0 if (fuente['id_fuente_luz'] == 4 and is_night) else 1
-                total_lumens += fuente['lumens'] * cantidad * factor
-            
-            # Calcular iluminancia
-            area = item[1]['area']
-            cu = item[1]['habitabilidad']['coeficiente_utilizacion_luz']
-            fm = 1 - item[1]['habitabilidad']['reduccion_luminosidad']
-            iluminancia = (total_lumens * cu * fm) / area
-            
-            # Determinar color basado en luz recomendada
-            luz_recomendada = float(item[1]['habitabilidad']['luz_recomendada'].split()[0])
-            if iluminancia < luz_recomendada * 0.5:
-                nodes_colors.append('red')
-            elif iluminancia < luz_recomendada:
-                nodes_colors.append('orange')
-            else:
-                nodes_colors.append('green')
-    
+    calcular_habitabilidad(is_night)
+    get_data()
+    nodes_colors.clear()
+
+    for lvl_habitability in nodes_lvl_habitability:
+        if lvl_habitability == 50:
+            nodes_colors.append('red')
+        elif lvl_habitability == 75:
+            nodes_colors.append('orange')
+        elif lvl_habitability == 100:
+            nodes_colors.append('green')
+
     return create_figure(nodes_colors)
 
 # Callback para cambiar el texto del botón 'Cambiar tiempo'
@@ -217,16 +214,27 @@ def update_color(n_clicks):
     prevent_initial_call=True
 )
 def update_button_text(n_clicks):
-    global colors_time, is_night, luz_solar_activa
-    if n_clicks % 2 == 0:  # Día
+    global colors_time, is_night
+
+    if is_night:
         colors_time = ['white', 'black', '#e3e6ff']
         is_night = False
-        luz_solar_activa = 1
-    else:  # Noche
+    else:
         colors_time = ['#2b2e47', 'white', '#4f5582']
         is_night = True
-        luz_solar_activa = 0
-    
+        
+    return create_figure(['blue'] * len(G.nodes()))
+
+# Callback al recargar la página se resetean valores 
+@app.callback(
+    Output('graph', 'figure', allow_duplicate=True),
+    Input('url', 'pathname'),
+    prevent_initial_call=True
+)
+def reload_page(pathname):
+    global is_night, colors_time
+    is_night = False
+    colors_time = ['white', 'black', '#e3e6ff']
     return create_figure(['blue'] * len(G.nodes()))
 
 # Correr la app

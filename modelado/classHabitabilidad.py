@@ -59,14 +59,16 @@ class Habitabilidad:
         
         pass
 
-    def calcular_flujo_luminoso(self, fuentes_luz: List[Tuple[FuenteLuz, int]]):
+    def calcular_flujo_luminoso(self, fuentes_luz: List[Tuple[FuenteLuz, int]], is_night: bool):
         """
         Calcula el flujo luminoso total basado en las fuentes de luz proporcionadas.
         Args:
             fuentes_luz: Lista de tuplas (fuente_luz, cantidad)
         """
-        
-        self.flujo_luminoso = sum(cantidad * fuente.lumens for fuente, cantidad in fuentes_luz)
+        # Si es de noche (is_night=True) la luz solar no se toma en cuenta
+        self.flujo_luminoso = sum(cantidad * fuente.lumens for fuente, cantidad in fuentes_luz if not (fuente.id_fuente_luz == 4 and is_night))
+
+        # self.flujo_luminoso = sum(cantidad * fuente.lumens for fuente, cantidad in fuentes_luz)
         #print(self.flujo_luminoso)
     def calcular_iluminancia_prom(self, area: float, factor_mantenimiento: float):
         """
