@@ -79,6 +79,16 @@ fuente_luz3 = FuenteLuz(
     lumens=1000
 )
 
+fuente_luz4 = FuenteLuz(
+    id_fuente_luz= 4,
+    tipo_fuente= "Solar (A través de vidrio)",
+    interna= False,
+    iluminacion_promedio= 80000.0,
+    temperatura_emitida= 5000.0,
+    intensidad= 0.8,
+    lumens= 120000
+)
+
 # Crear instancias de la clase Material
 material1 = Material(
     id_material=1,
@@ -112,44 +122,44 @@ material3 = Material(
 
 # Crear instancias de la clase Espacios para el Piso 1
 espacios_piso1 = [
-    Espacios(1, "Laboratorio de Redes y Telemática", "Laboratorio", habitabilidad1, [(fuente_luz1, 8), (fuente_luz2, 2)], 30, 85.0),
-    Espacios(2, "Laboratorio de Redes Inalámbricas", "Laboratorio", habitabilidad1, [(fuente_luz1, 6), (fuente_luz2, 2)], 30, 90.0),
-    Espacios(3, "Sala de Informática 1", "Laboratorio", habitabilidad1, [(fuente_luz1, 6), (fuente_luz2, 3)], 30, 75.0),
-    Espacios(4, "Sala de Informática 2", "Laboratorio", habitabilidad1, [(fuente_luz1, 8), (fuente_luz2, 2)], 30, 80.0),
-    Espacios(5, "Sala de Informática 3", "Laboratorio", habitabilidad1, [(fuente_luz1, 8), (fuente_luz2, 4)], 30, 100.0),
-    Espacios(6, "Sala de Informática 4", "Laboratorio", habitabilidad1, [(fuente_luz1, 8), (fuente_luz2, 4)], 30, 80.0),
-    Espacios(7, "Sala de Informática 5", "Laboratorio", habitabilidad1, [(fuente_luz1, 8), (fuente_luz2, 4)], 30, 75.0),
-    Espacios(8, "Sala de Informática 6", "Laboratorio", habitabilidad1, [(fuente_luz1, 8), (fuente_luz2, 4)], 30, 100.0),
-    Espacios(9, "Sala de Informática 7", "Laboratorio", habitabilidad1, [(fuente_luz1, 8), (fuente_luz2, 2)], 30, 85.0),
-    Espacios(10, "Oficina de Sistemas", "Oficina", habitabilidad2, [(fuente_luz1, 1)], 10, 50.0),
+    Espacios(1, "Laboratorio de Redes y Telemática", "Laboratorio", habitabilidad1, [(fuente_luz1, 8), (fuente_luz2, 2), (fuente_luz4, 1)], 30, 85.0),
+    Espacios(2, "Laboratorio de Redes Inalámbricas", "Laboratorio", habitabilidad1, [(fuente_luz1, 6), (fuente_luz2, 2), (fuente_luz4, 1)], 30, 90.0),
+    Espacios(3, "Sala de Informática 1", "Laboratorio", habitabilidad1, [(fuente_luz1, 6), (fuente_luz2, 3), (fuente_luz4, 1)], 30, 75.0),
+    Espacios(4, "Sala de Informática 2", "Laboratorio", habitabilidad1, [(fuente_luz1, 8), (fuente_luz2, 2), (fuente_luz4, 1)], 30, 80.0),
+    Espacios(5, "Sala de Informática 3", "Laboratorio", habitabilidad1, [(fuente_luz1, 8), (fuente_luz2, 4), (fuente_luz4, 1)], 30, 100.0),
+    Espacios(6, "Sala de Informática 4", "Laboratorio", habitabilidad1, [(fuente_luz1, 8), (fuente_luz2, 4), (fuente_luz4, 1)], 30, 80.0),
+    Espacios(7, "Sala de Informática 5", "Laboratorio", habitabilidad1, [(fuente_luz1, 8), (fuente_luz2, 4), (fuente_luz4, 1)], 30, 75.0),
+    Espacios(8, "Sala de Informática 6", "Laboratorio", habitabilidad1, [(fuente_luz1, 8), (fuente_luz2, 4), (fuente_luz4, 1)], 30, 100.0),
+    Espacios(9, "Sala de Informática 7", "Laboratorio", habitabilidad1, [(fuente_luz1, 8), (fuente_luz2, 2), (fuente_luz4, 1)], 30, 85.0),
+    Espacios(10, "Oficina de Sistemas", "Oficina", habitabilidad2, [(fuente_luz1, 1), (fuente_luz4, 1)], 10, 50.0),
     Espacios(11, "Área de Soporte Técnico y Almacén", "Área de Soporte", habitabilidad2, [(fuente_luz1, 1)], 10, 50.0),
-    Espacios(12, "Cuarto de Monitoreo", "Monitoreo", habitabilidad3, [(fuente_luz1, 1)], 5, 25.0)
+    Espacios(12, "Cuarto de Monitoreo", "Monitoreo", habitabilidad3, [(fuente_luz1, 1), (fuente_luz4, 1)], 5, 25.0)
 ]
 
 # Crear instancias de la clase Espacios para el Piso 2
 espacios_piso2 = [
-    Espacios(13, "Laboratorio de Electromagnetismo", "Laboratorio", habitabilidad1, [(fuente_luz1, 8), (fuente_luz2, 2)], 30, 95.0),
-    Espacios(14, "Laboratorio de Circuitos Eléctricos", "Laboratorio", habitabilidad1, [(fuente_luz1, 8), (fuente_luz2, 2)], 30, 85.0),
-    Espacios(15, "Laboratorio de Electrónica 1", "Laboratorio", habitabilidad1, [(fuente_luz1, 8), (fuente_luz2, 2)], 30, 85.0),
-    Espacios(16, "Laboratorio de Electrónica 2", "Laboratorio", habitabilidad1, [(fuente_luz1, 7), (fuente_luz2, 2)], 30, 85.0),
-    Espacios(17, "Laboratorio de Electrónica 3", "Laboratorio", habitabilidad1, [(fuente_luz1, 6), (fuente_luz2, 2)], 30, 85.0),
-    Espacios(18, "Área de Almacenamiento y Taller de Mantenimiento Electrónico", "Área de Almacenamiento", habitabilidad2, [(fuente_luz1, 9)], 10, 50.0),
-    Espacios(19, "Cuarto de Atención a Estudiantes", "Atención a Estudiantes", habitabilidad2, [(fuente_luz1, 5)], 10, 50.0),
-    Espacios(20, "Laboratorio de Circuitos Impresos", "Laboratorio", habitabilidad1, [(fuente_luz1, 6), (fuente_luz2, 2)], 30, 80.0),
-    Espacios(21, "Laboratorio de Telecomunicaciones", "Laboratorio", habitabilidad1, [(fuente_luz1, 8), (fuente_luz2, 2)], 30, 85.0),
-    Espacios(22, "Laboratorio Especializado de Control", "Laboratorio", habitabilidad1, [(fuente_luz1, 9), (fuente_luz2, 2)], 30, 90.0)
+    Espacios(13, "Laboratorio de Electromagnetismo", "Laboratorio", habitabilidad1, [(fuente_luz1, 8), (fuente_luz2, 2), (fuente_luz4, 1)], 30, 95.0),
+    Espacios(14, "Laboratorio de Circuitos Eléctricos", "Laboratorio", habitabilidad1, [(fuente_luz1, 8), (fuente_luz2, 2), (fuente_luz4, 1)], 30, 85.0),
+    Espacios(15, "Laboratorio de Electrónica 1", "Laboratorio", habitabilidad1, [(fuente_luz1, 8), (fuente_luz2, 2), (fuente_luz4, 1)], 30, 85.0),
+    Espacios(16, "Laboratorio de Electrónica 2", "Laboratorio", habitabilidad1, [(fuente_luz1, 7), (fuente_luz2, 2), (fuente_luz4, 1)], 30, 85.0),
+    Espacios(17, "Laboratorio de Electrónica 3", "Laboratorio", habitabilidad1, [(fuente_luz1, 6), (fuente_luz2, 2), (fuente_luz4, 1)], 30, 85.0),
+    Espacios(18, "Área de Almacenamiento y Taller de Mantenimiento Electrónico", "Área de Almacenamiento", habitabilidad2, [(fuente_luz1, 9), (fuente_luz4, 1)], 10, 50.0),
+    Espacios(19, "Cuarto de Atención a Estudiantes", "Atención a Estudiantes", habitabilidad2, [(fuente_luz1, 5), (fuente_luz4, 1)], 10, 50.0),
+    Espacios(20, "Laboratorio de Circuitos Impresos", "Laboratorio", habitabilidad1, [(fuente_luz1, 6), (fuente_luz2, 2), (fuente_luz4, 1)], 30, 80.0),
+    Espacios(21, "Laboratorio de Telecomunicaciones", "Laboratorio", habitabilidad1, [(fuente_luz1, 8), (fuente_luz2, 2), (fuente_luz4, 1)], 30, 85.0),
+    Espacios(22, "Laboratorio Especializado de Control", "Laboratorio", habitabilidad1, [(fuente_luz1, 9), (fuente_luz2, 2), (fuente_luz4, 1)], 30, 90.0)
 ]
 
 # Crear instancias de la clase Espacios para el Piso 3
 espacios_piso3 = [
-    Espacios(23, "Salón de Clase 1", "Salón de Clase", habitabilidad2, [(fuente_luz1, 7)], 40, 80.0),
-    Espacios(24, "Salón de Clase 2", "Salón de Clase", habitabilidad2, [(fuente_luz1, 7)], 40, 80.0),
-    Espacios(25, "Salón de Clase 3", "Salón de Clase", habitabilidad2, [(fuente_luz1, 7)], 40, 80.0),
-    Espacios(26, "Salón de Clase 4", "Salón de Clase", habitabilidad2, [(fuente_luz1, 7)], 40, 80.0),
-    Espacios(27, "Salón de Clase 5", "Salón de Clase", habitabilidad2, [(fuente_luz1, 7)], 40, 80.0),
-    Espacios(28, "Salón de Clase 6", "Salón de Clase", habitabilidad2, [(fuente_luz1, 7)], 40, 80.0),
-    Espacios(29, "Salón de Clase 7", "Salón de Clase", habitabilidad2, [(fuente_luz1, 7)], 40, 80.0),
-    Espacios(30, "Salón de Clase 8", "Salón de Clase", habitabilidad2, [(fuente_luz1, 7)], 40, 80.0)
+    Espacios(23, "Salón de Clase 1", "Salón de Clase", habitabilidad2, [(fuente_luz1, 7), (fuente_luz4, 1)], 40, 80.0),
+    Espacios(24, "Salón de Clase 2", "Salón de Clase", habitabilidad2, [(fuente_luz1, 7), (fuente_luz4, 1)], 40, 80.0),
+    Espacios(25, "Salón de Clase 3", "Salón de Clase", habitabilidad2, [(fuente_luz1, 7), (fuente_luz4, 1)], 40, 80.0),
+    Espacios(26, "Salón de Clase 4", "Salón de Clase", habitabilidad2, [(fuente_luz1, 7), (fuente_luz4, 1)], 40, 80.0),
+    Espacios(27, "Salón de Clase 5", "Salón de Clase", habitabilidad2, [(fuente_luz1, 7), (fuente_luz4, 1)], 40, 80.0),
+    Espacios(28, "Salón de Clase 6", "Salón de Clase", habitabilidad2, [(fuente_luz1, 7), (fuente_luz4, 1)], 40, 80.0),
+    Espacios(29, "Salón de Clase 7", "Salón de Clase", habitabilidad2, [(fuente_luz1, 7), (fuente_luz4, 1)], 40, 80.0),
+    Espacios(30, "Salón de Clase 8", "Salón de Clase", habitabilidad2, [(fuente_luz1, 7), (fuente_luz4, 1)], 40, 80.0)
 ]
 
 # Crear instancias de la clase Pared basadas en la matriz de adyacencia
@@ -197,7 +207,7 @@ for pared in paredes:
     print(f"Pared entre espacios {pared.id_espacio_1} y {pared.id_espacio_2} - Material: {pared.material.nombre}")
 
 # Guardar las instancias en diccionarios
-fuentes_luz_dict = {fuente_luz.id_fuente_luz: fuente_luz.__dict__ for fuente_luz in [fuente_luz1, fuente_luz2, fuente_luz3]}
+fuentes_luz_dict = {fuente_luz.id_fuente_luz: fuente_luz.__dict__ for fuente_luz in [fuente_luz1, fuente_luz2, fuente_luz3, fuente_luz4]}
 materiales_dict = {material.id_material: material.__dict__ for material in [material1, material2, material3]}
 espacios_dict = {espacio.id_espacio: espacio.to_dict() for espacio in espacios_piso1 + espacios_piso2 + espacios_piso3}
 paredes_dict = {i+1: pared.to_dict() for i, pared in enumerate(paredes)}

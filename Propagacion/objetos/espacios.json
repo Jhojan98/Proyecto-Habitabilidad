@@ -6,11 +6,11 @@
         "habitabilidad": {
             "id_habitabilidad": 1,
             "luz_recomendada": "500 lux",
-            "nivel_habitabilidad": 75,
-            "flujo_luminoso": 46000,
+            "nivel_habitabilidad": 100,
+            "flujo_luminoso": 166000,
             "coeficiente_utilizacion_luz": 0.75,
             "reduccion_luminosidad": 0.1,
-            "iluminancia_prom": 365.29411764705884,
+            "iluminancia_prom": 1318.235294117647,
             "uniformidad_iluminancia": 0.0
         },
         "fuentes_luz": [
@@ -37,6 +37,18 @@
                     "lumens": 3000
                 },
                 2
+            ],
+            [
+                {
+                    "id_fuente_luz": 4,
+                    "tipo_fuente": "Solar (A través de vidrio)",
+                    "interna": false,
+                    "iluminacion_promedio": 80000.0,
+                    "temperatura_emitida": 5000.0,
+                    "intensidad": 0.8,
+                    "lumens": 120000
+                },
+                1
             ]
         ],
         "cantidad_personas": 30,
@@ -49,11 +61,11 @@
         "habitabilidad": {
             "id_habitabilidad": 1,
             "luz_recomendada": "500 lux",
-            "nivel_habitabilidad": 50,
-            "flujo_luminoso": 36000,
+            "nivel_habitabilidad": 100,
+            "flujo_luminoso": 156000,
             "coeficiente_utilizacion_luz": 0.75,
             "reduccion_luminosidad": 0.1,
-            "iluminancia_prom": 270.0,
+            "iluminancia_prom": 1170.0,
             "uniformidad_iluminancia": 0.0
         },
         "fuentes_luz": [
@@ -80,6 +92,18 @@
                     "lumens": 3000
                 },
                 2
+            ],
+            [
+                {
+                    "id_fuente_luz": 4,
+                    "tipo_fuente": "Solar (A través de vidrio)",
+                    "interna": false,
+                    "iluminacion_promedio": 80000.0,
+                    "temperatura_emitida": 5000.0,
+                    "intensidad": 0.8,
+                    "lumens": 120000
+                },
+                1
             ]
         ],
         "cantidad_personas": 30,
@@ -92,11 +116,11 @@
         "habitabilidad": {
             "id_habitabilidad": 1,
             "luz_recomendada": "500 lux",
-            "nivel_habitabilidad": 75,
-            "flujo_luminoso": 39000,
+            "nivel_habitabilidad": 100,
+            "flujo_luminoso": 159000,
             "coeficiente_utilizacion_luz": 0.75,
             "reduccion_luminosidad": 0.1,
-            "iluminancia_prom": 351.0,
+            "iluminancia_prom": 1431.0,
             "uniformidad_iluminancia": 0.0
         },
         "fuentes_luz": [
@@ -123,6 +147,18 @@
                     "lumens": 3000
                 },
                 3
+            ],
+            [
+                {
+                    "id_fuente_luz": 4,
+                    "tipo_fuente": "Solar (A través de vidrio)",
+                    "interna": false,
+                    "iluminacion_promedio": 80000.0,
+                    "temperatura_emitida": 5000.0,
+                    "intensidad": 0.8,
+                    "lumens": 120000
+                },
+                1
             ]
         ],
         "cantidad_personas": 30,
@@ -135,11 +171,11 @@
         "habitabilidad": {
             "id_habitabilidad": 1,
             "luz_recomendada": "500 lux",
-            "nivel_habitabilidad": 75,
-            "flujo_luminoso": 46000,
+            "nivel_habitabilidad": 100,
+            "flujo_luminoso": 166000,
             "coeficiente_utilizacion_luz": 0.75,
             "reduccion_luminosidad": 0.1,
-            "iluminancia_prom": 388.125,
+            "iluminancia_prom": 1400.625,
             "uniformidad_iluminancia": 0.0
         },
         "fuentes_luz": [
@@ -166,6 +202,18 @@
                     "lumens": 3000
                 },
                 2
+            ],
+            [
+                {
+                    "id_fuente_luz": 4,
+                    "tipo_fuente": "Solar (A través de vidrio)",
+                    "interna": false,
+                    "iluminacion_promedio": 80000.0,
+                    "temperatura_emitida": 5000.0,
+                    "intensidad": 0.8,
+                    "lumens": 120000
+                },
+                1
             ]
         ],
         "cantidad_personas": 30,
@@ -178,11 +226,11 @@
         "habitabilidad": {
             "id_habitabilidad": 1,
             "luz_recomendada": "500 lux",
-            "nivel_habitabilidad": 75,
-            "flujo_luminoso": 52000,
+            "nivel_habitabilidad": 100,
+            "flujo_luminoso": 172000,
             "coeficiente_utilizacion_luz": 0.75,
             "reduccion_luminosidad": 0.1,
-            "iluminancia_prom": 351.0,
+            "iluminancia_prom": 1161.0,
             "uniformidad_iluminancia": 0.0
         },
         "fuentes_luz": [
@@ -209,6 +257,18 @@
                     "lumens": 3000
                 },
                 4
+            ],
+            [
+                {
+                    "id_fuente_luz": 4,
+                    "tipo_fuente": "Solar (A través de vidrio)",
+                    "interna": false,
+                    "iluminacion_promedio": 80000.0,
+                    "temperatura_emitida": 5000.0,
+                    "intensidad": 0.8,
+                    "lumens": 120000
+                },
+                1
             ]
         ],
         "cantidad_personas": 30,
@@ -221,11 +281,11 @@
         "habitabilidad": {
             "id_habitabilidad": 1,
             "luz_recomendada": "500 lux",
-            "nivel_habitabilidad": 75,
-            "flujo_luminoso": 52000,
+            "nivel_habitabilidad": 100,
+            "flujo_luminoso": 172000,
             "coeficiente_utilizacion_luz": 0.75,
             "reduccion_luminosidad": 0.1,
-            "iluminancia_prom": 438.75,
+            "iluminancia_prom": 1451.25,
             "uniformidad_iluminancia": 0.0
         },
         "fuentes_luz": [
@@ -252,6 +312,18 @@
                     "lumens": 3000
                 },
                 4
+            ],
+            [
+                {
+                    "id_fuente_luz": 4,
+                    "tipo_fuente": "Solar (A través de vidrio)",
+                    "interna": false,
+                    "iluminacion_promedio": 80000.0,
+                    "temperatura_emitida": 5000.0,
+                    "intensidad": 0.8,
+                    "lumens": 120000
+                },
+                1
             ]
         ],
         "cantidad_personas": 30,
@@ -264,11 +336,11 @@
         "habitabilidad": {
             "id_habitabilidad": 1,
             "luz_recomendada": "500 lux",
-            "nivel_habitabilidad": 75,
-            "flujo_luminoso": 52000,
+            "nivel_habitabilidad": 100,
+            "flujo_luminoso": 172000,
             "coeficiente_utilizacion_luz": 0.75,
             "reduccion_luminosidad": 0.1,
-            "iluminancia_prom": 468.0,
+            "iluminancia_prom": 1548.0,
             "uniformidad_iluminancia": 0.0
         },
         "fuentes_luz": [
@@ -295,6 +367,18 @@
                     "lumens": 3000
                 },
                 4
+            ],
+            [
+                {
+                    "id_fuente_luz": 4,
+                    "tipo_fuente": "Solar (A través de vidrio)",
+                    "interna": false,
+                    "iluminacion_promedio": 80000.0,
+                    "temperatura_emitida": 5000.0,
+                    "intensidad": 0.8,
+                    "lumens": 120000
+                },
+                1
             ]
         ],
         "cantidad_personas": 30,
@@ -307,11 +391,11 @@
         "habitabilidad": {
             "id_habitabilidad": 1,
             "luz_recomendada": "500 lux",
-            "nivel_habitabilidad": 75,
-            "flujo_luminoso": 52000,
+            "nivel_habitabilidad": 100,
+            "flujo_luminoso": 172000,
             "coeficiente_utilizacion_luz": 0.75,
             "reduccion_luminosidad": 0.1,
-            "iluminancia_prom": 351.0,
+            "iluminancia_prom": 1161.0,
             "uniformidad_iluminancia": 0.0
         },
         "fuentes_luz": [
@@ -338,6 +422,18 @@
                     "lumens": 3000
                 },
                 4
+            ],
+            [
+                {
+                    "id_fuente_luz": 4,
+                    "tipo_fuente": "Solar (A través de vidrio)",
+                    "interna": false,
+                    "iluminacion_promedio": 80000.0,
+                    "temperatura_emitida": 5000.0,
+                    "intensidad": 0.8,
+                    "lumens": 120000
+                },
+                1
             ]
         ],
         "cantidad_personas": 30,
@@ -350,11 +446,11 @@
         "habitabilidad": {
             "id_habitabilidad": 1,
             "luz_recomendada": "500 lux",
-            "nivel_habitabilidad": 75,
-            "flujo_luminoso": 46000,
+            "nivel_habitabilidad": 100,
+            "flujo_luminoso": 166000,
             "coeficiente_utilizacion_luz": 0.75,
             "reduccion_luminosidad": 0.1,
-            "iluminancia_prom": 365.29411764705884,
+            "iluminancia_prom": 1318.235294117647,
             "uniformidad_iluminancia": 0.0
         },
         "fuentes_luz": [
@@ -381,6 +477,18 @@
                     "lumens": 3000
                 },
                 2
+            ],
+            [
+                {
+                    "id_fuente_luz": 4,
+                    "tipo_fuente": "Solar (A través de vidrio)",
+                    "interna": false,
+                    "iluminacion_promedio": 80000.0,
+                    "temperatura_emitida": 5000.0,
+                    "intensidad": 0.8,
+                    "lumens": 120000
+                },
+                1
             ]
         ],
         "cantidad_personas": 30,
@@ -393,11 +501,11 @@
         "habitabilidad": {
             "id_habitabilidad": 2,
             "luz_recomendada": "300 lux",
-            "nivel_habitabilidad": 50,
-            "flujo_luminoso": 5000,
+            "nivel_habitabilidad": 100,
+            "flujo_luminoso": 125000,
             "coeficiente_utilizacion_luz": 0.8,
             "reduccion_luminosidad": 0.05,
-            "iluminancia_prom": 76.0,
+            "iluminancia_prom": 1900.0,
             "uniformidad_iluminancia": 0.0
         },
         "fuentes_luz": [
@@ -410,6 +518,18 @@
                     "temperatura_emitida": 3500.0,
                     "intensidad": 0.8,
                     "lumens": 5000
+                },
+                1
+            ],
+            [
+                {
+                    "id_fuente_luz": 4,
+                    "tipo_fuente": "Solar (A través de vidrio)",
+                    "interna": false,
+                    "iluminacion_promedio": 80000.0,
+                    "temperatura_emitida": 5000.0,
+                    "intensidad": 0.8,
+                    "lumens": 120000
                 },
                 1
             ]
@@ -455,11 +575,11 @@
         "habitabilidad": {
             "id_habitabilidad": 3,
             "luz_recomendada": "700 lux",
-            "nivel_habitabilidad": 50,
-            "flujo_luminoso": 5000,
+            "nivel_habitabilidad": 100,
+            "flujo_luminoso": 125000,
             "coeficiente_utilizacion_luz": 0.9,
             "reduccion_luminosidad": 0.02,
-            "iluminancia_prom": 176.4,
+            "iluminancia_prom": 4410.0,
             "uniformidad_iluminancia": 0.0
         },
         "fuentes_luz": [
@@ -474,6 +594,18 @@
                     "lumens": 5000
                 },
                 1
+            ],
+            [
+                {
+                    "id_fuente_luz": 4,
+                    "tipo_fuente": "Solar (A través de vidrio)",
+                    "interna": false,
+                    "iluminacion_promedio": 80000.0,
+                    "temperatura_emitida": 5000.0,
+                    "intensidad": 0.8,
+                    "lumens": 120000
+                },
+                1
             ]
         ],
         "cantidad_personas": 5,
@@ -486,11 +618,11 @@
         "habitabilidad": {
             "id_habitabilidad": 1,
             "luz_recomendada": "500 lux",
-            "nivel_habitabilidad": 75,
-            "flujo_luminoso": 46000,
+            "nivel_habitabilidad": 100,
+            "flujo_luminoso": 166000,
             "coeficiente_utilizacion_luz": 0.75,
             "reduccion_luminosidad": 0.1,
-            "iluminancia_prom": 326.8421052631579,
+            "iluminancia_prom": 1179.4736842105262,
             "uniformidad_iluminancia": 0.0
         },
         "fuentes_luz": [
@@ -517,6 +649,18 @@
                     "lumens": 3000
                 },
                 2
+            ],
+            [
+                {
+                    "id_fuente_luz": 4,
+                    "tipo_fuente": "Solar (A través de vidrio)",
+                    "interna": false,
+                    "iluminacion_promedio": 80000.0,
+                    "temperatura_emitida": 5000.0,
+                    "intensidad": 0.8,
+                    "lumens": 120000
+                },
+                1
             ]
         ],
         "cantidad_personas": 30,
@@ -529,11 +673,11 @@
         "habitabilidad": {
             "id_habitabilidad": 1,
             "luz_recomendada": "500 lux",
-            "nivel_habitabilidad": 75,
-            "flujo_luminoso": 46000,
+            "nivel_habitabilidad": 100,
+            "flujo_luminoso": 166000,
             "coeficiente_utilizacion_luz": 0.75,
             "reduccion_luminosidad": 0.1,
-            "iluminancia_prom": 365.29411764705884,
+            "iluminancia_prom": 1318.235294117647,
             "uniformidad_iluminancia": 0.0
         },
         "fuentes_luz": [
@@ -560,6 +704,18 @@
                     "lumens": 3000
                 },
                 2
+            ],
+            [
+                {
+                    "id_fuente_luz": 4,
+                    "tipo_fuente": "Solar (A través de vidrio)",
+                    "interna": false,
+                    "iluminacion_promedio": 80000.0,
+                    "temperatura_emitida": 5000.0,
+                    "intensidad": 0.8,
+                    "lumens": 120000
+                },
+                1
             ]
         ],
         "cantidad_personas": 30,
@@ -572,11 +728,11 @@
         "habitabilidad": {
             "id_habitabilidad": 1,
             "luz_recomendada": "500 lux",
-            "nivel_habitabilidad": 75,
-            "flujo_luminoso": 46000,
+            "nivel_habitabilidad": 100,
+            "flujo_luminoso": 166000,
             "coeficiente_utilizacion_luz": 0.75,
             "reduccion_luminosidad": 0.1,
-            "iluminancia_prom": 365.29411764705884,
+            "iluminancia_prom": 1318.235294117647,
             "uniformidad_iluminancia": 0.0
         },
         "fuentes_luz": [
@@ -603,6 +759,18 @@
                     "lumens": 3000
                 },
                 2
+            ],
+            [
+                {
+                    "id_fuente_luz": 4,
+                    "tipo_fuente": "Solar (A través de vidrio)",
+                    "interna": false,
+                    "iluminacion_promedio": 80000.0,
+                    "temperatura_emitida": 5000.0,
+                    "intensidad": 0.8,
+                    "lumens": 120000
+                },
+                1
             ]
         ],
         "cantidad_personas": 30,
@@ -615,11 +783,11 @@
         "habitabilidad": {
             "id_habitabilidad": 1,
             "luz_recomendada": "500 lux",
-            "nivel_habitabilidad": 75,
-            "flujo_luminoso": 41000,
+            "nivel_habitabilidad": 100,
+            "flujo_luminoso": 161000,
             "coeficiente_utilizacion_luz": 0.75,
             "reduccion_luminosidad": 0.1,
-            "iluminancia_prom": 325.5882352941176,
+            "iluminancia_prom": 1278.5294117647059,
             "uniformidad_iluminancia": 0.0
         },
         "fuentes_luz": [
@@ -646,6 +814,18 @@
                     "lumens": 3000
                 },
                 2
+            ],
+            [
+                {
+                    "id_fuente_luz": 4,
+                    "tipo_fuente": "Solar (A través de vidrio)",
+                    "interna": false,
+                    "iluminacion_promedio": 80000.0,
+                    "temperatura_emitida": 5000.0,
+                    "intensidad": 0.8,
+                    "lumens": 120000
+                },
+                1
             ]
         ],
         "cantidad_personas": 30,
@@ -658,11 +838,11 @@
         "habitabilidad": {
             "id_habitabilidad": 1,
             "luz_recomendada": "500 lux",
-            "nivel_habitabilidad": 50,
-            "flujo_luminoso": 36000,
+            "nivel_habitabilidad": 100,
+            "flujo_luminoso": 156000,
             "coeficiente_utilizacion_luz": 0.75,
             "reduccion_luminosidad": 0.1,
-            "iluminancia_prom": 285.88235294117646,
+            "iluminancia_prom": 1238.8235294117646,
             "uniformidad_iluminancia": 0.0
         },
         "fuentes_luz": [
@@ -689,6 +869,18 @@
                     "lumens": 3000
                 },
                 2
+            ],
+            [
+                {
+                    "id_fuente_luz": 4,
+                    "tipo_fuente": "Solar (A través de vidrio)",
+                    "interna": false,
+                    "iluminacion_promedio": 80000.0,
+                    "temperatura_emitida": 5000.0,
+                    "intensidad": 0.8,
+                    "lumens": 120000
+                },
+                1
             ]
         ],
         "cantidad_personas": 30,
@@ -702,10 +894,10 @@
             "id_habitabilidad": 2,
             "luz_recomendada": "300 lux",
             "nivel_habitabilidad": 100,
-            "flujo_luminoso": 45000,
+            "flujo_luminoso": 165000,
             "coeficiente_utilizacion_luz": 0.8,
             "reduccion_luminosidad": 0.05,
-            "iluminancia_prom": 684.0,
+            "iluminancia_prom": 2508.0,
             "uniformidad_iluminancia": 0.0
         },
         "fuentes_luz": [
@@ -720,6 +912,18 @@
                     "lumens": 5000
                 },
                 9
+            ],
+            [
+                {
+                    "id_fuente_luz": 4,
+                    "tipo_fuente": "Solar (A través de vidrio)",
+                    "interna": false,
+                    "iluminacion_promedio": 80000.0,
+                    "temperatura_emitida": 5000.0,
+                    "intensidad": 0.8,
+                    "lumens": 120000
+                },
+                1
             ]
         ],
         "cantidad_personas": 10,
@@ -733,10 +937,10 @@
             "id_habitabilidad": 2,
             "luz_recomendada": "300 lux",
             "nivel_habitabilidad": 100,
-            "flujo_luminoso": 25000,
+            "flujo_luminoso": 145000,
             "coeficiente_utilizacion_luz": 0.8,
             "reduccion_luminosidad": 0.05,
-            "iluminancia_prom": 380.0,
+            "iluminancia_prom": 2204.0,
             "uniformidad_iluminancia": 0.0
         },
         "fuentes_luz": [
@@ -751,6 +955,18 @@
                     "lumens": 5000
                 },
                 5
+            ],
+            [
+                {
+                    "id_fuente_luz": 4,
+                    "tipo_fuente": "Solar (A través de vidrio)",
+                    "interna": false,
+                    "iluminacion_promedio": 80000.0,
+                    "temperatura_emitida": 5000.0,
+                    "intensidad": 0.8,
+                    "lumens": 120000
+                },
+                1
             ]
         ],
         "cantidad_personas": 10,
@@ -763,11 +979,11 @@
         "habitabilidad": {
             "id_habitabilidad": 1,
             "luz_recomendada": "500 lux",
-            "nivel_habitabilidad": 75,
-            "flujo_luminoso": 36000,
+            "nivel_habitabilidad": 100,
+            "flujo_luminoso": 156000,
             "coeficiente_utilizacion_luz": 0.75,
             "reduccion_luminosidad": 0.1,
-            "iluminancia_prom": 303.75,
+            "iluminancia_prom": 1316.25,
             "uniformidad_iluminancia": 0.0
         },
         "fuentes_luz": [
@@ -794,6 +1010,18 @@
                     "lumens": 3000
                 },
                 2
+            ],
+            [
+                {
+                    "id_fuente_luz": 4,
+                    "tipo_fuente": "Solar (A través de vidrio)",
+                    "interna": false,
+                    "iluminacion_promedio": 80000.0,
+                    "temperatura_emitida": 5000.0,
+                    "intensidad": 0.8,
+                    "lumens": 120000
+                },
+                1
             ]
         ],
         "cantidad_personas": 30,
@@ -806,11 +1034,11 @@
         "habitabilidad": {
             "id_habitabilidad": 1,
             "luz_recomendada": "500 lux",
-            "nivel_habitabilidad": 75,
-            "flujo_luminoso": 46000,
+            "nivel_habitabilidad": 100,
+            "flujo_luminoso": 166000,
             "coeficiente_utilizacion_luz": 0.75,
             "reduccion_luminosidad": 0.1,
-            "iluminancia_prom": 365.29411764705884,
+            "iluminancia_prom": 1318.235294117647,
             "uniformidad_iluminancia": 0.0
         },
         "fuentes_luz": [
@@ -837,6 +1065,18 @@
                     "lumens": 3000
                 },
                 2
+            ],
+            [
+                {
+                    "id_fuente_luz": 4,
+                    "tipo_fuente": "Solar (A través de vidrio)",
+                    "interna": false,
+                    "iluminacion_promedio": 80000.0,
+                    "temperatura_emitida": 5000.0,
+                    "intensidad": 0.8,
+                    "lumens": 120000
+                },
+                1
             ]
         ],
         "cantidad_personas": 30,
@@ -849,11 +1089,11 @@
         "habitabilidad": {
             "id_habitabilidad": 1,
             "luz_recomendada": "500 lux",
-            "nivel_habitabilidad": 75,
-            "flujo_luminoso": 51000,
+            "nivel_habitabilidad": 100,
+            "flujo_luminoso": 171000,
             "coeficiente_utilizacion_luz": 0.75,
             "reduccion_luminosidad": 0.1,
-            "iluminancia_prom": 382.5,
+            "iluminancia_prom": 1282.5,
             "uniformidad_iluminancia": 0.0
         },
         "fuentes_luz": [
@@ -880,6 +1120,18 @@
                     "lumens": 3000
                 },
                 2
+            ],
+            [
+                {
+                    "id_fuente_luz": 4,
+                    "tipo_fuente": "Solar (A través de vidrio)",
+                    "interna": false,
+                    "iluminacion_promedio": 80000.0,
+                    "temperatura_emitida": 5000.0,
+                    "intensidad": 0.8,
+                    "lumens": 120000
+                },
+                1
             ]
         ],
         "cantidad_personas": 30,
@@ -893,10 +1145,10 @@
             "id_habitabilidad": 2,
             "luz_recomendada": "300 lux",
             "nivel_habitabilidad": 100,
-            "flujo_luminoso": 35000,
+            "flujo_luminoso": 155000,
             "coeficiente_utilizacion_luz": 0.8,
             "reduccion_luminosidad": 0.05,
-            "iluminancia_prom": 332.5,
+            "iluminancia_prom": 1472.5,
             "uniformidad_iluminancia": 0.0
         },
         "fuentes_luz": [
@@ -911,6 +1163,18 @@
                     "lumens": 5000
                 },
                 7
+            ],
+            [
+                {
+                    "id_fuente_luz": 4,
+                    "tipo_fuente": "Solar (A través de vidrio)",
+                    "interna": false,
+                    "iluminacion_promedio": 80000.0,
+                    "temperatura_emitida": 5000.0,
+                    "intensidad": 0.8,
+                    "lumens": 120000
+                },
+                1
             ]
         ],
         "cantidad_personas": 40,
@@ -924,10 +1188,10 @@
             "id_habitabilidad": 2,
             "luz_recomendada": "300 lux",
             "nivel_habitabilidad": 100,
-            "flujo_luminoso": 35000,
+            "flujo_luminoso": 155000,
             "coeficiente_utilizacion_luz": 0.8,
             "reduccion_luminosidad": 0.05,
-            "iluminancia_prom": 332.5,
+            "iluminancia_prom": 1472.5,
             "uniformidad_iluminancia": 0.0
         },
         "fuentes_luz": [
@@ -942,6 +1206,18 @@
                     "lumens": 5000
                 },
                 7
+            ],
+            [
+                {
+                    "id_fuente_luz": 4,
+                    "tipo_fuente": "Solar (A través de vidrio)",
+                    "interna": false,
+                    "iluminacion_promedio": 80000.0,
+                    "temperatura_emitida": 5000.0,
+                    "intensidad": 0.8,
+                    "lumens": 120000
+                },
+                1
             ]
         ],
         "cantidad_personas": 40,
@@ -955,10 +1231,10 @@
             "id_habitabilidad": 2,
             "luz_recomendada": "300 lux",
             "nivel_habitabilidad": 100,
-            "flujo_luminoso": 35000,
+            "flujo_luminoso": 155000,
             "coeficiente_utilizacion_luz": 0.8,
             "reduccion_luminosidad": 0.05,
-            "iluminancia_prom": 332.5,
+            "iluminancia_prom": 1472.5,
             "uniformidad_iluminancia": 0.0
         },
         "fuentes_luz": [
@@ -973,6 +1249,18 @@
                     "lumens": 5000
                 },
                 7
+            ],
+            [
+                {
+                    "id_fuente_luz": 4,
+                    "tipo_fuente": "Solar (A través de vidrio)",
+                    "interna": false,
+                    "iluminacion_promedio": 80000.0,
+                    "temperatura_emitida": 5000.0,
+                    "intensidad": 0.8,
+                    "lumens": 120000
+                },
+                1
             ]
         ],
         "cantidad_personas": 40,
@@ -986,10 +1274,10 @@
             "id_habitabilidad": 2,
             "luz_recomendada": "300 lux",
             "nivel_habitabilidad": 100,
-            "flujo_luminoso": 35000,
+            "flujo_luminoso": 155000,
             "coeficiente_utilizacion_luz": 0.8,
             "reduccion_luminosidad": 0.05,
-            "iluminancia_prom": 332.5,
+            "iluminancia_prom": 1472.5,
             "uniformidad_iluminancia": 0.0
         },
         "fuentes_luz": [
@@ -1004,6 +1292,18 @@
                     "lumens": 5000
                 },
                 7
+            ],
+            [
+                {
+                    "id_fuente_luz": 4,
+                    "tipo_fuente": "Solar (A través de vidrio)",
+                    "interna": false,
+                    "iluminacion_promedio": 80000.0,
+                    "temperatura_emitida": 5000.0,
+                    "intensidad": 0.8,
+                    "lumens": 120000
+                },
+                1
             ]
         ],
         "cantidad_personas": 40,
@@ -1017,10 +1317,10 @@
             "id_habitabilidad": 2,
             "luz_recomendada": "300 lux",
             "nivel_habitabilidad": 100,
-            "flujo_luminoso": 35000,
+            "flujo_luminoso": 155000,
             "coeficiente_utilizacion_luz": 0.8,
             "reduccion_luminosidad": 0.05,
-            "iluminancia_prom": 332.5,
+            "iluminancia_prom": 1472.5,
             "uniformidad_iluminancia": 0.0
         },
         "fuentes_luz": [
@@ -1035,6 +1335,18 @@
                     "lumens": 5000
                 },
                 7
+            ],
+            [
+                {
+                    "id_fuente_luz": 4,
+                    "tipo_fuente": "Solar (A través de vidrio)",
+                    "interna": false,
+                    "iluminacion_promedio": 80000.0,
+                    "temperatura_emitida": 5000.0,
+                    "intensidad": 0.8,
+                    "lumens": 120000
+                },
+                1
             ]
         ],
         "cantidad_personas": 40,
@@ -1048,10 +1360,10 @@
             "id_habitabilidad": 2,
             "luz_recomendada": "300 lux",
             "nivel_habitabilidad": 100,
-            "flujo_luminoso": 35000,
+            "flujo_luminoso": 155000,
             "coeficiente_utilizacion_luz": 0.8,
             "reduccion_luminosidad": 0.05,
-            "iluminancia_prom": 332.5,
+            "iluminancia_prom": 1472.5,
             "uniformidad_iluminancia": 0.0
         },
         "fuentes_luz": [
@@ -1066,6 +1378,18 @@
                     "lumens": 5000
                 },
                 7
+            ],
+            [
+                {
+                    "id_fuente_luz": 4,
+                    "tipo_fuente": "Solar (A través de vidrio)",
+                    "interna": false,
+                    "iluminacion_promedio": 80000.0,
+                    "temperatura_emitida": 5000.0,
+                    "intensidad": 0.8,
+                    "lumens": 120000
+                },
+                1
             ]
         ],
         "cantidad_personas": 40,
@@ -1079,10 +1403,10 @@
             "id_habitabilidad": 2,
             "luz_recomendada": "300 lux",
             "nivel_habitabilidad": 100,
-            "flujo_luminoso": 35000,
+            "flujo_luminoso": 155000,
             "coeficiente_utilizacion_luz": 0.8,
             "reduccion_luminosidad": 0.05,
-            "iluminancia_prom": 332.5,
+            "iluminancia_prom": 1472.5,
             "uniformidad_iluminancia": 0.0
         },
         "fuentes_luz": [
@@ -1097,6 +1421,18 @@
                     "lumens": 5000
                 },
                 7
+            ],
+            [
+                {
+                    "id_fuente_luz": 4,
+                    "tipo_fuente": "Solar (A través de vidrio)",
+                    "interna": false,
+                    "iluminacion_promedio": 80000.0,
+                    "temperatura_emitida": 5000.0,
+                    "intensidad": 0.8,
+                    "lumens": 120000
+                },
+                1
             ]
         ],
         "cantidad_personas": 40,
@@ -1110,10 +1446,10 @@
             "id_habitabilidad": 2,
             "luz_recomendada": "300 lux",
             "nivel_habitabilidad": 100,
-            "flujo_luminoso": 35000,
+            "flujo_luminoso": 155000,
             "coeficiente_utilizacion_luz": 0.8,
             "reduccion_luminosidad": 0.05,
-            "iluminancia_prom": 332.5,
+            "iluminancia_prom": 1472.5,
             "uniformidad_iluminancia": 0.0
         },
         "fuentes_luz": [
@@ -1128,6 +1464,18 @@
                     "lumens": 5000
                 },
                 7
+            ],
+            [
+                {
+                    "id_fuente_luz": 4,
+                    "tipo_fuente": "Solar (A través de vidrio)",
+                    "interna": false,
+                    "iluminacion_promedio": 80000.0,
+                    "temperatura_emitida": 5000.0,
+                    "intensidad": 0.8,
+                    "lumens": 120000
+                },
+                1
             ]
         ],
         "cantidad_personas": 40,

@@ -25,5 +25,14 @@
         "temperatura_emitida": 3000.0,
         "intensidad": 1.0,
         "lumens": 1000
+    },
+    "4": {
+        "id_fuente_luz": 4,
+        "tipo_fuente": "Solar (A través de vidrio)",
+        "interna": false,
+        "iluminacion_promedio": 80000.0,
+        "temperatura_emitida": 5000.0,
+        "intensidad": 0.8,
+        "lumens": 120000
     }
 }
