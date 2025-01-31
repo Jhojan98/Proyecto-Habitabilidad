@@ -1,0 +1,23 @@
+{
+    "sugerencias": {
+      "poca_luz": [
+        "Añadir más luz artificial con sistemas de iluminación regulable",
+        "Incorporar luces frías para áreas de estudio",
+        "Instalar ventanas más grandes",
+        "Usar reflectores de luz o estantes de luz para redirigir la luz natural",
+        "Pintar paredes y techos con colores claros para reflejar mejor la luz",
+        "Colocar espejos estratégicamente para amplificar la luz natural",
+        "Eliminar obstáculos que bloqueen la entrada de luz (muebles altos, cortinas opacas, etc.)",
+        "Crear zonas abiertas para permitir que la luz se distribuya mejor"
+      ],
+      "exceso_de_luz": [
+        "Usar cortinas, persianas ajustables para regular la cantidad de luz",
+        "Instalar cortinas blackout en habitaciones que requieren oscuridad total",
+        "Usar vegetación para filtrar la luz solar",
+        "Optar por superficies color mate en lugar de brillantes para evitar reflejos molestos",
+        "Orientar las ventanas hacia el norte o sur en climas cálidos para minimizar la luz solar directa",
+        "Implementar sistemas de automatización que ajusten cortinas o persianas según la intensidad de la luz",
+        "Usar sensores de luz para regular la iluminación artificial en función de la luz natural"
+      ]
+    }
+}
