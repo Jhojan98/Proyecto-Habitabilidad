@@ -8,30 +8,22 @@ from dash.dependencies import Input, Output
 from Propagacion.analisis_habitabilidad import calcular_habitabilidad
 
 # ------ OBTENCION DE DATOS ------
-# listas para agrupar la info sacada del json
-nodes_names = []
-nodes_activities = []
-nodes_lvl_habitability = []
-nodes_colors = []
-
 # Variables globales
+nodes_colors = []
 colors_time = ['white', 'black', '#e3e6ff']
 is_night = False  # False = día, True = noche
 
 # Leer el json y obtener los datos de los espacios
 def get_data():
-    nodes_names.clear()
-    nodes_activities.clear()
-    nodes_lvl_habitability.clear()
-
     with open('Propagacion/objetos/espacios.json', encoding="utf-8") as json_file:
         data = json.load(json_file)
-        for item in data.items():
-            nodes_names.append(item[1]['nombre'])
-            nodes_activities.append(item[1]['actividad'])
-            nodes_lvl_habitability.append(item[1]['habitabilidad']['nivel_habitabilidad'])
 
-get_data()
+        return [f"""Node: {n_node} 
+                <br>Nombre: {item[1]['nombre']} 
+                <br>Actividad: {item[1]['actividad']} 
+                <br>Nivel Habitabilidad: {item[1]['habitabilidad']['nivel_habitabilidad']}""" 
+                for n_node, item
+                in zip(G.nodes(), data.items())]
 
 # ------ CREACION DEL GRAFO ------
 # Crear el grafo
@@ -54,7 +46,6 @@ nodes_piso_3 = {
 # Agregar nodos al grafo
 for nodes in [nodes_piso_1, nodes_piso_2, nodes_piso_3]:
     G.add_nodes_from(nodes.keys())
-# nodes_colors = ['blue'] * len(G.nodes())
 
 # Agregar aristas por piso
 edges_piso_1 = [
@@ -120,15 +111,12 @@ def create_figure(node_colors):
         hoverinfo='none'
     ))
 
-    # Crear texto para la interfaz
-    hover_text = [f"Node: {n_node} <br>Nombre: {name} <br>Actividad: {activity} <br>Nivel Habitabilidad: {habitability}" for n_node, name, activity, habitability in zip(G.nodes(), nodes_names, nodes_activities, nodes_lvl_habitability)]
-
     # Agregar nodos
     fig.add_trace(go.Scatter3d(
         x=node_x, y=node_y, z=node_z,
         mode='markers',
         marker=dict(size=6, color=node_colors),
-        text=hover_text,
+        text=get_data(),
         hoverinfo='text',
     ))
 
@@ -194,16 +182,19 @@ app.layout = html.Div([
 # funcion llamada por el boton
 def update_color(n_clicks):
     calcular_habitabilidad(is_night)
-    get_data()
     nodes_colors.clear()
 
-    for lvl_habitability in nodes_lvl_habitability:
-        if lvl_habitability == 50:
-            nodes_colors.append('red')
-        elif lvl_habitability == 75:
-            nodes_colors.append('orange')
-        elif lvl_habitability == 100:
-            nodes_colors.append('green')
+    with open('Propagacion/objetos/espacios.json', encoding="utf-8") as json_file:
+        data = json.load(json_file)
+
+        for item in data.items():
+            lvl_habitability = item[1]['habitabilidad']['nivel_habitabilidad']
+            if lvl_habitability == 50:
+                nodes_colors.append('red')
+            elif lvl_habitability == 75:
+                nodes_colors.append('orange')
+            elif lvl_habitability == 100:
+                nodes_colors.append('green')
 
     return create_figure(nodes_colors)
 
