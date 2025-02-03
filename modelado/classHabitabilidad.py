@@ -3,10 +3,9 @@ from modelado.classFuenteLuz import FuenteLuz
 
 
 class Habitabilidad:
-    def __init__(self, id_habitabilidad: int, luz_recomendada: str, nivel_habitabilidad: int, flujo_luminoso: float,
+    def __init__(self, id_habitabilidad: int, nivel_habitabilidad: int, flujo_luminoso: float,
                  coeficiente_utilizacion_luz: float, reduccion_luminosidad: float, iluminancia_prom: float = 0.0, uniformidad_iluminancia: float = 0.0):
         self.id_habitabilidad = id_habitabilidad
-        self.luz_recomendada = luz_recomendada
         self.nivel_habitabilidad = nivel_habitabilidad
         self.flujo_luminoso = flujo_luminoso
         self.coeficiente_utilizacion_luz = coeficiente_utilizacion_luz
@@ -17,7 +16,6 @@ class Habitabilidad:
     def to_dict(self):
             return {
                 "id_habitabilidad": self.id_habitabilidad,
-                "luz_recomendada": self.luz_recomendada,
                 "nivel_habitabilidad": self.nivel_habitabilidad,
                 "flujo_luminoso": self.flujo_luminoso,
                 "coeficiente_utilizacion_luz": self.coeficiente_utilizacion_luz,
@@ -26,7 +24,7 @@ class Habitabilidad:
                 "uniformidad_iluminancia": self.uniformidad_iluminancia
             }
 
-    def calcular_nivel_habitabilidad(self, area: float) -> float:
+    def calcular_nivel_habitabilidad(self, area: float, luz_recomendada_min: float, luz_recomendada_max: float) -> float:
         """
         Calcula el nivel de habitabilidad del espacio usando la fórmula:
         E = (Φ * Cu * Fm) / A
@@ -38,44 +36,42 @@ class Habitabilidad:
         - A: Área del espacio (m²)
         
         Args:
-            espacio: Objeto Espacios que contiene el área
+            area: Área del espacio en m²
+            luz_recomendada_min: Valor mínimo de luz recomendada en lux (proporcionado por la clase Actividad)
+            luz_recomendada_max: Valor máximo de luz recomendada en lux (proporcionado por la clase Actividad)
         Returns:
             float: Nivel de habitabilidad
         """
-        factor_mantenimiento = 1 - self.reduccion_luminosidad
-    
-        iluminancia = (self.flujo_luminoso * 
-                    self.coeficiente_utilizacion_luz * 
-                    factor_mantenimiento) / area
-        self.iluminancia_prom = iluminancia
-        luz_recomendada_valor = float(self.luz_recomendada.split()[0])  # Extract numeric value from "500 lux"
-        #print(f'flujo_luminoso: {self.flujo_luminoso} coeficiente_utilizacion_luz: {self.coeficiente_utilizacion_luz} iluminancia: {iluminancia} luz_recomendada: {luz_recomendada_valor} area: {area} factor_mantenimiento: {factor_mantenimiento} ')
-        if iluminancia >= luz_recomendada_valor * 1.0:  # 20% above recommended
-            self.nivel_habitabilidad = 100  # Very good
-        elif iluminancia >= luz_recomendada_valor * 0.6:  # Within 20% of recommended
-            self.nivel_habitabilidad = 75  # Okay
-        else:  # Below 80% of recommended
-            self.nivel_habitabilidad = 50  # Low
+        iluminancia = self.iluminancia_prom
+
+        # Determinar nivel de habitabilidad basado en los valores recomendados de la actividad
+        if luz_recomendada_min <= iluminancia <= luz_recomendada_max:
+            self.nivel_habitabilidad = 100  # Dentro del rango ideal
+        elif iluminancia < luz_recomendada_min:
+            # Verificar si está en rango aceptable inferior (hasta 40% debajo)
+            self.nivel_habitabilidad = 75 if iluminancia >= 0.6 * luz_recomendada_min else 50
+        else:  # iluminancia > luz_recomendada_max
+            # Verificar si está en rango aceptable
+            self.nivel_habitabilidad = 75 if iluminancia <= 1 * luz_recomendada_max else 50
         
-        pass
+        return self.nivel_habitabilidad
 
     def calcular_flujo_luminoso(self, fuentes_luz: List[Tuple[FuenteLuz, int]], is_night: bool):
-        """
-        Calcula el flujo luminoso total basado en las fuentes de luz proporcionadas.
-        Args:
-            fuentes_luz: Lista de tuplas (fuente_luz, cantidad)
-        """
-        # Si es de noche (is_night=True) la luz solar no se toma en cuenta
-        self.flujo_luminoso = sum(cantidad * fuente.lumens for fuente, cantidad in fuentes_luz if not (fuente.id_fuente_luz == 4 and is_night))
+        """Calcula el flujo luminoso total de fuentes propias del espacio"""
+        self.flujo_luminoso = sum(
+            cantidad * fuente.lumens 
+            for fuente, cantidad in fuentes_luz 
+            if not (fuente.id_fuente_luz == 4 and is_night)  # Excluir luz solar de noche
+        )
 
-        # self.flujo_luminoso = sum(cantidad * fuente.lumens for fuente, cantidad in fuentes_luz)
-        #print(self.flujo_luminoso)
-    def calcular_iluminancia_prom(self, area: float, factor_mantenimiento: float):
-        """
-        Calcula la iluminancia promedio y la asigna al atributo iluminancia_prom.
-        """
-        self.iluminancia_prom = (self.flujo_luminoso * self.coeficiente_utilizacion_luz * factor_mantenimiento) / area
-
+    def calcular_iluminancia_prom(self, area: float):
+        """Calcula iluminancia inicial considerando solo fuentes propias"""
+        factor_mantenimiento = 1 - self.reduccion_luminosidad
+        self.iluminancia_prom = (
+            self.flujo_luminoso * 
+            self.coeficiente_utilizacion_luz * 
+            factor_mantenimiento
+        ) / area
   
     # Getters y Setters
     def get_id_habitabilidad(self) -> int:
@@ -83,12 +79,6 @@ class Habitabilidad:
 
     def set_id_habitabilidad(self, id_habitabilidad: int):
         self.id_habitabilidad = id_habitabilidad
-
-    def get_luz_recomendada(self) -> str:
-        return self.luz_recomendada
-    
-    def set_luz_recomendada(self, luz_recomendada: str):
-        self.luz_recomendada = luz_recomendada
 
     def get_nivel_habitabilidad(self) -> int:
         return self.nivel_habitabilidad

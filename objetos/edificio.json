@@ -1,0 +1,2116 @@
+{
+    "habitaciones": [
+        {
+            "id_espacio": 1,
+            "nombre": "Laboratorio de Redes y Telemática",
+            "actividad": {
+                "id": 1001,
+                "nombre": "Laboratorio",
+                "descripcion": "Actividades de laboratorio y prácticas",
+                "tipo": "Académica",
+                "duracion": "4 horas",
+                "fecha_inicio": "08:00",
+                "fecha_fin": "18:00",
+                "espacio_id": 1,
+                "luz_recomendada_min": 450,
+                "luz_recomendada_max": 550
+            },
+            "habitabilidad": {
+                "id_habitabilidad": 1,
+                "nivel_habitabilidad": 85,
+                "flujo_luminoso": 5000.0,
+                "coeficiente_utilizacion_luz": 0.75,
+                "reduccion_luminosidad": 0.1,
+                "iluminancia_prom": 0.0,
+                "uniformidad_iluminancia": 0.0
+            },
+            "fuentes_luz": [
+                [
+                    {
+                        "id_fuente_luz": 1,
+                        "tipo_fuente": "LED",
+                        "interna": true,
+                        "iluminacion_promedio": 300.0,
+                        "temperatura_emitida": 3500.0,
+                        "intensidad": 0.8,
+                        "lumens": 5000
+                    },
+                    8
+                ],
+                [
+                    {
+                        "id_fuente_luz": 2,
+                        "tipo_fuente": "Halógena",
+                        "interna": false,
+                        "iluminacion_promedio": 500.0,
+                        "temperatura_emitida": 2700.0,
+                        "intensidad": 1.2,
+                        "lumens": 3000
+                    },
+                    2
+                ],
+                [
+                    {
+                        "id_fuente_luz": 4,
+                        "tipo_fuente": "Solar (A través de vidrio)",
+                        "interna": false,
+                        "iluminacion_promedio": 80000.0,
+                        "temperatura_emitida": 5000.0,
+                        "intensidad": 0.8,
+                        "lumens": 120000
+                    },
+                    1
+                ]
+            ],
+            "cantidad_personas": 30,
+            "area": 85.0
+        },
+        {
+            "id_espacio": 2,
+            "nombre": "Laboratorio de Redes Inalámbricas",
+            "actividad": {
+                "id": 1002,
+                "nombre": "Laboratorio",
+                "descripcion": "Actividades de laboratorio y prácticas",
+                "tipo": "Académica",
+                "duracion": "4 horas",
+                "fecha_inicio": "08:00",
+                "fecha_fin": "18:00",
+                "espacio_id": 2,
+                "luz_recomendada_min": 450,
+                "luz_recomendada_max": 550
+            },
+            "habitabilidad": {
+                "id_habitabilidad": 1,
+                "nivel_habitabilidad": 85,
+                "flujo_luminoso": 5000.0,
+                "coeficiente_utilizacion_luz": 0.75,
+                "reduccion_luminosidad": 0.1,
+                "iluminancia_prom": 0.0,
+                "uniformidad_iluminancia": 0.0
+            },
+            "fuentes_luz": [
+                [
+                    {
+                        "id_fuente_luz": 1,
+                        "tipo_fuente": "LED",
+                        "interna": true,
+                        "iluminacion_promedio": 300.0,
+                        "temperatura_emitida": 3500.0,
+                        "intensidad": 0.8,
+                        "lumens": 5000
+                    },
+                    6
+                ],
+                [
+                    {
+                        "id_fuente_luz": 2,
+                        "tipo_fuente": "Halógena",
+                        "interna": false,
+                        "iluminacion_promedio": 500.0,
+                        "temperatura_emitida": 2700.0,
+                        "intensidad": 1.2,
+                        "lumens": 3000
+                    },
+                    2
+                ],
+                [
+                    {
+                        "id_fuente_luz": 4,
+                        "tipo_fuente": "Solar (A través de vidrio)",
+                        "interna": false,
+                        "iluminacion_promedio": 80000.0,
+                        "temperatura_emitida": 5000.0,
+                        "intensidad": 0.8,
+                        "lumens": 120000
+                    },
+                    1
+                ]
+            ],
+            "cantidad_personas": 30,
+            "area": 90.0
+        },
+        {
+            "id_espacio": 3,
+            "nombre": "Sala de Informática 1",
+            "actividad": {
+                "id": 1003,
+                "nombre": "Laboratorio",
+                "descripcion": "Actividades de laboratorio y prácticas",
+                "tipo": "Académica",
+                "duracion": "4 horas",
+                "fecha_inicio": "08:00",
+                "fecha_fin": "18:00",
+                "espacio_id": 3,
+                "luz_recomendada_min": 450,
+                "luz_recomendada_max": 550
+            },
+            "habitabilidad": {
+                "id_habitabilidad": 1,
+                "nivel_habitabilidad": 85,
+                "flujo_luminoso": 5000.0,
+                "coeficiente_utilizacion_luz": 0.75,
+                "reduccion_luminosidad": 0.1,
+                "iluminancia_prom": 0.0,
+                "uniformidad_iluminancia": 0.0
+            },
+            "fuentes_luz": [
+                [
+                    {
+                        "id_fuente_luz": 1,
+                        "tipo_fuente": "LED",
+                        "interna": true,
+                        "iluminacion_promedio": 300.0,
+                        "temperatura_emitida": 3500.0,
+                        "intensidad": 0.8,
+                        "lumens": 5000
+                    },
+                    6
+                ],
+                [
+                    {
+                        "id_fuente_luz": 2,
+                        "tipo_fuente": "Halógena",
+                        "interna": false,
+                        "iluminacion_promedio": 500.0,
+                        "temperatura_emitida": 2700.0,
+                        "intensidad": 1.2,
+                        "lumens": 3000
+                    },
+                    3
+                ],
+                [
+                    {
+                        "id_fuente_luz": 4,
+                        "tipo_fuente": "Solar (A través de vidrio)",
+                        "interna": false,
+                        "iluminacion_promedio": 80000.0,
+                        "temperatura_emitida": 5000.0,
+                        "intensidad": 0.8,
+                        "lumens": 120000
+                    },
+                    1
+                ]
+            ],
+            "cantidad_personas": 30,
+            "area": 75.0
+        },
+        {
+            "id_espacio": 4,
+            "nombre": "Sala de Informática 2",
+            "actividad": {
+                "id": 1004,
+                "nombre": "Laboratorio",
+                "descripcion": "Actividades de laboratorio y prácticas",
+                "tipo": "Académica",
+                "duracion": "4 horas",
+                "fecha_inicio": "08:00",
+                "fecha_fin": "18:00",
+                "espacio_id": 4,
+                "luz_recomendada_min": 450,
+                "luz_recomendada_max": 550
+            },
+            "habitabilidad": {
+                "id_habitabilidad": 1,
+                "nivel_habitabilidad": 85,
+                "flujo_luminoso": 5000.0,
+                "coeficiente_utilizacion_luz": 0.75,
+                "reduccion_luminosidad": 0.1,
+                "iluminancia_prom": 0.0,
+                "uniformidad_iluminancia": 0.0
+            },
+            "fuentes_luz": [
+                [
+                    {
+                        "id_fuente_luz": 1,
+                        "tipo_fuente": "LED",
+                        "interna": true,
+                        "iluminacion_promedio": 300.0,
+                        "temperatura_emitida": 3500.0,
+                        "intensidad": 0.8,
+                        "lumens": 5000
+                    },
+                    8
+                ],
+                [
+                    {
+                        "id_fuente_luz": 2,
+                        "tipo_fuente": "Halógena",
+                        "interna": false,
+                        "iluminacion_promedio": 500.0,
+                        "temperatura_emitida": 2700.0,
+                        "intensidad": 1.2,
+                        "lumens": 3000
+                    },
+                    2
+                ],
+                [
+                    {
+                        "id_fuente_luz": 4,
+                        "tipo_fuente": "Solar (A través de vidrio)",
+                        "interna": false,
+                        "iluminacion_promedio": 80000.0,
+                        "temperatura_emitida": 5000.0,
+                        "intensidad": 0.8,
+                        "lumens": 120000
+                    },
+                    1
+                ]
+            ],
+            "cantidad_personas": 30,
+            "area": 80.0
+        },
+        {
+            "id_espacio": 5,
+            "nombre": "Sala de Informática 3",
+            "actividad": {
+                "id": 1005,
+                "nombre": "Laboratorio",
+                "descripcion": "Actividades de laboratorio y prácticas",
+                "tipo": "Académica",
+                "duracion": "4 horas",
+                "fecha_inicio": "08:00",
+                "fecha_fin": "18:00",
+                "espacio_id": 5,
+                "luz_recomendada_min": 450,
+                "luz_recomendada_max": 550
+            },
+            "habitabilidad": {
+                "id_habitabilidad": 1,
+                "nivel_habitabilidad": 85,
+                "flujo_luminoso": 5000.0,
+                "coeficiente_utilizacion_luz": 0.75,
+                "reduccion_luminosidad": 0.1,
+                "iluminancia_prom": 0.0,
+                "uniformidad_iluminancia": 0.0
+            },
+            "fuentes_luz": [
+                [
+                    {
+                        "id_fuente_luz": 1,
+                        "tipo_fuente": "LED",
+                        "interna": true,
+                        "iluminacion_promedio": 300.0,
+                        "temperatura_emitida": 3500.0,
+                        "intensidad": 0.8,
+                        "lumens": 5000
+                    },
+                    8
+                ],
+                [
+                    {
+                        "id_fuente_luz": 2,
+                        "tipo_fuente": "Halógena",
+                        "interna": false,
+                        "iluminacion_promedio": 500.0,
+                        "temperatura_emitida": 2700.0,
+                        "intensidad": 1.2,
+                        "lumens": 3000
+                    },
+                    4
+                ],
+                [
+                    {
+                        "id_fuente_luz": 4,
+                        "tipo_fuente": "Solar (A través de vidrio)",
+                        "interna": false,
+                        "iluminacion_promedio": 80000.0,
+                        "temperatura_emitida": 5000.0,
+                        "intensidad": 0.8,
+                        "lumens": 120000
+                    },
+                    1
+                ]
+            ],
+            "cantidad_personas": 30,
+            "area": 100.0
+        },
+        {
+            "id_espacio": 6,
+            "nombre": "Sala de Informática 4",
+            "actividad": {
+                "id": 1006,
+                "nombre": "Laboratorio",
+                "descripcion": "Actividades de laboratorio y prácticas",
+                "tipo": "Académica",
+                "duracion": "4 horas",
+                "fecha_inicio": "08:00",
+                "fecha_fin": "18:00",
+                "espacio_id": 6,
+                "luz_recomendada_min": 450,
+                "luz_recomendada_max": 550
+            },
+            "habitabilidad": {
+                "id_habitabilidad": 1,
+                "nivel_habitabilidad": 85,
+                "flujo_luminoso": 5000.0,
+                "coeficiente_utilizacion_luz": 0.75,
+                "reduccion_luminosidad": 0.1,
+                "iluminancia_prom": 0.0,
+                "uniformidad_iluminancia": 0.0
+            },
+            "fuentes_luz": [
+                [
+                    {
+                        "id_fuente_luz": 1,
+                        "tipo_fuente": "LED",
+                        "interna": true,
+                        "iluminacion_promedio": 300.0,
+                        "temperatura_emitida": 3500.0,
+                        "intensidad": 0.8,
+                        "lumens": 5000
+                    },
+                    8
+                ],
+                [
+                    {
+                        "id_fuente_luz": 2,
+                        "tipo_fuente": "Halógena",
+                        "interna": false,
+                        "iluminacion_promedio": 500.0,
+                        "temperatura_emitida": 2700.0,
+                        "intensidad": 1.2,
+                        "lumens": 3000
+                    },
+                    4
+                ],
+                [
+                    {
+                        "id_fuente_luz": 4,
+                        "tipo_fuente": "Solar (A través de vidrio)",
+                        "interna": false,
+                        "iluminacion_promedio": 80000.0,
+                        "temperatura_emitida": 5000.0,
+                        "intensidad": 0.8,
+                        "lumens": 120000
+                    },
+                    1
+                ]
+            ],
+            "cantidad_personas": 30,
+            "area": 80.0
+        },
+        {
+            "id_espacio": 7,
+            "nombre": "Sala de Informática 5",
+            "actividad": {
+                "id": 1007,
+                "nombre": "Laboratorio",
+                "descripcion": "Actividades de laboratorio y prácticas",
+                "tipo": "Académica",
+                "duracion": "4 horas",
+                "fecha_inicio": "08:00",
+                "fecha_fin": "18:00",
+                "espacio_id": 7,
+                "luz_recomendada_min": 450,
+                "luz_recomendada_max": 550
+            },
+            "habitabilidad": {
+                "id_habitabilidad": 1,
+                "nivel_habitabilidad": 85,
+                "flujo_luminoso": 5000.0,
+                "coeficiente_utilizacion_luz": 0.75,
+                "reduccion_luminosidad": 0.1,
+                "iluminancia_prom": 0.0,
+                "uniformidad_iluminancia": 0.0
+            },
+            "fuentes_luz": [
+                [
+                    {
+                        "id_fuente_luz": 1,
+                        "tipo_fuente": "LED",
+                        "interna": true,
+                        "iluminacion_promedio": 300.0,
+                        "temperatura_emitida": 3500.0,
+                        "intensidad": 0.8,
+                        "lumens": 5000
+                    },
+                    8
+                ],
+                [
+                    {
+                        "id_fuente_luz": 2,
+                        "tipo_fuente": "Halógena",
+                        "interna": false,
+                        "iluminacion_promedio": 500.0,
+                        "temperatura_emitida": 2700.0,
+                        "intensidad": 1.2,
+                        "lumens": 3000
+                    },
+                    4
+                ],
+                [
+                    {
+                        "id_fuente_luz": 4,
+                        "tipo_fuente": "Solar (A través de vidrio)",
+                        "interna": false,
+                        "iluminacion_promedio": 80000.0,
+                        "temperatura_emitida": 5000.0,
+                        "intensidad": 0.8,
+                        "lumens": 120000
+                    },
+                    1
+                ]
+            ],
+            "cantidad_personas": 30,
+            "area": 75.0
+        },
+        {
+            "id_espacio": 8,
+            "nombre": "Sala de Informática 6",
+            "actividad": {
+                "id": 1008,
+                "nombre": "Laboratorio",
+                "descripcion": "Actividades de laboratorio y prácticas",
+                "tipo": "Académica",
+                "duracion": "4 horas",
+                "fecha_inicio": "08:00",
+                "fecha_fin": "18:00",
+                "espacio_id": 8,
+                "luz_recomendada_min": 450,
+                "luz_recomendada_max": 550
+            },
+            "habitabilidad": {
+                "id_habitabilidad": 1,
+                "nivel_habitabilidad": 85,
+                "flujo_luminoso": 5000.0,
+                "coeficiente_utilizacion_luz": 0.75,
+                "reduccion_luminosidad": 0.1,
+                "iluminancia_prom": 0.0,
+                "uniformidad_iluminancia": 0.0
+            },
+            "fuentes_luz": [
+                [
+                    {
+                        "id_fuente_luz": 1,
+                        "tipo_fuente": "LED",
+                        "interna": true,
+                        "iluminacion_promedio": 300.0,
+                        "temperatura_emitida": 3500.0,
+                        "intensidad": 0.8,
+                        "lumens": 5000
+                    },
+                    8
+                ],
+                [
+                    {
+                        "id_fuente_luz": 2,
+                        "tipo_fuente": "Halógena",
+                        "interna": false,
+                        "iluminacion_promedio": 500.0,
+                        "temperatura_emitida": 2700.0,
+                        "intensidad": 1.2,
+                        "lumens": 3000
+                    },
+                    4
+                ],
+                [
+                    {
+                        "id_fuente_luz": 4,
+                        "tipo_fuente": "Solar (A través de vidrio)",
+                        "interna": false,
+                        "iluminacion_promedio": 80000.0,
+                        "temperatura_emitida": 5000.0,
+                        "intensidad": 0.8,
+                        "lumens": 120000
+                    },
+                    1
+                ]
+            ],
+            "cantidad_personas": 30,
+            "area": 100.0
+        },
+        {
+            "id_espacio": 9,
+            "nombre": "Sala de Informática 7",
+            "actividad": {
+                "id": 1009,
+                "nombre": "Laboratorio",
+                "descripcion": "Actividades de laboratorio y prácticas",
+                "tipo": "Académica",
+                "duracion": "4 horas",
+                "fecha_inicio": "08:00",
+                "fecha_fin": "18:00",
+                "espacio_id": 9,
+                "luz_recomendada_min": 450,
+                "luz_recomendada_max": 550
+            },
+            "habitabilidad": {
+                "id_habitabilidad": 1,
+                "nivel_habitabilidad": 85,
+                "flujo_luminoso": 5000.0,
+                "coeficiente_utilizacion_luz": 0.75,
+                "reduccion_luminosidad": 0.1,
+                "iluminancia_prom": 0.0,
+                "uniformidad_iluminancia": 0.0
+            },
+            "fuentes_luz": [
+                [
+                    {
+                        "id_fuente_luz": 1,
+                        "tipo_fuente": "LED",
+                        "interna": true,
+                        "iluminacion_promedio": 300.0,
+                        "temperatura_emitida": 3500.0,
+                        "intensidad": 0.8,
+                        "lumens": 5000
+                    },
+                    8
+                ],
+                [
+                    {
+                        "id_fuente_luz": 2,
+                        "tipo_fuente": "Halógena",
+                        "interna": false,
+                        "iluminacion_promedio": 500.0,
+                        "temperatura_emitida": 2700.0,
+                        "intensidad": 1.2,
+                        "lumens": 3000
+                    },
+                    2
+                ],
+                [
+                    {
+                        "id_fuente_luz": 4,
+                        "tipo_fuente": "Solar (A través de vidrio)",
+                        "interna": false,
+                        "iluminacion_promedio": 80000.0,
+                        "temperatura_emitida": 5000.0,
+                        "intensidad": 0.8,
+                        "lumens": 120000
+                    },
+                    1
+                ]
+            ],
+            "cantidad_personas": 30,
+            "area": 85.0
+        },
+        {
+            "id_espacio": 10,
+            "nombre": "Oficina de Sistemas",
+            "actividad": {
+                "id": 2010,
+                "nombre": "Oficina",
+                "descripcion": "Trabajo administrativo y atención",
+                "tipo": "Administrativa",
+                "duracion": "8 horas",
+                "fecha_inicio": "08:00",
+                "fecha_fin": "17:00",
+                "espacio_id": 10,
+                "luz_recomendada_min": 250,
+                "luz_recomendada_max": 350
+            },
+            "habitabilidad": {
+                "id_habitabilidad": 2,
+                "nivel_habitabilidad": 70,
+                "flujo_luminoso": 3000.0,
+                "coeficiente_utilizacion_luz": 0.8,
+                "reduccion_luminosidad": 0.05,
+                "iluminancia_prom": 0.0,
+                "uniformidad_iluminancia": 0.0
+            },
+            "fuentes_luz": [
+                [
+                    {
+                        "id_fuente_luz": 1,
+                        "tipo_fuente": "LED",
+                        "interna": true,
+                        "iluminacion_promedio": 300.0,
+                        "temperatura_emitida": 3500.0,
+                        "intensidad": 0.8,
+                        "lumens": 5000
+                    },
+                    1
+                ],
+                [
+                    {
+                        "id_fuente_luz": 4,
+                        "tipo_fuente": "Solar (A través de vidrio)",
+                        "interna": false,
+                        "iluminacion_promedio": 80000.0,
+                        "temperatura_emitida": 5000.0,
+                        "intensidad": 0.8,
+                        "lumens": 120000
+                    },
+                    1
+                ]
+            ],
+            "cantidad_personas": 10,
+            "area": 50.0
+        },
+        {
+            "id_espacio": 11,
+            "nombre": "Área de Soporte Técnico y Almacén",
+            "actividad": {
+                "id": 3011,
+                "nombre": "Área de Soporte",
+                "descripcion": "Soporte técnico y almacenamiento",
+                "tipo": "Técnica",
+                "duracion": "8 horas",
+                "fecha_inicio": "08:00",
+                "fecha_fin": "17:00",
+                "espacio_id": 11,
+                "luz_recomendada_min": 250,
+                "luz_recomendada_max": 350
+            },
+            "habitabilidad": {
+                "id_habitabilidad": 2,
+                "nivel_habitabilidad": 70,
+                "flujo_luminoso": 3000.0,
+                "coeficiente_utilizacion_luz": 0.8,
+                "reduccion_luminosidad": 0.05,
+                "iluminancia_prom": 0.0,
+                "uniformidad_iluminancia": 0.0
+            },
+            "fuentes_luz": [
+                [
+                    {
+                        "id_fuente_luz": 1,
+                        "tipo_fuente": "LED",
+                        "interna": true,
+                        "iluminacion_promedio": 300.0,
+                        "temperatura_emitida": 3500.0,
+                        "intensidad": 0.8,
+                        "lumens": 5000
+                    },
+                    1
+                ]
+            ],
+            "cantidad_personas": 10,
+            "area": 50.0
+        },
+        {
+            "id_espacio": 12,
+            "nombre": "Cuarto de Monitoreo",
+            "actividad": {
+                "id": 4012,
+                "nombre": "Monitoreo",
+                "descripcion": "Monitoreo y control de sistemas",
+                "tipo": "Técnica",
+                "duracion": "24 horas",
+                "fecha_inicio": "00:00",
+                "fecha_fin": "23:59",
+                "espacio_id": 12,
+                "luz_recomendada_min": 600,
+                "luz_recomendada_max": 800
+            },
+            "habitabilidad": {
+                "id_habitabilidad": 3,
+                "nivel_habitabilidad": 90,
+                "flujo_luminoso": 7000.0,
+                "coeficiente_utilizacion_luz": 0.9,
+                "reduccion_luminosidad": 0.02,
+                "iluminancia_prom": 0.0,
+                "uniformidad_iluminancia": 0.0
+            },
+            "fuentes_luz": [
+                [
+                    {
+                        "id_fuente_luz": 1,
+                        "tipo_fuente": "LED",
+                        "interna": true,
+                        "iluminacion_promedio": 300.0,
+                        "temperatura_emitida": 3500.0,
+                        "intensidad": 0.8,
+                        "lumens": 5000
+                    },
+                    1
+                ],
+                [
+                    {
+                        "id_fuente_luz": 4,
+                        "tipo_fuente": "Solar (A través de vidrio)",
+                        "interna": false,
+                        "iluminacion_promedio": 80000.0,
+                        "temperatura_emitida": 5000.0,
+                        "intensidad": 0.8,
+                        "lumens": 120000
+                    },
+                    1
+                ]
+            ],
+            "cantidad_personas": 5,
+            "area": 25.0
+        },
+        {
+            "id_espacio": 13,
+            "nombre": "Laboratorio de Electromagnetismo",
+            "actividad": {
+                "id": 1013,
+                "nombre": "Laboratorio",
+                "descripcion": "Actividades de laboratorio y prácticas",
+                "tipo": "Académica",
+                "duracion": "4 horas",
+                "fecha_inicio": "08:00",
+                "fecha_fin": "18:00",
+                "espacio_id": 13,
+                "luz_recomendada_min": 450,
+                "luz_recomendada_max": 550
+            },
+            "habitabilidad": {
+                "id_habitabilidad": 1,
+                "nivel_habitabilidad": 85,
+                "flujo_luminoso": 5000.0,
+                "coeficiente_utilizacion_luz": 0.75,
+                "reduccion_luminosidad": 0.1,
+                "iluminancia_prom": 0.0,
+                "uniformidad_iluminancia": 0.0
+            },
+            "fuentes_luz": [
+                [
+                    {
+                        "id_fuente_luz": 1,
+                        "tipo_fuente": "LED",
+                        "interna": true,
+                        "iluminacion_promedio": 300.0,
+                        "temperatura_emitida": 3500.0,
+                        "intensidad": 0.8,
+                        "lumens": 5000
+                    },
+                    8
+                ],
+                [
+                    {
+                        "id_fuente_luz": 2,
+                        "tipo_fuente": "Halógena",
+                        "interna": false,
+                        "iluminacion_promedio": 500.0,
+                        "temperatura_emitida": 2700.0,
+                        "intensidad": 1.2,
+                        "lumens": 3000
+                    },
+                    2
+                ],
+                [
+                    {
+                        "id_fuente_luz": 4,
+                        "tipo_fuente": "Solar (A través de vidrio)",
+                        "interna": false,
+                        "iluminacion_promedio": 80000.0,
+                        "temperatura_emitida": 5000.0,
+                        "intensidad": 0.8,
+                        "lumens": 120000
+                    },
+                    1
+                ]
+            ],
+            "cantidad_personas": 30,
+            "area": 95.0
+        },
+        {
+            "id_espacio": 14,
+            "nombre": "Laboratorio de Circuitos Eléctricos",
+            "actividad": {
+                "id": 1014,
+                "nombre": "Laboratorio",
+                "descripcion": "Actividades de laboratorio y prácticas",
+                "tipo": "Académica",
+                "duracion": "4 horas",
+                "fecha_inicio": "08:00",
+                "fecha_fin": "18:00",
+                "espacio_id": 14,
+                "luz_recomendada_min": 450,
+                "luz_recomendada_max": 550
+            },
+            "habitabilidad": {
+                "id_habitabilidad": 1,
+                "nivel_habitabilidad": 85,
+                "flujo_luminoso": 5000.0,
+                "coeficiente_utilizacion_luz": 0.75,
+                "reduccion_luminosidad": 0.1,
+                "iluminancia_prom": 0.0,
+                "uniformidad_iluminancia": 0.0
+            },
+            "fuentes_luz": [
+                [
+                    {
+                        "id_fuente_luz": 1,
+                        "tipo_fuente": "LED",
+                        "interna": true,
+                        "iluminacion_promedio": 300.0,
+                        "temperatura_emitida": 3500.0,
+                        "intensidad": 0.8,
+                        "lumens": 5000
+                    },
+                    8
+                ],
+                [
+                    {
+                        "id_fuente_luz": 2,
+                        "tipo_fuente": "Halógena",
+                        "interna": false,
+                        "iluminacion_promedio": 500.0,
+                        "temperatura_emitida": 2700.0,
+                        "intensidad": 1.2,
+                        "lumens": 3000
+                    },
+                    2
+                ],
+                [
+                    {
+                        "id_fuente_luz": 4,
+                        "tipo_fuente": "Solar (A través de vidrio)",
+                        "interna": false,
+                        "iluminacion_promedio": 80000.0,
+                        "temperatura_emitida": 5000.0,
+                        "intensidad": 0.8,
+                        "lumens": 120000
+                    },
+                    1
+                ]
+            ],
+            "cantidad_personas": 30,
+            "area": 85.0
+        },
+        {
+            "id_espacio": 15,
+            "nombre": "Laboratorio de Electrónica 1",
+            "actividad": {
+                "id": 1015,
+                "nombre": "Laboratorio",
+                "descripcion": "Actividades de laboratorio y prácticas",
+                "tipo": "Académica",
+                "duracion": "4 horas",
+                "fecha_inicio": "08:00",
+                "fecha_fin": "18:00",
+                "espacio_id": 15,
+                "luz_recomendada_min": 450,
+                "luz_recomendada_max": 550
+            },
+            "habitabilidad": {
+                "id_habitabilidad": 1,
+                "nivel_habitabilidad": 85,
+                "flujo_luminoso": 5000.0,
+                "coeficiente_utilizacion_luz": 0.75,
+                "reduccion_luminosidad": 0.1,
+                "iluminancia_prom": 0.0,
+                "uniformidad_iluminancia": 0.0
+            },
+            "fuentes_luz": [
+                [
+                    {
+                        "id_fuente_luz": 1,
+                        "tipo_fuente": "LED",
+                        "interna": true,
+                        "iluminacion_promedio": 300.0,
+                        "temperatura_emitida": 3500.0,
+                        "intensidad": 0.8,
+                        "lumens": 5000
+                    },
+                    8
+                ],
+                [
+                    {
+                        "id_fuente_luz": 2,
+                        "tipo_fuente": "Halógena",
+                        "interna": false,
+                        "iluminacion_promedio": 500.0,
+                        "temperatura_emitida": 2700.0,
+                        "intensidad": 1.2,
+                        "lumens": 3000
+                    },
+                    2
+                ],
+                [
+                    {
+                        "id_fuente_luz": 4,
+                        "tipo_fuente": "Solar (A través de vidrio)",
+                        "interna": false,
+                        "iluminacion_promedio": 80000.0,
+                        "temperatura_emitida": 5000.0,
+                        "intensidad": 0.8,
+                        "lumens": 120000
+                    },
+                    1
+                ]
+            ],
+            "cantidad_personas": 30,
+            "area": 85.0
+        },
+        {
+            "id_espacio": 16,
+            "nombre": "Laboratorio de Electrónica 2",
+            "actividad": {
+                "id": 1016,
+                "nombre": "Laboratorio",
+                "descripcion": "Actividades de laboratorio y prácticas",
+                "tipo": "Académica",
+                "duracion": "4 horas",
+                "fecha_inicio": "08:00",
+                "fecha_fin": "18:00",
+                "espacio_id": 16,
+                "luz_recomendada_min": 450,
+                "luz_recomendada_max": 550
+            },
+            "habitabilidad": {
+                "id_habitabilidad": 1,
+                "nivel_habitabilidad": 85,
+                "flujo_luminoso": 5000.0,
+                "coeficiente_utilizacion_luz": 0.75,
+                "reduccion_luminosidad": 0.1,
+                "iluminancia_prom": 0.0,
+                "uniformidad_iluminancia": 0.0
+            },
+            "fuentes_luz": [
+                [
+                    {
+                        "id_fuente_luz": 1,
+                        "tipo_fuente": "LED",
+                        "interna": true,
+                        "iluminacion_promedio": 300.0,
+                        "temperatura_emitida": 3500.0,
+                        "intensidad": 0.8,
+                        "lumens": 5000
+                    },
+                    7
+                ],
+                [
+                    {
+                        "id_fuente_luz": 2,
+                        "tipo_fuente": "Halógena",
+                        "interna": false,
+                        "iluminacion_promedio": 500.0,
+                        "temperatura_emitida": 2700.0,
+                        "intensidad": 1.2,
+                        "lumens": 3000
+                    },
+                    2
+                ],
+                [
+                    {
+                        "id_fuente_luz": 4,
+                        "tipo_fuente": "Solar (A través de vidrio)",
+                        "interna": false,
+                        "iluminacion_promedio": 80000.0,
+                        "temperatura_emitida": 5000.0,
+                        "intensidad": 0.8,
+                        "lumens": 120000
+                    },
+                    1
+                ]
+            ],
+            "cantidad_personas": 30,
+            "area": 85.0
+        },
+        {
+            "id_espacio": 17,
+            "nombre": "Laboratorio de Electrónica 3",
+            "actividad": {
+                "id": 1017,
+                "nombre": "Laboratorio",
+                "descripcion": "Actividades de laboratorio y prácticas",
+                "tipo": "Académica",
+                "duracion": "4 horas",
+                "fecha_inicio": "08:00",
+                "fecha_fin": "18:00",
+                "espacio_id": 17,
+                "luz_recomendada_min": 450,
+                "luz_recomendada_max": 550
+            },
+            "habitabilidad": {
+                "id_habitabilidad": 1,
+                "nivel_habitabilidad": 85,
+                "flujo_luminoso": 5000.0,
+                "coeficiente_utilizacion_luz": 0.75,
+                "reduccion_luminosidad": 0.1,
+                "iluminancia_prom": 0.0,
+                "uniformidad_iluminancia": 0.0
+            },
+            "fuentes_luz": [
+                [
+                    {
+                        "id_fuente_luz": 1,
+                        "tipo_fuente": "LED",
+                        "interna": true,
+                        "iluminacion_promedio": 300.0,
+                        "temperatura_emitida": 3500.0,
+                        "intensidad": 0.8,
+                        "lumens": 5000
+                    },
+                    6
+                ],
+                [
+                    {
+                        "id_fuente_luz": 2,
+                        "tipo_fuente": "Halógena",
+                        "interna": false,
+                        "iluminacion_promedio": 500.0,
+                        "temperatura_emitida": 2700.0,
+                        "intensidad": 1.2,
+                        "lumens": 3000
+                    },
+                    2
+                ],
+                [
+                    {
+                        "id_fuente_luz": 4,
+                        "tipo_fuente": "Solar (A través de vidrio)",
+                        "interna": false,
+                        "iluminacion_promedio": 80000.0,
+                        "temperatura_emitida": 5000.0,
+                        "intensidad": 0.8,
+                        "lumens": 120000
+                    },
+                    1
+                ]
+            ],
+            "cantidad_personas": 30,
+            "area": 85.0
+        },
+        {
+            "id_espacio": 18,
+            "nombre": "Área de Almacenamiento y Taller de Mantenimiento Electrónico",
+            "actividad": {
+                "id": 3018,
+                "nombre": "Área de Soporte",
+                "descripcion": "Soporte técnico y almacenamiento",
+                "tipo": "Técnica",
+                "duracion": "8 horas",
+                "fecha_inicio": "08:00",
+                "fecha_fin": "17:00",
+                "espacio_id": 18,
+                "luz_recomendada_min": 250,
+                "luz_recomendada_max": 350
+            },
+            "habitabilidad": {
+                "id_habitabilidad": 2,
+                "nivel_habitabilidad": 70,
+                "flujo_luminoso": 3000.0,
+                "coeficiente_utilizacion_luz": 0.8,
+                "reduccion_luminosidad": 0.05,
+                "iluminancia_prom": 0.0,
+                "uniformidad_iluminancia": 0.0
+            },
+            "fuentes_luz": [
+                [
+                    {
+                        "id_fuente_luz": 1,
+                        "tipo_fuente": "LED",
+                        "interna": true,
+                        "iluminacion_promedio": 300.0,
+                        "temperatura_emitida": 3500.0,
+                        "intensidad": 0.8,
+                        "lumens": 5000
+                    },
+                    9
+                ],
+                [
+                    {
+                        "id_fuente_luz": 4,
+                        "tipo_fuente": "Solar (A través de vidrio)",
+                        "interna": false,
+                        "iluminacion_promedio": 80000.0,
+                        "temperatura_emitida": 5000.0,
+                        "intensidad": 0.8,
+                        "lumens": 120000
+                    },
+                    1
+                ]
+            ],
+            "cantidad_personas": 10,
+            "area": 50.0
+        },
+        {
+            "id_espacio": 19,
+            "nombre": "Cuarto de Atención a Estudiantes",
+            "actividad": {
+                "id": 2019,
+                "nombre": "Oficina",
+                "descripcion": "Trabajo administrativo y atención",
+                "tipo": "Administrativa",
+                "duracion": "8 horas",
+                "fecha_inicio": "08:00",
+                "fecha_fin": "17:00",
+                "espacio_id": 19,
+                "luz_recomendada_min": 250,
+                "luz_recomendada_max": 350
+            },
+            "habitabilidad": {
+                "id_habitabilidad": 2,
+                "nivel_habitabilidad": 70,
+                "flujo_luminoso": 3000.0,
+                "coeficiente_utilizacion_luz": 0.8,
+                "reduccion_luminosidad": 0.05,
+                "iluminancia_prom": 0.0,
+                "uniformidad_iluminancia": 0.0
+            },
+            "fuentes_luz": [
+                [
+                    {
+                        "id_fuente_luz": 1,
+                        "tipo_fuente": "LED",
+                        "interna": true,
+                        "iluminacion_promedio": 300.0,
+                        "temperatura_emitida": 3500.0,
+                        "intensidad": 0.8,
+                        "lumens": 5000
+                    },
+                    5
+                ],
+                [
+                    {
+                        "id_fuente_luz": 4,
+                        "tipo_fuente": "Solar (A través de vidrio)",
+                        "interna": false,
+                        "iluminacion_promedio": 80000.0,
+                        "temperatura_emitida": 5000.0,
+                        "intensidad": 0.8,
+                        "lumens": 120000
+                    },
+                    1
+                ]
+            ],
+            "cantidad_personas": 10,
+            "area": 50.0
+        },
+        {
+            "id_espacio": 20,
+            "nombre": "Laboratorio de Circuitos Impresos",
+            "actividad": {
+                "id": 1020,
+                "nombre": "Laboratorio",
+                "descripcion": "Actividades de laboratorio y prácticas",
+                "tipo": "Académica",
+                "duracion": "4 horas",
+                "fecha_inicio": "08:00",
+                "fecha_fin": "18:00",
+                "espacio_id": 20,
+                "luz_recomendada_min": 450,
+                "luz_recomendada_max": 550
+            },
+            "habitabilidad": {
+                "id_habitabilidad": 1,
+                "nivel_habitabilidad": 85,
+                "flujo_luminoso": 5000.0,
+                "coeficiente_utilizacion_luz": 0.75,
+                "reduccion_luminosidad": 0.1,
+                "iluminancia_prom": 0.0,
+                "uniformidad_iluminancia": 0.0
+            },
+            "fuentes_luz": [
+                [
+                    {
+                        "id_fuente_luz": 1,
+                        "tipo_fuente": "LED",
+                        "interna": true,
+                        "iluminacion_promedio": 300.0,
+                        "temperatura_emitida": 3500.0,
+                        "intensidad": 0.8,
+                        "lumens": 5000
+                    },
+                    6
+                ],
+                [
+                    {
+                        "id_fuente_luz": 2,
+                        "tipo_fuente": "Halógena",
+                        "interna": false,
+                        "iluminacion_promedio": 500.0,
+                        "temperatura_emitida": 2700.0,
+                        "intensidad": 1.2,
+                        "lumens": 3000
+                    },
+                    2
+                ],
+                [
+                    {
+                        "id_fuente_luz": 4,
+                        "tipo_fuente": "Solar (A través de vidrio)",
+                        "interna": false,
+                        "iluminacion_promedio": 80000.0,
+                        "temperatura_emitida": 5000.0,
+                        "intensidad": 0.8,
+                        "lumens": 120000
+                    },
+                    1
+                ]
+            ],
+            "cantidad_personas": 30,
+            "area": 80.0
+        },
+        {
+            "id_espacio": 21,
+            "nombre": "Laboratorio de Telecomunicaciones",
+            "actividad": {
+                "id": 1021,
+                "nombre": "Laboratorio",
+                "descripcion": "Actividades de laboratorio y prácticas",
+                "tipo": "Académica",
+                "duracion": "4 horas",
+                "fecha_inicio": "08:00",
+                "fecha_fin": "18:00",
+                "espacio_id": 21,
+                "luz_recomendada_min": 450,
+                "luz_recomendada_max": 550
+            },
+            "habitabilidad": {
+                "id_habitabilidad": 1,
+                "nivel_habitabilidad": 85,
+                "flujo_luminoso": 5000.0,
+                "coeficiente_utilizacion_luz": 0.75,
+                "reduccion_luminosidad": 0.1,
+                "iluminancia_prom": 0.0,
+                "uniformidad_iluminancia": 0.0
+            },
+            "fuentes_luz": [
+                [
+                    {
+                        "id_fuente_luz": 1,
+                        "tipo_fuente": "LED",
+                        "interna": true,
+                        "iluminacion_promedio": 300.0,
+                        "temperatura_emitida": 3500.0,
+                        "intensidad": 0.8,
+                        "lumens": 5000
+                    },
+                    8
+                ],
+                [
+                    {
+                        "id_fuente_luz": 2,
+                        "tipo_fuente": "Halógena",
+                        "interna": false,
+                        "iluminacion_promedio": 500.0,
+                        "temperatura_emitida": 2700.0,
+                        "intensidad": 1.2,
+                        "lumens": 3000
+                    },
+                    2
+                ],
+                [
+                    {
+                        "id_fuente_luz": 4,
+                        "tipo_fuente": "Solar (A través de vidrio)",
+                        "interna": false,
+                        "iluminacion_promedio": 80000.0,
+                        "temperatura_emitida": 5000.0,
+                        "intensidad": 0.8,
+                        "lumens": 120000
+                    },
+                    1
+                ]
+            ],
+            "cantidad_personas": 30,
+            "area": 85.0
+        },
+        {
+            "id_espacio": 22,
+            "nombre": "Cuarto Oscuro de Fotografía",
+            "actividad": {
+                "id": 6022,
+                "nombre": "Cuarto Oscuro de Fotografía",
+                "descripcion": "Procesamiento y revelado de fotografías",
+                "tipo": "Técnica",
+                "duracion": "6 horas",
+                "fecha_inicio": "08:00",
+                "fecha_fin": "20:00",
+                "espacio_id": 22,
+                "luz_recomendada_min": 50,
+                "luz_recomendada_max": 100
+            },
+            "habitabilidad": {
+                "id_habitabilidad": 1,
+                "nivel_habitabilidad": 85,
+                "flujo_luminoso": 5000.0,
+                "coeficiente_utilizacion_luz": 0.75,
+                "reduccion_luminosidad": 0.1,
+                "iluminancia_prom": 0.0,
+                "uniformidad_iluminancia": 0.0
+            },
+            "fuentes_luz": [
+                [
+                    {
+                        "id_fuente_luz": 1,
+                        "tipo_fuente": "LED",
+                        "interna": true,
+                        "iluminacion_promedio": 300.0,
+                        "temperatura_emitida": 3500.0,
+                        "intensidad": 0.8,
+                        "lumens": 5000
+                    },
+                    2
+                ]
+            ],
+            "cantidad_personas": 5,
+            "area": 40.0
+        },
+        {
+            "id_espacio": 23,
+            "nombre": "Salón de Clase 1",
+            "actividad": {
+                "id": 5023,
+                "nombre": "Salón de Clase",
+                "descripcion": "Actividades académicas en aula",
+                "tipo": "Académica",
+                "duracion": "2 horas",
+                "fecha_inicio": "07:00",
+                "fecha_fin": "21:00",
+                "espacio_id": 23,
+                "luz_recomendada_min": 250,
+                "luz_recomendada_max": 350
+            },
+            "habitabilidad": {
+                "id_habitabilidad": 2,
+                "nivel_habitabilidad": 70,
+                "flujo_luminoso": 3000.0,
+                "coeficiente_utilizacion_luz": 0.8,
+                "reduccion_luminosidad": 0.05,
+                "iluminancia_prom": 0.0,
+                "uniformidad_iluminancia": 0.0
+            },
+            "fuentes_luz": [
+                [
+                    {
+                        "id_fuente_luz": 1,
+                        "tipo_fuente": "LED",
+                        "interna": true,
+                        "iluminacion_promedio": 300.0,
+                        "temperatura_emitida": 3500.0,
+                        "intensidad": 0.8,
+                        "lumens": 5000
+                    },
+                    7
+                ],
+                [
+                    {
+                        "id_fuente_luz": 4,
+                        "tipo_fuente": "Solar (A través de vidrio)",
+                        "interna": false,
+                        "iluminacion_promedio": 80000.0,
+                        "temperatura_emitida": 5000.0,
+                        "intensidad": 0.8,
+                        "lumens": 120000
+                    },
+                    1
+                ]
+            ],
+            "cantidad_personas": 40,
+            "area": 80.0
+        },
+        {
+            "id_espacio": 24,
+            "nombre": "Salón de Clase 2",
+            "actividad": {
+                "id": 5024,
+                "nombre": "Salón de Clase",
+                "descripcion": "Actividades académicas en aula",
+                "tipo": "Académica",
+                "duracion": "2 horas",
+                "fecha_inicio": "07:00",
+                "fecha_fin": "21:00",
+                "espacio_id": 24,
+                "luz_recomendada_min": 250,
+                "luz_recomendada_max": 350
+            },
+            "habitabilidad": {
+                "id_habitabilidad": 2,
+                "nivel_habitabilidad": 70,
+                "flujo_luminoso": 3000.0,
+                "coeficiente_utilizacion_luz": 0.8,
+                "reduccion_luminosidad": 0.05,
+                "iluminancia_prom": 0.0,
+                "uniformidad_iluminancia": 0.0
+            },
+            "fuentes_luz": [
+                [
+                    {
+                        "id_fuente_luz": 1,
+                        "tipo_fuente": "LED",
+                        "interna": true,
+                        "iluminacion_promedio": 300.0,
+                        "temperatura_emitida": 3500.0,
+                        "intensidad": 0.8,
+                        "lumens": 5000
+                    },
+                    7
+                ],
+                [
+                    {
+                        "id_fuente_luz": 4,
+                        "tipo_fuente": "Solar (A través de vidrio)",
+                        "interna": false,
+                        "iluminacion_promedio": 80000.0,
+                        "temperatura_emitida": 5000.0,
+                        "intensidad": 0.8,
+                        "lumens": 120000
+                    },
+                    1
+                ]
+            ],
+            "cantidad_personas": 40,
+            "area": 80.0
+        },
+        {
+            "id_espacio": 25,
+            "nombre": "Salón de Clase 3",
+            "actividad": {
+                "id": 5025,
+                "nombre": "Salón de Clase",
+                "descripcion": "Actividades académicas en aula",
+                "tipo": "Académica",
+                "duracion": "2 horas",
+                "fecha_inicio": "07:00",
+                "fecha_fin": "21:00",
+                "espacio_id": 25,
+                "luz_recomendada_min": 250,
+                "luz_recomendada_max": 350
+            },
+            "habitabilidad": {
+                "id_habitabilidad": 2,
+                "nivel_habitabilidad": 70,
+                "flujo_luminoso": 3000.0,
+                "coeficiente_utilizacion_luz": 0.8,
+                "reduccion_luminosidad": 0.05,
+                "iluminancia_prom": 0.0,
+                "uniformidad_iluminancia": 0.0
+            },
+            "fuentes_luz": [
+                [
+                    {
+                        "id_fuente_luz": 1,
+                        "tipo_fuente": "LED",
+                        "interna": true,
+                        "iluminacion_promedio": 300.0,
+                        "temperatura_emitida": 3500.0,
+                        "intensidad": 0.8,
+                        "lumens": 5000
+                    },
+                    7
+                ],
+                [
+                    {
+                        "id_fuente_luz": 4,
+                        "tipo_fuente": "Solar (A través de vidrio)",
+                        "interna": false,
+                        "iluminacion_promedio": 80000.0,
+                        "temperatura_emitida": 5000.0,
+                        "intensidad": 0.8,
+                        "lumens": 120000
+                    },
+                    1
+                ]
+            ],
+            "cantidad_personas": 40,
+            "area": 80.0
+        },
+        {
+            "id_espacio": 26,
+            "nombre": "Salón de Clase 4",
+            "actividad": {
+                "id": 5026,
+                "nombre": "Salón de Clase",
+                "descripcion": "Actividades académicas en aula",
+                "tipo": "Académica",
+                "duracion": "2 horas",
+                "fecha_inicio": "07:00",
+                "fecha_fin": "21:00",
+                "espacio_id": 26,
+                "luz_recomendada_min": 250,
+                "luz_recomendada_max": 350
+            },
+            "habitabilidad": {
+                "id_habitabilidad": 2,
+                "nivel_habitabilidad": 70,
+                "flujo_luminoso": 3000.0,
+                "coeficiente_utilizacion_luz": 0.8,
+                "reduccion_luminosidad": 0.05,
+                "iluminancia_prom": 0.0,
+                "uniformidad_iluminancia": 0.0
+            },
+            "fuentes_luz": [
+                [
+                    {
+                        "id_fuente_luz": 1,
+                        "tipo_fuente": "LED",
+                        "interna": true,
+                        "iluminacion_promedio": 300.0,
+                        "temperatura_emitida": 3500.0,
+                        "intensidad": 0.8,
+                        "lumens": 5000
+                    },
+                    7
+                ],
+                [
+                    {
+                        "id_fuente_luz": 4,
+                        "tipo_fuente": "Solar (A través de vidrio)",
+                        "interna": false,
+                        "iluminacion_promedio": 80000.0,
+                        "temperatura_emitida": 5000.0,
+                        "intensidad": 0.8,
+                        "lumens": 120000
+                    },
+                    1
+                ]
+            ],
+            "cantidad_personas": 40,
+            "area": 80.0
+        },
+        {
+            "id_espacio": 27,
+            "nombre": "Salón de Clase 5",
+            "actividad": {
+                "id": 5027,
+                "nombre": "Salón de Clase",
+                "descripcion": "Actividades académicas en aula",
+                "tipo": "Académica",
+                "duracion": "2 horas",
+                "fecha_inicio": "07:00",
+                "fecha_fin": "21:00",
+                "espacio_id": 27,
+                "luz_recomendada_min": 250,
+                "luz_recomendada_max": 350
+            },
+            "habitabilidad": {
+                "id_habitabilidad": 2,
+                "nivel_habitabilidad": 70,
+                "flujo_luminoso": 3000.0,
+                "coeficiente_utilizacion_luz": 0.8,
+                "reduccion_luminosidad": 0.05,
+                "iluminancia_prom": 0.0,
+                "uniformidad_iluminancia": 0.0
+            },
+            "fuentes_luz": [
+                [
+                    {
+                        "id_fuente_luz": 1,
+                        "tipo_fuente": "LED",
+                        "interna": true,
+                        "iluminacion_promedio": 300.0,
+                        "temperatura_emitida": 3500.0,
+                        "intensidad": 0.8,
+                        "lumens": 5000
+                    },
+                    7
+                ],
+                [
+                    {
+                        "id_fuente_luz": 4,
+                        "tipo_fuente": "Solar (A través de vidrio)",
+                        "interna": false,
+                        "iluminacion_promedio": 80000.0,
+                        "temperatura_emitida": 5000.0,
+                        "intensidad": 0.8,
+                        "lumens": 120000
+                    },
+                    1
+                ]
+            ],
+            "cantidad_personas": 40,
+            "area": 80.0
+        },
+        {
+            "id_espacio": 28,
+            "nombre": "Salón de Clase 6",
+            "actividad": {
+                "id": 5028,
+                "nombre": "Salón de Clase",
+                "descripcion": "Actividades académicas en aula",
+                "tipo": "Académica",
+                "duracion": "2 horas",
+                "fecha_inicio": "07:00",
+                "fecha_fin": "21:00",
+                "espacio_id": 28,
+                "luz_recomendada_min": 250,
+                "luz_recomendada_max": 350
+            },
+            "habitabilidad": {
+                "id_habitabilidad": 2,
+                "nivel_habitabilidad": 70,
+                "flujo_luminoso": 3000.0,
+                "coeficiente_utilizacion_luz": 0.8,
+                "reduccion_luminosidad": 0.05,
+                "iluminancia_prom": 0.0,
+                "uniformidad_iluminancia": 0.0
+            },
+            "fuentes_luz": [
+                [
+                    {
+                        "id_fuente_luz": 1,
+                        "tipo_fuente": "LED",
+                        "interna": true,
+                        "iluminacion_promedio": 300.0,
+                        "temperatura_emitida": 3500.0,
+                        "intensidad": 0.8,
+                        "lumens": 5000
+                    },
+                    7
+                ],
+                [
+                    {
+                        "id_fuente_luz": 4,
+                        "tipo_fuente": "Solar (A través de vidrio)",
+                        "interna": false,
+                        "iluminacion_promedio": 80000.0,
+                        "temperatura_emitida": 5000.0,
+                        "intensidad": 0.8,
+                        "lumens": 120000
+                    },
+                    1
+                ]
+            ],
+            "cantidad_personas": 40,
+            "area": 80.0
+        },
+        {
+            "id_espacio": 29,
+            "nombre": "Salón de Clase 7",
+            "actividad": {
+                "id": 5029,
+                "nombre": "Salón de Clase",
+                "descripcion": "Actividades académicas en aula",
+                "tipo": "Académica",
+                "duracion": "2 horas",
+                "fecha_inicio": "07:00",
+                "fecha_fin": "21:00",
+                "espacio_id": 29,
+                "luz_recomendada_min": 250,
+                "luz_recomendada_max": 350
+            },
+            "habitabilidad": {
+                "id_habitabilidad": 2,
+                "nivel_habitabilidad": 70,
+                "flujo_luminoso": 3000.0,
+                "coeficiente_utilizacion_luz": 0.8,
+                "reduccion_luminosidad": 0.05,
+                "iluminancia_prom": 0.0,
+                "uniformidad_iluminancia": 0.0
+            },
+            "fuentes_luz": [
+                [
+                    {
+                        "id_fuente_luz": 1,
+                        "tipo_fuente": "LED",
+                        "interna": true,
+                        "iluminacion_promedio": 300.0,
+                        "temperatura_emitida": 3500.0,
+                        "intensidad": 0.8,
+                        "lumens": 5000
+                    },
+                    7
+                ],
+                [
+                    {
+                        "id_fuente_luz": 4,
+                        "tipo_fuente": "Solar (A través de vidrio)",
+                        "interna": false,
+                        "iluminacion_promedio": 80000.0,
+                        "temperatura_emitida": 5000.0,
+                        "intensidad": 0.8,
+                        "lumens": 120000
+                    },
+                    1
+                ]
+            ],
+            "cantidad_personas": 40,
+            "area": 80.0
+        },
+        {
+            "id_espacio": 30,
+            "nombre": "Salón de Clase 8",
+            "actividad": {
+                "id": 5030,
+                "nombre": "Salón de Clase",
+                "descripcion": "Actividades académicas en aula",
+                "tipo": "Académica",
+                "duracion": "2 horas",
+                "fecha_inicio": "07:00",
+                "fecha_fin": "21:00",
+                "espacio_id": 30,
+                "luz_recomendada_min": 250,
+                "luz_recomendada_max": 350
+            },
+            "habitabilidad": {
+                "id_habitabilidad": 2,
+                "nivel_habitabilidad": 70,
+                "flujo_luminoso": 3000.0,
+                "coeficiente_utilizacion_luz": 0.8,
+                "reduccion_luminosidad": 0.05,
+                "iluminancia_prom": 0.0,
+                "uniformidad_iluminancia": 0.0
+            },
+            "fuentes_luz": [
+                [
+                    {
+                        "id_fuente_luz": 1,
+                        "tipo_fuente": "LED",
+                        "interna": true,
+                        "iluminacion_promedio": 300.0,
+                        "temperatura_emitida": 3500.0,
+                        "intensidad": 0.8,
+                        "lumens": 5000
+                    },
+                    7
+                ],
+                [
+                    {
+                        "id_fuente_luz": 4,
+                        "tipo_fuente": "Solar (A través de vidrio)",
+                        "interna": false,
+                        "iluminacion_promedio": 80000.0,
+                        "temperatura_emitida": 5000.0,
+                        "intensidad": 0.8,
+                        "lumens": 120000
+                    },
+                    1
+                ]
+            ],
+            "cantidad_personas": 40,
+            "area": 80.0
+        }
+    ],
+    "paredes": [
+        {
+            "material": {
+                "id_material": 3,
+                "nombre": "Vidrio",
+                "resistencia_luz": 2,
+                "tipo_material": "Transparente",
+                "opacidad": 0.1,
+                "reflexion": 0.1,
+                "transmision": 0.8
+            },
+            "id_espacio_1": 1,
+            "id_espacio_2": 2
+        },
+        {
+            "material": {
+                "id_material": 3,
+                "nombre": "Vidrio",
+                "resistencia_luz": 2,
+                "tipo_material": "Transparente",
+                "opacidad": 0.1,
+                "reflexion": 0.1,
+                "transmision": 0.8
+            },
+            "id_espacio_1": 2,
+            "id_espacio_2": 3
+        },
+        {
+            "material": {
+                "id_material": 3,
+                "nombre": "Vidrio",
+                "resistencia_luz": 2,
+                "tipo_material": "Transparente",
+                "opacidad": 0.1,
+                "reflexion": 0.1,
+                "transmision": 0.8
+            },
+            "id_espacio_1": 3,
+            "id_espacio_2": 4
+        },
+        {
+            "material": {
+                "id_material": 3,
+                "nombre": "Vidrio",
+                "resistencia_luz": 2,
+                "tipo_material": "Transparente",
+                "opacidad": 0.1,
+                "reflexion": 0.1,
+                "transmision": 0.8
+            },
+            "id_espacio_1": 4,
+            "id_espacio_2": 5
+        },
+        {
+            "material": {
+                "id_material": 3,
+                "nombre": "Vidrio",
+                "resistencia_luz": 2,
+                "tipo_material": "Transparente",
+                "opacidad": 0.1,
+                "reflexion": 0.1,
+                "transmision": 0.8
+            },
+            "id_espacio_1": 5,
+            "id_espacio_2": 6
+        },
+        {
+            "material": {
+                "id_material": 3,
+                "nombre": "Vidrio",
+                "resistencia_luz": 2,
+                "tipo_material": "Transparente",
+                "opacidad": 0.1,
+                "reflexion": 0.1,
+                "transmision": 0.8
+            },
+            "id_espacio_1": 7,
+            "id_espacio_2": 8
+        },
+        {
+            "material": {
+                "id_material": 3,
+                "nombre": "Vidrio",
+                "resistencia_luz": 2,
+                "tipo_material": "Transparente",
+                "opacidad": 0.1,
+                "reflexion": 0.1,
+                "transmision": 0.8
+            },
+            "id_espacio_1": 8,
+            "id_espacio_2": 9
+        },
+        {
+            "material": {
+                "id_material": 3,
+                "nombre": "Vidrio",
+                "resistencia_luz": 2,
+                "tipo_material": "Transparente",
+                "opacidad": 0.1,
+                "reflexion": 0.1,
+                "transmision": 0.8
+            },
+            "id_espacio_1": 9,
+            "id_espacio_2": 10
+        },
+        {
+            "material": {
+                "id_material": 1,
+                "nombre": "Concreto",
+                "resistencia_luz": 5,
+                "tipo_material": "Sólido",
+                "opacidad": 0.95,
+                "reflexion": 0.3,
+                "transmision": 0.0
+            },
+            "id_espacio_1": 10,
+            "id_espacio_2": 11
+        },
+        {
+            "material": {
+                "id_material": 1,
+                "nombre": "Concreto",
+                "resistencia_luz": 5,
+                "tipo_material": "Sólido",
+                "opacidad": 0.95,
+                "reflexion": 0.3,
+                "transmision": 0.0
+            },
+            "id_espacio_1": 10,
+            "id_espacio_2": 12
+        },
+        {
+            "material": {
+                "id_material": 1,
+                "nombre": "Concreto",
+                "resistencia_luz": 5,
+                "tipo_material": "Sólido",
+                "opacidad": 0.95,
+                "reflexion": 0.3,
+                "transmision": 0.0
+            },
+            "id_espacio_1": 11,
+            "id_espacio_2": 12
+        },
+        {
+            "material": {
+                "id_material": 3,
+                "nombre": "Vidrio",
+                "resistencia_luz": 2,
+                "tipo_material": "Transparente",
+                "opacidad": 0.1,
+                "reflexion": 0.1,
+                "transmision": 0.8
+            },
+            "id_espacio_1": 13,
+            "id_espacio_2": 21
+        },
+        {
+            "material": {
+                "id_material": 3,
+                "nombre": "Vidrio",
+                "resistencia_luz": 2,
+                "tipo_material": "Transparente",
+                "opacidad": 0.1,
+                "reflexion": 0.1,
+                "transmision": 0.8
+            },
+            "id_espacio_1": 14,
+            "id_espacio_2": 15
+        },
+        {
+            "material": {
+                "id_material": 3,
+                "nombre": "Vidrio",
+                "resistencia_luz": 2,
+                "tipo_material": "Transparente",
+                "opacidad": 0.1,
+                "reflexion": 0.1,
+                "transmision": 0.8
+            },
+            "id_espacio_1": 15,
+            "id_espacio_2": 16
+        },
+        {
+            "material": {
+                "id_material": 3,
+                "nombre": "Vidrio",
+                "resistencia_luz": 2,
+                "tipo_material": "Transparente",
+                "opacidad": 0.1,
+                "reflexion": 0.1,
+                "transmision": 0.8
+            },
+            "id_espacio_1": 16,
+            "id_espacio_2": 17
+        },
+        {
+            "material": {
+                "id_material": 1,
+                "nombre": "Concreto",
+                "resistencia_luz": 5,
+                "tipo_material": "Sólido",
+                "opacidad": 0.95,
+                "reflexion": 0.3,
+                "transmision": 0.0
+            },
+            "id_espacio_1": 18,
+            "id_espacio_2": 19
+        },
+        {
+            "material": {
+                "id_material": 3,
+                "nombre": "Vidrio",
+                "resistencia_luz": 2,
+                "tipo_material": "Transparente",
+                "opacidad": 0.1,
+                "reflexion": 0.1,
+                "transmision": 0.8
+            },
+            "id_espacio_1": 19,
+            "id_espacio_2": 20
+        },
+        {
+            "material": {
+                "id_material": 3,
+                "nombre": "Vidrio",
+                "resistencia_luz": 2,
+                "tipo_material": "Transparente",
+                "opacidad": 0.1,
+                "reflexion": 0.1,
+                "transmision": 0.8
+            },
+            "id_espacio_1": 20,
+            "id_espacio_2": 21
+        },
+        {
+            "material": {
+                "id_material": 3,
+                "nombre": "Vidrio",
+                "resistencia_luz": 2,
+                "tipo_material": "Transparente",
+                "opacidad": 0.1,
+                "reflexion": 0.1,
+                "transmision": 0.8
+            },
+            "id_espacio_1": 20,
+            "id_espacio_2": 22
+        },
+        {
+            "material": {
+                "id_material": 3,
+                "nombre": "Vidrio",
+                "resistencia_luz": 2,
+                "tipo_material": "Transparente",
+                "opacidad": 0.1,
+                "reflexion": 0.1,
+                "transmision": 0.8
+            },
+            "id_espacio_1": 21,
+            "id_espacio_2": 22
+        },
+        {
+            "material": {
+                "id_material": 1,
+                "nombre": "Concreto",
+                "resistencia_luz": 5,
+                "tipo_material": "Sólido",
+                "opacidad": 0.95,
+                "reflexion": 0.3,
+                "transmision": 0.0
+            },
+            "id_espacio_1": 23,
+            "id_espacio_2": 31
+        },
+        {
+            "material": {
+                "id_material": 1,
+                "nombre": "Concreto",
+                "resistencia_luz": 5,
+                "tipo_material": "Sólido",
+                "opacidad": 0.95,
+                "reflexion": 0.3,
+                "transmision": 0.0
+            },
+            "id_espacio_1": 24,
+            "id_espacio_2": 25
+        },
+        {
+            "material": {
+                "id_material": 1,
+                "nombre": "Concreto",
+                "resistencia_luz": 5,
+                "tipo_material": "Sólido",
+                "opacidad": 0.95,
+                "reflexion": 0.3,
+                "transmision": 0.0
+            },
+            "id_espacio_1": 25,
+            "id_espacio_2": 26
+        },
+        {
+            "material": {
+                "id_material": 1,
+                "nombre": "Concreto",
+                "resistencia_luz": 5,
+                "tipo_material": "Sólido",
+                "opacidad": 0.95,
+                "reflexion": 0.3,
+                "transmision": 0.0
+            },
+            "id_espacio_1": 26,
+            "id_espacio_2": 27
+        },
+        {
+            "material": {
+                "id_material": 1,
+                "nombre": "Concreto",
+                "resistencia_luz": 5,
+                "tipo_material": "Sólido",
+                "opacidad": 0.95,
+                "reflexion": 0.3,
+                "transmision": 0.0
+            },
+            "id_espacio_1": 28,
+            "id_espacio_2": 29
+        },
+        {
+            "material": {
+                "id_material": 1,
+                "nombre": "Concreto",
+                "resistencia_luz": 5,
+                "tipo_material": "Sólido",
+                "opacidad": 0.95,
+                "reflexion": 0.3,
+                "transmision": 0.0
+            },
+            "id_espacio_1": 29,
+            "id_espacio_2": 30
+        },
+        {
+            "material": {
+                "id_material": 1,
+                "nombre": "Concreto",
+                "resistencia_luz": 5,
+                "tipo_material": "Sólido",
+                "opacidad": 0.95,
+                "reflexion": 0.3,
+                "transmision": 0.0
+            },
+            "id_espacio_1": 30,
+            "id_espacio_2": 31
+        }
+    ],
+    "informacionNodos": ""
+}

@@ -1,9 +1,10 @@
 from modelado.classHabitabilidad import Habitabilidad
 from modelado.classFuenteLuz import FuenteLuz
+from modelado.classActividad import Actividad
 from typing import List, Tuple
 
 class Espacios:
-    def __init__(self, id_espacio: int, nombre: str, actividad: str, habitabilidad: Habitabilidad, 
+    def __init__(self, id_espacio: int, nombre: str, actividad: Actividad, habitabilidad: Habitabilidad, 
                  fuentes_luz: List[Tuple[FuenteLuz, int]], cantidad_personas: int, area: float):
         self.id_espacio = id_espacio
         self.nombre = nombre
@@ -26,7 +27,7 @@ class Espacios:
         return {
             "id_espacio": self.id_espacio,
             "nombre": self.nombre,
-            "actividad": self.actividad,
+            "actividad": self.actividad.__dict__,
             "habitabilidad": self.habitabilidad.to_dict(),
             "fuentes_luz": [(fuente.__dict__, cantidad) for fuente, cantidad in self.fuentes_luz],
             "cantidad_personas": self.cantidad_personas,
