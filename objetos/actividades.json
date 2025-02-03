@@ -117,7 +117,7 @@
         "fecha_fin": "17:00",
         "espacio_id": 10,
         "luz_recomendada_min": 250,
-        "luz_recomendada_max": 350
+        "luz_recomendada_max": 550
     },
     "3011": {
         "id": 3011,
@@ -129,7 +129,7 @@
         "fecha_fin": "17:00",
         "espacio_id": 11,
         "luz_recomendada_min": 250,
-        "luz_recomendada_max": 350
+        "luz_recomendada_max": 550
     },
     "4012": {
         "id": 4012,
@@ -213,7 +213,7 @@
         "fecha_fin": "17:00",
         "espacio_id": 18,
         "luz_recomendada_min": 250,
-        "luz_recomendada_max": 350
+        "luz_recomendada_max": 550
     },
     "2019": {
         "id": 2019,
@@ -225,7 +225,7 @@
         "fecha_fin": "17:00",
         "espacio_id": 19,
         "luz_recomendada_min": 250,
-        "luz_recomendada_max": 350
+        "luz_recomendada_max": 550
     },
     "1020": {
         "id": 1020,
@@ -273,7 +273,7 @@
         "fecha_fin": "21:00",
         "espacio_id": 23,
         "luz_recomendada_min": 250,
-        "luz_recomendada_max": 350
+        "luz_recomendada_max": 550
     },
     "5024": {
         "id": 5024,
@@ -285,7 +285,7 @@
         "fecha_fin": "21:00",
         "espacio_id": 24,
         "luz_recomendada_min": 250,
-        "luz_recomendada_max": 350
+        "luz_recomendada_max": 550
     },
     "5025": {
         "id": 5025,
@@ -297,7 +297,7 @@
         "fecha_fin": "21:00",
         "espacio_id": 25,
         "luz_recomendada_min": 250,
-        "luz_recomendada_max": 350
+        "luz_recomendada_max": 550
     },
     "5026": {
         "id": 5026,
@@ -309,7 +309,7 @@
         "fecha_fin": "21:00",
         "espacio_id": 26,
         "luz_recomendada_min": 250,
-        "luz_recomendada_max": 350
+        "luz_recomendada_max": 550
     },
     "5027": {
         "id": 5027,
@@ -321,7 +321,7 @@
         "fecha_fin": "21:00",
         "espacio_id": 27,
         "luz_recomendada_min": 250,
-        "luz_recomendada_max": 350
+        "luz_recomendada_max": 550
     },
     "5028": {
         "id": 5028,
@@ -333,7 +333,7 @@
         "fecha_fin": "21:00",
         "espacio_id": 28,
         "luz_recomendada_min": 250,
-        "luz_recomendada_max": 350
+        "luz_recomendada_max": 550
     },
     "5029": {
         "id": 5029,
@@ -345,7 +345,7 @@
         "fecha_fin": "21:00",
         "espacio_id": 29,
         "luz_recomendada_min": 250,
-        "luz_recomendada_max": 350
+        "luz_recomendada_max": 550
     },
     "5030": {
         "id": 5030,
@@ -357,6 +357,6 @@
         "fecha_fin": "21:00",
         "espacio_id": 30,
         "luz_recomendada_min": 250,
-        "luz_recomendada_max": 350
+        "luz_recomendada_max": 550
     }
 }

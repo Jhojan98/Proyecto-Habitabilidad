@@ -4,26 +4,23 @@ import plotly.graph_objects as go
 import dash
 from dash import dcc, html
 from dash.dependencies import Input, Output
-
-from Propagacion.analisis_habitabilidad import calcular_habitabilidad
+from modelado.classEdificio import Edificio
 
 # ------ OBTENCION DE DATOS ------
 # Variables globales
 nodes_colors = []
 colors_time = ['white', 'black', '#e3e6ff']
 is_night = False  # False = día, True = noche
-
+edificio = Edificio.cargar_desde_json('objetos/edificio.json')
 # Leer el json y obtener los datos de los espacios
 def get_data():
-    with open('Propagacion/objetos/espacios.json', encoding="utf-8") as json_file:
-        data = json.load(json_file)
-
-        return [f"""Node: {n_node} 
-                <br>Nombre: {item[1]['nombre']} 
-                <br>Actividad: {item[1]['actividad']} 
-                <br>Nivel Habitabilidad: {item[1]['habitabilidad']['nivel_habitabilidad']}""" 
-                for n_node, item
-                in zip(G.nodes(), data.items())]
+    global edificio
+    return [f"""Node: {n_node} 
+            <br>Nombre: {habitacion.nombre} 
+            <br>Actividad: {habitacion.actividad.nombre} 
+            <br>Nivel Habitabilidad: {habitacion.habitabilidad.nivel_habitabilidad}""" 
+            for n_node, habitacion
+            in zip(G.nodes(), edificio.habitaciones.values())]  # Usar .values() aquí
 
 # ------ CREACION DEL GRAFO ------
 # Crear el grafo
@@ -181,20 +178,17 @@ app.layout = html.Div([
 
 # funcion llamada por el boton
 def update_color(n_clicks):
-    calcular_habitabilidad(is_night)
+    edificio.calcular_habitabilidad(is_night)
     nodes_colors.clear()
 
-    with open('Propagacion/objetos/espacios.json', encoding="utf-8") as json_file:
-        data = json.load(json_file)
-
-        for item in data.items():
-            lvl_habitability = item[1]['habitabilidad']['nivel_habitabilidad']
-            if lvl_habitability == 50:
-                nodes_colors.append('red')
-            elif lvl_habitability == 75:
-                nodes_colors.append('orange')
-            elif lvl_habitability == 100:
-                nodes_colors.append('green')
+    for habitacion in edificio.habitaciones.values():
+        lvl_habitability = habitacion.habitabilidad.nivel_habitabilidad
+        if lvl_habitability == 50:
+            nodes_colors.append('red')
+        elif lvl_habitability == 75:
+            nodes_colors.append('orange')
+        else:  # 100
+            nodes_colors.append('green')
 
     return create_figure(nodes_colors)
 

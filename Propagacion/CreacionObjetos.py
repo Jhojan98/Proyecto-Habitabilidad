@@ -86,7 +86,7 @@ fuente_luz4 = FuenteLuz(
     iluminacion_promedio= 80000.0,
     temperatura_emitida= 5000.0,
     intensidad= 0.8,
-    lumens= 120000
+    lumens= 12000
 )
 
 # Crear instancias de la clase Material
@@ -144,7 +144,7 @@ actividad_oficina = Actividad(
     fecha_fin="17:00",
     espacio_id=None,
     luz_recomendada_min=250,
-    luz_recomendada_max=350
+    luz_recomendada_max=550
 )
 
 actividad_soporte = Actividad(
@@ -157,7 +157,7 @@ actividad_soporte = Actividad(
     fecha_fin="17:00",
     espacio_id=None,
     luz_recomendada_min=250,
-    luz_recomendada_max=350
+    luz_recomendada_max=550
 )
 
 actividad_monitoreo = Actividad(
@@ -183,7 +183,7 @@ actividad_clase = Actividad(
     fecha_fin="21:00",
     espacio_id=None,
     luz_recomendada_min=250,
-    luz_recomendada_max=350
+    luz_recomendada_max=550
 )
 
 actividad_fotografia = Actividad(

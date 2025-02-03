@@ -57,7 +57,7 @@
                         "iluminacion_promedio": 80000.0,
                         "temperatura_emitida": 5000.0,
                         "intensidad": 0.8,
-                        "lumens": 120000
+                        "lumens": 12000
                     },
                     1
                 ]
@@ -122,7 +122,7 @@
                         "iluminacion_promedio": 80000.0,
                         "temperatura_emitida": 5000.0,
                         "intensidad": 0.8,
-                        "lumens": 120000
+                        "lumens": 12000
                     },
                     1
                 ]
@@ -187,7 +187,7 @@
                         "iluminacion_promedio": 80000.0,
                         "temperatura_emitida": 5000.0,
                         "intensidad": 0.8,
-                        "lumens": 120000
+                        "lumens": 12000
                     },
                     1
                 ]
@@ -252,7 +252,7 @@
                         "iluminacion_promedio": 80000.0,
                         "temperatura_emitida": 5000.0,
                         "intensidad": 0.8,
-                        "lumens": 120000
+                        "lumens": 12000
                     },
                     1
                 ]
@@ -317,7 +317,7 @@
                         "iluminacion_promedio": 80000.0,
                         "temperatura_emitida": 5000.0,
                         "intensidad": 0.8,
-                        "lumens": 120000
+                        "lumens": 12000
                     },
                     1
                 ]
@@ -382,7 +382,7 @@
                         "iluminacion_promedio": 80000.0,
                         "temperatura_emitida": 5000.0,
                         "intensidad": 0.8,
-                        "lumens": 120000
+                        "lumens": 12000
                     },
                     1
                 ]
@@ -447,7 +447,7 @@
                         "iluminacion_promedio": 80000.0,
                         "temperatura_emitida": 5000.0,
                         "intensidad": 0.8,
-                        "lumens": 120000
+                        "lumens": 12000
                     },
                     1
                 ]
@@ -512,7 +512,7 @@
                         "iluminacion_promedio": 80000.0,
                         "temperatura_emitida": 5000.0,
                         "intensidad": 0.8,
-                        "lumens": 120000
+                        "lumens": 12000
                     },
                     1
                 ]
@@ -577,7 +577,7 @@
                         "iluminacion_promedio": 80000.0,
                         "temperatura_emitida": 5000.0,
                         "intensidad": 0.8,
-                        "lumens": 120000
+                        "lumens": 12000
                     },
                     1
                 ]
@@ -598,7 +598,7 @@
                 "fecha_fin": "17:00",
                 "espacio_id": 10,
                 "luz_recomendada_min": 250,
-                "luz_recomendada_max": 350
+                "luz_recomendada_max": 550
             },
             "habitabilidad": {
                 "id_habitabilidad": 2,
@@ -630,7 +630,7 @@
                         "iluminacion_promedio": 80000.0,
                         "temperatura_emitida": 5000.0,
                         "intensidad": 0.8,
-                        "lumens": 120000
+                        "lumens": 12000
                     },
                     1
                 ]
@@ -651,7 +651,7 @@
                 "fecha_fin": "17:00",
                 "espacio_id": 11,
                 "luz_recomendada_min": 250,
-                "luz_recomendada_max": 350
+                "luz_recomendada_max": 550
             },
             "habitabilidad": {
                 "id_habitabilidad": 2,
@@ -724,7 +724,7 @@
                         "iluminacion_promedio": 80000.0,
                         "temperatura_emitida": 5000.0,
                         "intensidad": 0.8,
-                        "lumens": 120000
+                        "lumens": 12000
                     },
                     1
                 ]
@@ -789,7 +789,7 @@
                         "iluminacion_promedio": 80000.0,
                         "temperatura_emitida": 5000.0,
                         "intensidad": 0.8,
-                        "lumens": 120000
+                        "lumens": 12000
                     },
                     1
                 ]
@@ -854,7 +854,7 @@
                         "iluminacion_promedio": 80000.0,
                         "temperatura_emitida": 5000.0,
                         "intensidad": 0.8,
-                        "lumens": 120000
+                        "lumens": 12000
                     },
                     1
                 ]
@@ -919,7 +919,7 @@
                         "iluminacion_promedio": 80000.0,
                         "temperatura_emitida": 5000.0,
                         "intensidad": 0.8,
-                        "lumens": 120000
+                        "lumens": 12000
                     },
                     1
                 ]
@@ -984,7 +984,7 @@
                         "iluminacion_promedio": 80000.0,
                         "temperatura_emitida": 5000.0,
                         "intensidad": 0.8,
-                        "lumens": 120000
+                        "lumens": 12000
                     },
                     1
                 ]
@@ -1049,7 +1049,7 @@
                         "iluminacion_promedio": 80000.0,
                         "temperatura_emitida": 5000.0,
                         "intensidad": 0.8,
-                        "lumens": 120000
+                        "lumens": 12000
                     },
                     1
                 ]
@@ -1070,7 +1070,7 @@
                 "fecha_fin": "17:00",
                 "espacio_id": 18,
                 "luz_recomendada_min": 250,
-                "luz_recomendada_max": 350
+                "luz_recomendada_max": 550
             },
             "habitabilidad": {
                 "id_habitabilidad": 2,
@@ -1102,7 +1102,7 @@
                         "iluminacion_promedio": 80000.0,
                         "temperatura_emitida": 5000.0,
                         "intensidad": 0.8,
-                        "lumens": 120000
+                        "lumens": 12000
                     },
                     1
                 ]
@@ -1123,7 +1123,7 @@
                 "fecha_fin": "17:00",
                 "espacio_id": 19,
                 "luz_recomendada_min": 250,
-                "luz_recomendada_max": 350
+                "luz_recomendada_max": 550
             },
             "habitabilidad": {
                 "id_habitabilidad": 2,
@@ -1155,7 +1155,7 @@
                         "iluminacion_promedio": 80000.0,
                         "temperatura_emitida": 5000.0,
                         "intensidad": 0.8,
-                        "lumens": 120000
+                        "lumens": 12000
                     },
                     1
                 ]
@@ -1220,7 +1220,7 @@
                         "iluminacion_promedio": 80000.0,
                         "temperatura_emitida": 5000.0,
                         "intensidad": 0.8,
-                        "lumens": 120000
+                        "lumens": 12000
                     },
                     1
                 ]
@@ -1285,7 +1285,7 @@
                         "iluminacion_promedio": 80000.0,
                         "temperatura_emitida": 5000.0,
                         "intensidad": 0.8,
-                        "lumens": 120000
+                        "lumens": 12000
                     },
                     1
                 ]
@@ -1347,7 +1347,7 @@
                 "fecha_fin": "21:00",
                 "espacio_id": 23,
                 "luz_recomendada_min": 250,
-                "luz_recomendada_max": 350
+                "luz_recomendada_max": 550
             },
             "habitabilidad": {
                 "id_habitabilidad": 2,
@@ -1379,7 +1379,7 @@
                         "iluminacion_promedio": 80000.0,
                         "temperatura_emitida": 5000.0,
                         "intensidad": 0.8,
-                        "lumens": 120000
+                        "lumens": 12000
                     },
                     1
                 ]
@@ -1400,7 +1400,7 @@
                 "fecha_fin": "21:00",
                 "espacio_id": 24,
                 "luz_recomendada_min": 250,
-                "luz_recomendada_max": 350
+                "luz_recomendada_max": 550
             },
             "habitabilidad": {
                 "id_habitabilidad": 2,
@@ -1432,7 +1432,7 @@
                         "iluminacion_promedio": 80000.0,
                         "temperatura_emitida": 5000.0,
                         "intensidad": 0.8,
-                        "lumens": 120000
+                        "lumens": 12000
                     },
                     1
                 ]
@@ -1453,7 +1453,7 @@
                 "fecha_fin": "21:00",
                 "espacio_id": 25,
                 "luz_recomendada_min": 250,
-                "luz_recomendada_max": 350
+                "luz_recomendada_max": 550
             },
             "habitabilidad": {
                 "id_habitabilidad": 2,
@@ -1485,7 +1485,7 @@
                         "iluminacion_promedio": 80000.0,
                         "temperatura_emitida": 5000.0,
                         "intensidad": 0.8,
-                        "lumens": 120000
+                        "lumens": 12000
                     },
                     1
                 ]
@@ -1506,7 +1506,7 @@
                 "fecha_fin": "21:00",
                 "espacio_id": 26,
                 "luz_recomendada_min": 250,
-                "luz_recomendada_max": 350
+                "luz_recomendada_max": 550
             },
             "habitabilidad": {
                 "id_habitabilidad": 2,
@@ -1538,7 +1538,7 @@
                         "iluminacion_promedio": 80000.0,
                         "temperatura_emitida": 5000.0,
                         "intensidad": 0.8,
-                        "lumens": 120000
+                        "lumens": 12000
                     },
                     1
                 ]
@@ -1559,7 +1559,7 @@
                 "fecha_fin": "21:00",
                 "espacio_id": 27,
                 "luz_recomendada_min": 250,
-                "luz_recomendada_max": 350
+                "luz_recomendada_max": 550
             },
             "habitabilidad": {
                 "id_habitabilidad": 2,
@@ -1591,7 +1591,7 @@
                         "iluminacion_promedio": 80000.0,
                         "temperatura_emitida": 5000.0,
                         "intensidad": 0.8,
-                        "lumens": 120000
+                        "lumens": 12000
                     },
                     1
                 ]
@@ -1612,7 +1612,7 @@
                 "fecha_fin": "21:00",
                 "espacio_id": 28,
                 "luz_recomendada_min": 250,
-                "luz_recomendada_max": 350
+                "luz_recomendada_max": 550
             },
             "habitabilidad": {
                 "id_habitabilidad": 2,
@@ -1644,7 +1644,7 @@
                         "iluminacion_promedio": 80000.0,
                         "temperatura_emitida": 5000.0,
                         "intensidad": 0.8,
-                        "lumens": 120000
+                        "lumens": 12000
                     },
                     1
                 ]
@@ -1665,7 +1665,7 @@
                 "fecha_fin": "21:00",
                 "espacio_id": 29,
                 "luz_recomendada_min": 250,
-                "luz_recomendada_max": 350
+                "luz_recomendada_max": 550
             },
             "habitabilidad": {
                 "id_habitabilidad": 2,
@@ -1697,7 +1697,7 @@
                         "iluminacion_promedio": 80000.0,
                         "temperatura_emitida": 5000.0,
                         "intensidad": 0.8,
-                        "lumens": 120000
+                        "lumens": 12000
                     },
                     1
                 ]
@@ -1718,7 +1718,7 @@
                 "fecha_fin": "21:00",
                 "espacio_id": 30,
                 "luz_recomendada_min": 250,
-                "luz_recomendada_max": 350
+                "luz_recomendada_max": 550
             },
             "habitabilidad": {
                 "id_habitabilidad": 2,
@@ -1750,7 +1750,7 @@
                         "iluminacion_promedio": 80000.0,
                         "temperatura_emitida": 5000.0,
                         "intensidad": 0.8,
-                        "lumens": 120000
+                        "lumens": 12000
                     },
                     1
                 ]
