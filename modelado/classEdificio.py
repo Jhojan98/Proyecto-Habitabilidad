@@ -144,6 +144,9 @@ class Edificio:
         with open('objetos/espacios.json', 'w', encoding="utf-8") as f:
             json.dump(espacios_dict, f, indent=4, ensure_ascii=False)
 
+        with open('objetos/edificio.json', 'w', encoding="utf-8") as f:
+            json.dump(self.to_dict(), f, indent=4, ensure_ascii=False)
+
     # Getters y Setters
     def get_habitaciones(self) -> list:
         return self.habitaciones
