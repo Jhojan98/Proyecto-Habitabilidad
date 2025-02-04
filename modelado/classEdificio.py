@@ -139,6 +139,9 @@ class Edificio:
             )
             print(f"  Nivel habitabilidad final: {espacio.habitabilidad.nivel_habitabilidad}")
 
+            # Agregar sugerencias para cada nodo
+            espacio.agregar_sugerencia()
+
         # Guardar las instancias modificadas en el archivo JSON
         espacios_dict = {espacio.id_espacio: espacio.to_dict() for espacio in self.habitaciones.values()}
         with open('objetos/espacios.json', 'w', encoding="utf-8") as f:

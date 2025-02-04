@@ -62,7 +62,11 @@
             ]
         ],
         "cantidad_personas": 30,
-        "area": 85.0
+        "area": 85.0,
+        "sugerencias": [
+            "Movilizar actividad",
+            "Pintar las paredes con colores claros"
+        ]
     },
     "2": {
         "id_espacio": 2,
@@ -127,7 +131,11 @@
             ]
         ],
         "cantidad_personas": 30,
-        "area": 90.0
+        "area": 90.0,
+        "sugerencias": [
+            "Movilizar actividad",
+            "Pintar las paredes con colores claros"
+        ]
     },
     "3": {
         "id_espacio": 3,
@@ -192,7 +200,11 @@
             ]
         ],
         "cantidad_personas": 30,
-        "area": 75.0
+        "area": 75.0,
+        "sugerencias": [
+            "Movilizar actividad",
+            "Pintar las paredes con colores claros"
+        ]
     },
     "4": {
         "id_espacio": 4,
@@ -257,7 +269,11 @@
             ]
         ],
         "cantidad_personas": 30,
-        "area": 80.0
+        "area": 80.0,
+        "sugerencias": [
+            "Movilizar actividad",
+            "Pintar las paredes con colores claros"
+        ]
     },
     "5": {
         "id_espacio": 5,
@@ -322,7 +338,11 @@
             ]
         ],
         "cantidad_personas": 30,
-        "area": 100.0
+        "area": 100.0,
+        "sugerencias": [
+            "Movilizar actividad",
+            "Pintar las paredes con colores claros"
+        ]
     },
     "6": {
         "id_espacio": 6,
@@ -387,7 +407,8 @@
             ]
         ],
         "cantidad_personas": 30,
-        "area": 80.0
+        "area": 80.0,
+        "sugerencias": []
     },
     "7": {
         "id_espacio": 7,
@@ -452,7 +473,8 @@
             ]
         ],
         "cantidad_personas": 30,
-        "area": 75.0
+        "area": 75.0,
+        "sugerencias": []
     },
     "8": {
         "id_espacio": 8,
@@ -517,7 +539,11 @@
             ]
         ],
         "cantidad_personas": 30,
-        "area": 100.0
+        "area": 100.0,
+        "sugerencias": [
+            "Movilizar actividad",
+            "Pintar las paredes con colores claros"
+        ]
     },
     "9": {
         "id_espacio": 9,
@@ -582,7 +608,11 @@
             ]
         ],
         "cantidad_personas": 30,
-        "area": 85.0
+        "area": 85.0,
+        "sugerencias": [
+            "Movilizar actividad",
+            "Pintar las paredes con colores claros"
+        ]
     },
     "10": {
         "id_espacio": 10,
@@ -635,7 +665,11 @@
             ]
         ],
         "cantidad_personas": 10,
-        "area": 50.0
+        "area": 50.0,
+        "sugerencias": [
+            "Movilizar actividad",
+            "Instalar mas luces LED"
+        ]
     },
     "11": {
         "id_espacio": 11,
@@ -676,7 +710,11 @@
             ]
         ],
         "cantidad_personas": 10,
-        "area": 50.0
+        "area": 50.0,
+        "sugerencias": [
+            "Movilizar actividad",
+            "Instalar mas luces LED"
+        ]
     },
     "12": {
         "id_espacio": 12,
@@ -729,7 +767,11 @@
             ]
         ],
         "cantidad_personas": 5,
-        "area": 25.0
+        "area": 25.0,
+        "sugerencias": [
+            "Movilizar actividad",
+            "Instalar mas luces LED"
+        ]
     },
     "13": {
         "id_espacio": 13,
@@ -794,7 +836,11 @@
             ]
         ],
         "cantidad_personas": 30,
-        "area": 95.0
+        "area": 95.0,
+        "sugerencias": [
+            "Movilizar actividad",
+            "Pintar las paredes con colores claros"
+        ]
     },
     "14": {
         "id_espacio": 14,
@@ -859,7 +905,11 @@
             ]
         ],
         "cantidad_personas": 30,
-        "area": 85.0
+        "area": 85.0,
+        "sugerencias": [
+            "Movilizar actividad",
+            "Pintar las paredes con colores claros"
+        ]
     },
     "15": {
         "id_espacio": 15,
@@ -924,7 +974,11 @@
             ]
         ],
         "cantidad_personas": 30,
-        "area": 85.0
+        "area": 85.0,
+        "sugerencias": [
+            "Movilizar actividad",
+            "Pintar las paredes con colores claros"
+        ]
     },
     "16": {
         "id_espacio": 16,
@@ -989,7 +1043,11 @@
             ]
         ],
         "cantidad_personas": 30,
-        "area": 85.0
+        "area": 85.0,
+        "sugerencias": [
+            "Movilizar actividad",
+            "Pintar las paredes con colores claros"
+        ]
     },
     "17": {
         "id_espacio": 17,
@@ -1054,7 +1112,11 @@
             ]
         ],
         "cantidad_personas": 30,
-        "area": 85.0
+        "area": 85.0,
+        "sugerencias": [
+            "Movilizar actividad",
+            "Pintar las paredes con colores claros"
+        ]
     },
     "18": {
         "id_espacio": 18,
@@ -1073,7 +1135,7 @@
         },
         "habitabilidad": {
             "id_habitabilidad": 2,
-            "nivel_habitabilidad": 50,
+            "nivel_habitabilidad": 75,
             "flujo_luminoso": 45000,
             "coeficiente_utilizacion_luz": 0.8,
             "reduccion_luminosidad": 0.05,
@@ -1107,7 +1169,11 @@
             ]
         ],
         "cantidad_personas": 10,
-        "area": 50.0
+        "area": 50.0,
+        "sugerencias": [
+            "Movilizar actividad",
+            "Pintar las paredes con colores oscuros"
+        ]
     },
     "19": {
         "id_espacio": 19,
@@ -1160,7 +1226,8 @@
             ]
         ],
         "cantidad_personas": 10,
-        "area": 50.0
+        "area": 50.0,
+        "sugerencias": []
     },
     "20": {
         "id_espacio": 20,
@@ -1225,7 +1292,11 @@
             ]
         ],
         "cantidad_personas": 30,
-        "area": 80.0
+        "area": 80.0,
+        "sugerencias": [
+            "Movilizar actividad",
+            "Pintar las paredes con colores claros"
+        ]
     },
     "21": {
         "id_espacio": 21,
@@ -1290,7 +1361,11 @@
             ]
         ],
         "cantidad_personas": 30,
-        "area": 85.0
+        "area": 85.0,
+        "sugerencias": [
+            "Movilizar actividad",
+            "Pintar las paredes con colores claros"
+        ]
     },
     "22": {
         "id_espacio": 22,
@@ -1331,7 +1406,11 @@
             ]
         ],
         "cantidad_personas": 5,
-        "area": 40.0
+        "area": 40.0,
+        "sugerencias": [
+            "Movilizar actividad",
+            "Instalar cortinas blackout"
+        ]
     },
     "23": {
         "id_espacio": 23,
@@ -1384,7 +1463,8 @@
             ]
         ],
         "cantidad_personas": 40,
-        "area": 80.0
+        "area": 80.0,
+        "sugerencias": []
     },
     "24": {
         "id_espacio": 24,
@@ -1437,7 +1517,8 @@
             ]
         ],
         "cantidad_personas": 40,
-        "area": 80.0
+        "area": 80.0,
+        "sugerencias": []
     },
     "25": {
         "id_espacio": 25,
@@ -1490,7 +1571,8 @@
             ]
         ],
         "cantidad_personas": 40,
-        "area": 80.0
+        "area": 80.0,
+        "sugerencias": []
     },
     "26": {
         "id_espacio": 26,
@@ -1543,7 +1625,8 @@
             ]
         ],
         "cantidad_personas": 40,
-        "area": 80.0
+        "area": 80.0,
+        "sugerencias": []
     },
     "27": {
         "id_espacio": 27,
@@ -1596,7 +1679,8 @@
             ]
         ],
         "cantidad_personas": 40,
-        "area": 80.0
+        "area": 80.0,
+        "sugerencias": []
     },
     "28": {
         "id_espacio": 28,
@@ -1649,7 +1733,8 @@
             ]
         ],
         "cantidad_personas": 40,
-        "area": 80.0
+        "area": 80.0,
+        "sugerencias": []
     },
     "29": {
         "id_espacio": 29,
@@ -1702,7 +1787,8 @@
             ]
         ],
         "cantidad_personas": 40,
-        "area": 80.0
+        "area": 80.0,
+        "sugerencias": []
     },
     "30": {
         "id_espacio": 30,
@@ -1755,6 +1841,7 @@
             ]
         ],
         "cantidad_personas": 40,
-        "area": 80.0
+        "area": 80.0,
+        "sugerencias": []
     }
 }

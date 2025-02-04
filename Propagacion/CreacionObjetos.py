@@ -217,44 +217,44 @@ def crear_actividad_unica(actividad_base, espacio_id):
 
 # Crear instancias de la clase Espacios para el Piso 1
 espacios_piso1 = [
-    Espacios(1, "Laboratorio de Redes y Telemática", crear_actividad_unica(actividad_laboratorio, 1), habitabilidad1, [(fuente_luz1, 8), (fuente_luz2, 2), (fuente_luz4, 1)], 30, 85.0),
-    Espacios(2, "Laboratorio de Redes Inalámbricas", crear_actividad_unica(actividad_laboratorio, 2), habitabilidad1, [(fuente_luz1, 6), (fuente_luz2, 2), (fuente_luz4, 1)], 30, 90.0),
-    Espacios(3, "Sala de Informática 1", crear_actividad_unica(actividad_laboratorio, 3), habitabilidad1, [(fuente_luz1, 6), (fuente_luz2, 3), (fuente_luz4, 1)], 30, 75.0),
-    Espacios(4, "Sala de Informática 2", crear_actividad_unica(actividad_laboratorio, 4), habitabilidad1, [(fuente_luz1, 8), (fuente_luz2, 2), (fuente_luz4, 1)], 30, 80.0),
-    Espacios(5, "Sala de Informática 3", crear_actividad_unica(actividad_laboratorio, 5), habitabilidad1, [(fuente_luz1, 8), (fuente_luz2, 4), (fuente_luz4, 1)], 30, 100.0),
-    Espacios(6, "Sala de Informática 4", crear_actividad_unica(actividad_laboratorio, 6), habitabilidad1, [(fuente_luz1, 8), (fuente_luz2, 4), (fuente_luz4, 1)], 30, 80.0),
-    Espacios(7, "Sala de Informática 5", crear_actividad_unica(actividad_laboratorio, 7), habitabilidad1, [(fuente_luz1, 8), (fuente_luz2, 4), (fuente_luz4, 1)], 30, 75.0),
-    Espacios(8, "Sala de Informática 6", crear_actividad_unica(actividad_laboratorio, 8), habitabilidad1, [(fuente_luz1, 8), (fuente_luz2, 4), (fuente_luz4, 1)], 30, 100.0),
-    Espacios(9, "Sala de Informática 7", crear_actividad_unica(actividad_laboratorio, 9), habitabilidad1, [(fuente_luz1, 8), (fuente_luz2, 2), (fuente_luz4, 1)], 30, 85.0),
-    Espacios(10, "Oficina de Sistemas", crear_actividad_unica(actividad_oficina, 10), habitabilidad2, [(fuente_luz1, 1), (fuente_luz4, 1)], 10, 50.0),
-    Espacios(11, "Área de Soporte Técnico y Almacén", crear_actividad_unica(actividad_soporte, 11), habitabilidad2, [(fuente_luz1, 1)], 10, 50.0),
-    Espacios(12, "Cuarto de Monitoreo", crear_actividad_unica(actividad_monitoreo, 12), habitabilidad3, [(fuente_luz1, 1), (fuente_luz4, 1)], 5, 25.0)
+    Espacios(1, "Laboratorio de Redes y Telemática", crear_actividad_unica(actividad_laboratorio, 1), habitabilidad1, [(fuente_luz1, 8), (fuente_luz2, 2), (fuente_luz4, 1)], 30, 85.0, []),
+    Espacios(2, "Laboratorio de Redes Inalámbricas", crear_actividad_unica(actividad_laboratorio, 2), habitabilidad1, [(fuente_luz1, 6), (fuente_luz2, 2), (fuente_luz4, 1)], 30, 90.0, []),
+    Espacios(3, "Sala de Informática 1", crear_actividad_unica(actividad_laboratorio, 3), habitabilidad1, [(fuente_luz1, 6), (fuente_luz2, 3), (fuente_luz4, 1)], 30, 75.0, []),
+    Espacios(4, "Sala de Informática 2", crear_actividad_unica(actividad_laboratorio, 4), habitabilidad1, [(fuente_luz1, 8), (fuente_luz2, 2), (fuente_luz4, 1)], 30, 80.0, []),
+    Espacios(5, "Sala de Informática 3", crear_actividad_unica(actividad_laboratorio, 5), habitabilidad1, [(fuente_luz1, 8), (fuente_luz2, 4), (fuente_luz4, 1)], 30, 100.0, []),
+    Espacios(6, "Sala de Informática 4", crear_actividad_unica(actividad_laboratorio, 6), habitabilidad1, [(fuente_luz1, 8), (fuente_luz2, 4), (fuente_luz4, 1)], 30, 80.0, []),
+    Espacios(7, "Sala de Informática 5", crear_actividad_unica(actividad_laboratorio, 7), habitabilidad1, [(fuente_luz1, 8), (fuente_luz2, 4), (fuente_luz4, 1)], 30, 75.0, []),
+    Espacios(8, "Sala de Informática 6", crear_actividad_unica(actividad_laboratorio, 8), habitabilidad1, [(fuente_luz1, 8), (fuente_luz2, 4), (fuente_luz4, 1)], 30, 100.0, []),
+    Espacios(9, "Sala de Informática 7", crear_actividad_unica(actividad_laboratorio, 9), habitabilidad1, [(fuente_luz1, 8), (fuente_luz2, 2), (fuente_luz4, 1)], 30, 85.0, []),
+    Espacios(10, "Oficina de Sistemas", crear_actividad_unica(actividad_oficina, 10), habitabilidad2, [(fuente_luz1, 1), (fuente_luz4, 1)], 10, 50.0, []),
+    Espacios(11, "Área de Soporte Técnico y Almacén", crear_actividad_unica(actividad_soporte, 11), habitabilidad2, [(fuente_luz1, 1)], 10, 50.0, []),
+    Espacios(12, "Cuarto de Monitoreo", crear_actividad_unica(actividad_monitoreo, 12), habitabilidad3, [(fuente_luz1, 1), (fuente_luz4, 1)], 5, 25.0, [])
 ]
 
 # Crear instancias de la clase Espacios para el Piso 2 (incluyendo el cuarto de fotografía)
 espacios_piso2 = [
-    Espacios(13, "Laboratorio de Electromagnetismo", crear_actividad_unica(actividad_laboratorio, 13), habitabilidad1, [(fuente_luz1, 8), (fuente_luz2, 2), (fuente_luz4, 1)], 30, 95.0),
-    Espacios(14, "Laboratorio de Circuitos Eléctricos", crear_actividad_unica(actividad_laboratorio, 14), habitabilidad1, [(fuente_luz1, 8), (fuente_luz2, 2), (fuente_luz4, 1)], 30, 85.0),
-    Espacios(15, "Laboratorio de Electrónica 1", crear_actividad_unica(actividad_laboratorio, 15), habitabilidad1, [(fuente_luz1, 8), (fuente_luz2, 2), (fuente_luz4, 1)], 30, 85.0),
-    Espacios(16, "Laboratorio de Electrónica 2", crear_actividad_unica(actividad_laboratorio, 16), habitabilidad1, [(fuente_luz1, 7), (fuente_luz2, 2), (fuente_luz4, 1)], 30, 85.0),
-    Espacios(17, "Laboratorio de Electrónica 3", crear_actividad_unica(actividad_laboratorio, 17), habitabilidad1, [(fuente_luz1, 6), (fuente_luz2, 2), (fuente_luz4, 1)], 30, 85.0),
-    Espacios(18, "Área de Almacenamiento y Taller de Mantenimiento Electrónico", crear_actividad_unica(actividad_soporte, 18), habitabilidad2, [(fuente_luz1, 9), (fuente_luz4, 1)], 10, 50.0),
-    Espacios(19, "Cuarto de Atención a Estudiantes", crear_actividad_unica(actividad_oficina, 19), habitabilidad2, [(fuente_luz1, 5), (fuente_luz4, 1)], 10, 50.0),
-    Espacios(20, "Laboratorio de Circuitos Impresos", crear_actividad_unica(actividad_laboratorio, 20), habitabilidad1, [(fuente_luz1, 6), (fuente_luz2, 2), (fuente_luz4, 1)], 30, 80.0),
-    Espacios(21, "Laboratorio de Telecomunicaciones", crear_actividad_unica(actividad_laboratorio, 21), habitabilidad1, [(fuente_luz1, 8), (fuente_luz2, 2), (fuente_luz4, 1)], 30, 85.0),
-    Espacios(22, "Cuarto Oscuro de Fotografía", crear_actividad_unica(actividad_fotografia, 22), habitabilidad1, [(fuente_luz1, 2)], 5, 40.0)
+    Espacios(13, "Laboratorio de Electromagnetismo", crear_actividad_unica(actividad_laboratorio, 13), habitabilidad1, [(fuente_luz1, 8), (fuente_luz2, 2), (fuente_luz4, 1)], 30, 95.0, []),
+    Espacios(14, "Laboratorio de Circuitos Eléctricos", crear_actividad_unica(actividad_laboratorio, 14), habitabilidad1, [(fuente_luz1, 8), (fuente_luz2, 2), (fuente_luz4, 1)], 30, 85.0, []),
+    Espacios(15, "Laboratorio de Electrónica 1", crear_actividad_unica(actividad_laboratorio, 15), habitabilidad1, [(fuente_luz1, 8), (fuente_luz2, 2), (fuente_luz4, 1)], 30, 85.0, []),
+    Espacios(16, "Laboratorio de Electrónica 2", crear_actividad_unica(actividad_laboratorio, 16), habitabilidad1, [(fuente_luz1, 7), (fuente_luz2, 2), (fuente_luz4, 1)], 30, 85.0, []),
+    Espacios(17, "Laboratorio de Electrónica 3", crear_actividad_unica(actividad_laboratorio, 17), habitabilidad1, [(fuente_luz1, 6), (fuente_luz2, 2), (fuente_luz4, 1)], 30, 85.0, []),
+    Espacios(18, "Área de Almacenamiento y Taller de Mantenimiento Electrónico", crear_actividad_unica(actividad_soporte, 18), habitabilidad2, [(fuente_luz1, 9), (fuente_luz4, 1)], 10, 50.0, []),
+    Espacios(19, "Cuarto de Atención a Estudiantes", crear_actividad_unica(actividad_oficina, 19), habitabilidad2, [(fuente_luz1, 5), (fuente_luz4, 1)], 10, 50.0, []),
+    Espacios(20, "Laboratorio de Circuitos Impresos", crear_actividad_unica(actividad_laboratorio, 20), habitabilidad1, [(fuente_luz1, 6), (fuente_luz2, 2), (fuente_luz4, 1)], 30, 80.0, []),
+    Espacios(21, "Laboratorio de Telecomunicaciones", crear_actividad_unica(actividad_laboratorio, 21), habitabilidad1, [(fuente_luz1, 8), (fuente_luz2, 2), (fuente_luz4, 1)], 30, 85.0, []),
+    Espacios(22, "Cuarto Oscuro de Fotografía", crear_actividad_unica(actividad_fotografia, 22), habitabilidad1, [(fuente_luz1, 2)], 5, 40.0, [])
 ]
 
 # Crear instancias de la clase Espacios para el Piso 3
 espacios_piso3 = [
-    Espacios(23, "Salón de Clase 1", crear_actividad_unica(actividad_clase, 23), habitabilidad2, [(fuente_luz1, 7), (fuente_luz4, 1)], 40, 80.0),
-    Espacios(24, "Salón de Clase 2", crear_actividad_unica(actividad_clase, 24), habitabilidad2, [(fuente_luz1, 7), (fuente_luz4, 1)], 40, 80.0),
-    Espacios(25, "Salón de Clase 3", crear_actividad_unica(actividad_clase, 25), habitabilidad2, [(fuente_luz1, 7), (fuente_luz4, 1)], 40, 80.0),
-    Espacios(26, "Salón de Clase 4", crear_actividad_unica(actividad_clase, 26), habitabilidad2, [(fuente_luz1, 7), (fuente_luz4, 1)], 40, 80.0),
-    Espacios(27, "Salón de Clase 5", crear_actividad_unica(actividad_clase, 27), habitabilidad2, [(fuente_luz1, 7), (fuente_luz4, 1)], 40, 80.0),
-    Espacios(28, "Salón de Clase 6", crear_actividad_unica(actividad_clase, 28), habitabilidad2, [(fuente_luz1, 7), (fuente_luz4, 1)], 40, 80.0),
-    Espacios(29, "Salón de Clase 7", crear_actividad_unica(actividad_clase, 29), habitabilidad2, [(fuente_luz1, 7), (fuente_luz4, 1)], 40, 80.0),
-    Espacios(30, "Salón de Clase 8", crear_actividad_unica(actividad_clase, 30), habitabilidad2, [(fuente_luz1, 7), (fuente_luz4, 1)], 40, 80.0)
+    Espacios(23, "Salón de Clase 1", crear_actividad_unica(actividad_clase, 23), habitabilidad2, [(fuente_luz1, 7), (fuente_luz4, 1)], 40, 80.0, []),
+    Espacios(24, "Salón de Clase 2", crear_actividad_unica(actividad_clase, 24), habitabilidad2, [(fuente_luz1, 7), (fuente_luz4, 1)], 40, 80.0, []),
+    Espacios(25, "Salón de Clase 3", crear_actividad_unica(actividad_clase, 25), habitabilidad2, [(fuente_luz1, 7), (fuente_luz4, 1)], 40, 80.0, []),
+    Espacios(26, "Salón de Clase 4", crear_actividad_unica(actividad_clase, 26), habitabilidad2, [(fuente_luz1, 7), (fuente_luz4, 1)], 40, 80.0, []),
+    Espacios(27, "Salón de Clase 5", crear_actividad_unica(actividad_clase, 27), habitabilidad2, [(fuente_luz1, 7), (fuente_luz4, 1)], 40, 80.0, []),
+    Espacios(28, "Salón de Clase 6", crear_actividad_unica(actividad_clase, 28), habitabilidad2, [(fuente_luz1, 7), (fuente_luz4, 1)], 40, 80.0, []),
+    Espacios(29, "Salón de Clase 7", crear_actividad_unica(actividad_clase, 29), habitabilidad2, [(fuente_luz1, 7), (fuente_luz4, 1)], 40, 80.0, []),
+    Espacios(30, "Salón de Clase 8", crear_actividad_unica(actividad_clase, 30), habitabilidad2, [(fuente_luz1, 7), (fuente_luz4, 1)], 40, 80.0, [])
 ]
 
 # Crear instancias de la clase Pared basadas en la matriz de adyacencia

@@ -11,16 +11,23 @@ from modelado.classEdificio import Edificio
 nodes_colors = []
 colors_time = ['white', 'black', '#e3e6ff']
 is_night = False  # False = día, True = noche
-edificio = Edificio.cargar_desde_json('objetos/edificio.json')
+edificio = Edificio.cargar_desde_json('objetos/edificio.json') # Cargar el edificio desde el archivo JSON
+
 # Leer el json y obtener los datos de los espacios
 def get_data():
-    global edificio
     return [f"""Node: {n_node} 
             <br>Nombre: {habitacion.nombre} 
-            <br>Actividad: {habitacion.actividad.nombre} 
-            <br>Nivel Habitabilidad: {habitacion.habitabilidad.nivel_habitabilidad}""" 
+            <br>Actividad: {habitacion.actividad.nombre}
+            <br>Horario: {habitacion.actividad.fecha_inicio} - {habitacion.actividad.fecha_fin}
+            <br>--------------------------
+            <br>Nivel Habitabilidad: {habitacion.habitabilidad.nivel_habitabilidad}
+            <br>luz recomendada min: {habitacion.actividad.luz_recomendada_min}
+            <br>luz recomendada max: {habitacion.actividad.luz_recomendada_max}
+            <br>Iluminancia: {habitacion.habitabilidad.iluminancia_prom:.2f} lux
+            {'<br>-------------------------- <br>Sugerencias: <br>- ' + '<br>- '.join(habitacion.sugerencias) if habitacion.sugerencias else ''}"""
+            
             for n_node, habitacion
-            in zip(G.nodes(), edificio.habitaciones.values())]  # Usar .values() aquí
+            in zip(G.nodes(), edificio.habitaciones.values())]
 
 # ------ CREACION DEL GRAFO ------
 # Crear el grafo
@@ -198,7 +205,7 @@ def update_color(n_clicks):
     Input('change-time', 'n_clicks'),
     prevent_initial_call=True
 )
-def update_button_text(n_clicks):
+def change_time(n_clicks):
     global colors_time, is_night
 
     if is_night:

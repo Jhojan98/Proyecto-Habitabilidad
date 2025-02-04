@@ -1,0 +1,42 @@
+{
+    "implementables": {
+        "poca_luz": [
+            "Movilizar actividad",
+            "Pintar las paredes con colores claros"
+        ],
+        "muy_poca_luz": [
+            "Movilizar actividad",
+            "Instalar mas luces LED"
+        ],
+        "mucha_luz": [
+            "Movilizar actividad",
+            "Pintar las paredes con colores oscuros"
+        ],
+        "demasiada_luz": [
+            "Movilizar actividad",
+            "Instalar cortinas blackout"
+        ]
+    },
+    "no_implementables": {
+        "poca_luz": [
+            "Instalar ventanas más grandes",
+            "Usar lámparas de pie o de mesa para iluminar zonas específicas",
+            "Colocar espejos estratégicamente para amplificar la luz natural",
+            "Eliminar obstáculos que bloqueen la entrada de luz"
+        ],
+        "muy_poca_luz": [
+            "Añadir más luz artificial con sistemas de iluminación regulable",
+            "Cambiar el suelo por materiales brillantes que reflejen la luz",
+            "Instalar ventanas más grandes",
+            "Usar reflectores de luz para redirigir la luz natural"
+        ],
+        "mucha_luz": [
+            "Usar vegetación para filtrar la luz solar",
+            "Añadir persianas ajustables"
+        ],
+        "demasiada_luz": [
+            "Instalar vidrios polarizados en las ventanas",
+            "Usar sensores de luz para regular la iluminación artificial"
+        ]
+    }	
+}

@@ -2,10 +2,11 @@ from modelado.classHabitabilidad import Habitabilidad
 from modelado.classFuenteLuz import FuenteLuz
 from modelado.classActividad import Actividad
 from typing import List, Tuple
+import json
 
 class Espacios:
     def __init__(self, id_espacio: int, nombre: str, actividad: Actividad, habitabilidad: Habitabilidad, 
-                 fuentes_luz: List[Tuple[FuenteLuz, int]], cantidad_personas: int, area: float):
+                 fuentes_luz: List[Tuple[FuenteLuz, int]], cantidad_personas: int, area: float, sugerencias: list = None):
         self.id_espacio = id_espacio
         self.nombre = nombre
         self.actividad = actividad
@@ -13,16 +14,13 @@ class Espacios:
         self.fuentes_luz = [(FuenteLuz(**f) if isinstance(f, dict) else f, q) for f, q in fuentes_luz]
         self.cantidad_personas = cantidad_personas
         self.area = area
+        self.sugerencias = []
 
     def obtener_luz_total(self) -> float:
         """Retorna la iluminancia total del espacio usando los cálculos de habitabilidad."""
         
-        
         return self.habitabilidad.iluminancia_prom
-
-    def movilizar_actividad(self) -> bool:
-        return False
-
+    
     def to_dict(self):
         return {
             "id_espacio": self.id_espacio,
@@ -31,8 +29,32 @@ class Espacios:
             "habitabilidad": self.habitabilidad.to_dict(),
             "fuentes_luz": [(fuente.__dict__, cantidad) for fuente, cantidad in self.fuentes_luz],
             "cantidad_personas": self.cantidad_personas,
-            "area": self.area
+            "area": self.area,
+            "sugerencias": self.sugerencias
         }
+    
+    # Agregar sugerencias en los nodos necesarios (naranjas y rojos)
+    def agregar_sugerencia(self):
+        with open("objetos/sugerencias.json", 'r', encoding='utf-8') as f:
+            sugerencias = json.load(f)
+
+        iluminancia = self.habitabilidad.iluminancia_prom
+
+        if iluminancia < 0.6*self.actividad.luz_recomendada_min:
+            # print(iluminancia)
+            # print(self.actividad.luz_recomendada_min)
+            self.sugerencias = sugerencias['implementables']['muy_poca_luz']
+        elif iluminancia < self.actividad.luz_recomendada_min:
+            self.sugerencias = sugerencias['implementables']['poca_luz']
+        elif iluminancia > 1.4*self.actividad.luz_recomendada_max:
+            self.sugerencias = sugerencias['implementables']['demasiada_luz']
+        elif iluminancia > self.actividad.luz_recomendada_max:
+            self.sugerencias = sugerencias['implementables']['mucha_luz']
+        else:
+            self.sugerencias = []
+
+    def movilizar_actividad(self) -> bool:
+        return False
 
     # Getters y Setters
     def get_id_espacio(self) -> int:
