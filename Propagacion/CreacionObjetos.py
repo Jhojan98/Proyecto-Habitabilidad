@@ -157,7 +157,7 @@ actividad_soporte = Actividad(
     fecha_fin="17:00",
     espacio_id=None,
     luz_recomendada_min=250,
-    luz_recomendada_max=550
+    luz_recomendada_max=650
 )
 
 actividad_monitoreo = Actividad(

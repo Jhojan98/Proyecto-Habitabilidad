@@ -110,7 +110,7 @@ class Edificio:
     def calcular_habitabilidad(self, is_night: bool):
         """Calcula la habitabilidad de todos los espacios del edificio"""
         # Estado inicial de los espacios
-        print("\n============================================= Estado Inicial de los Espacios ==========================================")
+        # print("\n============================================= Estado Inicial de los Espacios ==========================================")
         for espacio in self.habitaciones.values():
             espacio.habitabilidad.calcular_flujo_luminoso(espacio.get_fuentes_luz(), is_night)
             espacio.habitabilidad.calcular_iluminancia_prom(espacio.get_area())
@@ -119,25 +119,25 @@ class Edificio:
                 espacio.actividad.luz_recomendada_min,
                 espacio.actividad.luz_recomendada_max
             )
-            print(f"Espacio {espacio.id_espacio} - {espacio.nombre}:")
-            print(f"  Iluminancia inicial: {espacio.habitabilidad.iluminancia_prom:.2f} lux")
-            print(f"  Nivel habitabilidad inicial: {espacio.habitabilidad.nivel_habitabilidad}")
+            # print(f"Espacio {espacio.id_espacio} - {espacio.nombre}:")
+            # print(f"  Iluminancia inicial: {espacio.habitabilidad.iluminancia_prom:.2f} lux")
+            # print(f"  Nivel habitabilidad inicial: {espacio.habitabilidad.nivel_habitabilidad}")
 
         # Realizar la propagación
         print("\n============================================= Realizando propagación de luz ==========================================")
         self.calcular_propagacion_luz()
 
         # Estado final de los espacios
-        print("\n============================================= Estado Final de los Espacios ==========================================")
+        # print("\n============================================= Estado Final de los Espacios ==========================================")
         for espacio in self.habitaciones.values():
-            print(f"Espacio {espacio.id_espacio} - {espacio.nombre}:")
-            print(f"  Iluminancia final: {espacio.habitabilidad.iluminancia_prom:.2f} lux")
+            # print(f"Espacio {espacio.id_espacio} - {espacio.nombre}:")
+            # print(f"  Iluminancia final: {espacio.habitabilidad.iluminancia_prom:.2f} lux")
             espacio.habitabilidad.calcular_nivel_habitabilidad(
                 espacio.get_area(),
                 espacio.actividad.luz_recomendada_min,
                 espacio.actividad.luz_recomendada_max
             )
-            print(f"  Nivel habitabilidad final: {espacio.habitabilidad.nivel_habitabilidad}")
+            # print(f"  Nivel habitabilidad final: {espacio.habitabilidad.nivel_habitabilidad}")
 
             # Agregar sugerencias para cada nodo
             espacio.agregar_sugerencia()
@@ -149,6 +149,75 @@ class Edificio:
 
         with open('objetos/edificio.json', 'w', encoding="utf-8") as f:
             json.dump(self.to_dict(), f, indent=4, ensure_ascii=False)
+
+    def aplicar_sugerencias(self):
+        """Aplica las sugerencias de mejora a los espacios del edificio"""
+        print("\n============================================= Sugerencias aplicadas ==========================================")
+
+        still_activities = ['Laboratorio', 'Monitoreo', 'Cuarto Oscuro de Fotografía']
+        espaces_to_move = []
+        for espacio in self.habitaciones.values():
+            if 'Movilizar actividad' in espacio.sugerencias and espacio.actividad.nombre not in still_activities:
+                espaces_to_move.append(espacio)
+                espacio.sugerencias.remove('Movilizar actividad')
+
+        # self.movilizar_actividades(espaces_to_move)
+
+        for espacio in self.habitaciones.values():
+            # print(espacio not in espaces_to_move)
+            if espacio.sugerencias and espacio not in espaces_to_move:
+                print(f"\nSugerencias para el espacio {espacio.id_espacio} - {espacio.nombre}:")
+                print("- " + "\n- ".join(espacio.sugerencias))
+
+                print('Sugerencia aplicada:')
+                if 'Pintar las paredes con colores claros' in espacio.sugerencias:
+                    print(f"Se ha pintado el espacio con colores claros")
+                    espacio.habitabilidad.coeficiente_utilizacion_luz *= 1.18 #aumentar utilizacion de luz en un 18%
+                    espacio.sugerencias.remove('Pintar las paredes con colores claros')
+
+                if 'Pintar las paredes con colores oscuros' in espacio.sugerencias:
+                    print(f"Se ha pintado el espacio con colores oscuros")
+                    espacio.habitabilidad.coeficiente_utilizacion_luz *= 0.82 #disminuir utilizacion de luz en un 18%
+                    espacio.sugerencias.remove('Pintar las paredes con colores oscuros')
+
+
+                if 'Instalar mas luces LED' in espacio.sugerencias:
+                    print(f"Se han instalado más luces LED")
+                    espacio.fuentes_luz.append((FuenteLuz(
+                        id_fuente_luz=1,
+                        tipo_fuente="LED",
+                        interna=True,
+                        iluminacion_promedio=300.0,
+                        temperatura_emitida=3500.0,
+                        intensidad=0.8,
+                        lumens=5000
+                    ), 2)) # agregar 2 luces LED más
+                    espacio.sugerencias.remove('Instalar mas luces LED')
+
+                if 'Instalar cortinas blackout' in espacio.sugerencias:
+                    print(f"Se han instalado cortinas blackout") # reducir la luz en un 80%
+                    espacio.habitabilidad.reduccion_luminosidad *= 1.8 # aumentar la reducción de luminosidad en un 80%
+                    espacio.habitabilidad.coeficiente_utilizacion_luz *= 0.2 # disminuir utilizacion de luz en un 80%
+                    espacio.sugerencias.remove('Instalar cortinas blackout')
+                
+    def movilizar_actividades(self, espaces_to_move):
+        """Mueve la actividad a otro espacio"""
+        # print('Se ha movilizado la actividad a otro espacio')
+
+        space_to_move = {}
+        for espacio in espaces_to_move:
+            print(f"\nEspacio {espacio.id_espacio} - {espacio.actividad.luz_recomendada_min} - {espacio.actividad.luz_recomendada_max}")
+            # for espacio_destino in espaces_to_move:
+            for espacio_destino in self.habitaciones.values():
+                if espacio_destino.id_espacio != espacio.id_espacio:
+                    iluminancia = espacio_destino.habitabilidad.iluminancia_prom
+                    print(f"Espacio destino {espacio_destino.id_espacio} - {iluminancia}")
+                    # if espacio.actividad.luz_recomendada_min <= iluminancia and espacio.actividad.luz_recomendada_max >= iluminancia:
+                    #     print(f"El espacio {espacio.id_espacio} se puede mover al espacio {espacio_destino.id_espacio}")
+                    if espacio.actividad.luz_recomendada_min <= iluminancia and espacio.actividad.luz_recomendada_max >= iluminancia and espacio_destino.actividad.luz_recomendada_min <= espacio.habitabilidad.iluminancia_prom and espacio_destino.actividad.luz_recomendada_max >= espacio.habitabilidad.iluminancia_prom:
+                        print(f"{espacio_destino.actividad.luz_recomendada_min} - {espacio.habitabilidad.iluminancia_prom} - {espacio_destino.actividad.luz_recomendada_max}")
+                        print(f"El espacio {espacio.id_espacio} se puede mover al espacio {espacio_destino.id_espacio}")
+        return False
 
     # Getters y Setters
     def get_habitaciones(self) -> list:

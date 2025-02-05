@@ -16,11 +16,11 @@
         },
         "habitabilidad": {
             "id_habitabilidad": 1,
-            "nivel_habitabilidad": 75,
-            "flujo_luminoso": 46000,
+            "nivel_habitabilidad": 100,
+            "flujo_luminoso": 58000,
             "coeficiente_utilizacion_luz": 0.75,
             "reduccion_luminosidad": 0.1,
-            "iluminancia_prom": 365.29411764705884,
+            "iluminancia_prom": 460.5882352941176,
             "uniformidad_iluminancia": 0.0
         },
         "fuentes_luz": [
@@ -63,10 +63,7 @@
         ],
         "cantidad_personas": 30,
         "area": 85.0,
-        "sugerencias": [
-            "Movilizar actividad",
-            "Pintar las paredes con colores claros"
-        ]
+        "sugerencias": []
     },
     "2": {
         "id_espacio": 2,
@@ -86,10 +83,10 @@
         "habitabilidad": {
             "id_habitabilidad": 1,
             "nivel_habitabilidad": 75,
-            "flujo_luminoso": 36000,
+            "flujo_luminoso": 48000,
             "coeficiente_utilizacion_luz": 0.75,
             "reduccion_luminosidad": 0.1,
-            "iluminancia_prom": 297.4001871641086,
+            "iluminancia_prom": 395.2149682927981,
             "uniformidad_iluminancia": 0.0
         },
         "fuentes_luz": [
@@ -154,11 +151,11 @@
         },
         "habitabilidad": {
             "id_habitabilidad": 1,
-            "nivel_habitabilidad": 75,
-            "flujo_luminoso": 39000,
+            "nivel_habitabilidad": 100,
+            "flujo_luminoso": 51000,
             "coeficiente_utilizacion_luz": 0.75,
             "reduccion_luminosidad": 0.1,
-            "iluminancia_prom": 378.63386865437934,
+            "iluminancia_prom": 494.6309105749441,
             "uniformidad_iluminancia": 0.0
         },
         "fuentes_luz": [
@@ -201,10 +198,7 @@
         ],
         "cantidad_personas": 30,
         "area": 75.0,
-        "sugerencias": [
-            "Movilizar actividad",
-            "Pintar las paredes con colores claros"
-        ]
+        "sugerencias": []
     },
     "4": {
         "id_espacio": 4,
@@ -223,11 +217,11 @@
         },
         "habitabilidad": {
             "id_habitabilidad": 1,
-            "nivel_habitabilidad": 75,
-            "flujo_luminoso": 46000,
+            "nivel_habitabilidad": 100,
+            "flujo_luminoso": 58000,
             "coeficiente_utilizacion_luz": 0.75,
             "reduccion_luminosidad": 0.1,
-            "iluminancia_prom": 416.06128360678946,
+            "iluminancia_prom": 524.934187509804,
             "uniformidad_iluminancia": 0.0
         },
         "fuentes_luz": [
@@ -270,10 +264,7 @@
         ],
         "cantidad_personas": 30,
         "area": 80.0,
-        "sugerencias": [
-            "Movilizar actividad",
-            "Pintar las paredes con colores claros"
-        ]
+        "sugerencias": []
     },
     "5": {
         "id_espacio": 5,
@@ -292,11 +283,11 @@
         },
         "habitabilidad": {
             "id_habitabilidad": 1,
-            "nivel_habitabilidad": 75,
-            "flujo_luminoso": 52000,
+            "nivel_habitabilidad": 100,
+            "flujo_luminoso": 64000,
             "coeficiente_utilizacion_luz": 0.75,
             "reduccion_luminosidad": 0.1,
-            "iluminancia_prom": 381.39329008379696,
+            "iluminancia_prom": 469.8643266670153,
             "uniformidad_iluminancia": 0.0
         },
         "fuentes_luz": [
@@ -339,10 +330,7 @@
         ],
         "cantidad_personas": 30,
         "area": 100.0,
-        "sugerencias": [
-            "Movilizar actividad",
-            "Pintar las paredes con colores claros"
-        ]
+        "sugerencias": []
     },
     "6": {
         "id_espacio": 6,
@@ -361,11 +349,11 @@
         },
         "habitabilidad": {
             "id_habitabilidad": 1,
-            "nivel_habitabilidad": 100,
-            "flujo_luminoso": 52000,
+            "nivel_habitabilidad": 75,
+            "flujo_luminoso": 64000,
             "coeficiente_utilizacion_luz": 0.75,
             "reduccion_luminosidad": 0.1,
-            "iluminancia_prom": 451.739562274869,
+            "iluminancia_prom": 556.0033890587825,
             "uniformidad_iluminancia": 0.0
         },
         "fuentes_luz": [
@@ -408,7 +396,10 @@
         ],
         "cantidad_personas": 30,
         "area": 80.0,
-        "sugerencias": []
+        "sugerencias": [
+            "Movilizar actividad",
+            "Pintar las paredes con colores oscuros"
+        ]
     },
     "7": {
         "id_espacio": 7,
@@ -427,11 +418,11 @@
         },
         "habitabilidad": {
             "id_habitabilidad": 1,
-            "nivel_habitabilidad": 100,
-            "flujo_luminoso": 52000,
+            "nivel_habitabilidad": 75,
+            "flujo_luminoso": 64000,
             "coeficiente_utilizacion_luz": 0.75,
             "reduccion_luminosidad": 0.1,
-            "iluminancia_prom": 481.46250710204083,
+            "iluminancia_prom": 592.569239510204,
             "uniformidad_iluminancia": 0.0
         },
         "fuentes_luz": [
@@ -474,7 +465,10 @@
         ],
         "cantidad_personas": 30,
         "area": 75.0,
-        "sugerencias": []
+        "sugerencias": [
+            "Movilizar actividad",
+            "Pintar las paredes con colores oscuros"
+        ]
     },
     "8": {
         "id_espacio": 8,
@@ -493,11 +487,11 @@
         },
         "habitabilidad": {
             "id_habitabilidad": 1,
-            "nivel_habitabilidad": 75,
-            "flujo_luminoso": 52000,
+            "nivel_habitabilidad": 100,
+            "flujo_luminoso": 64000,
             "coeficiente_utilizacion_luz": 0.75,
             "reduccion_luminosidad": 0.1,
-            "iluminancia_prom": 381.1931858613746,
+            "iluminancia_prom": 469.54122814098986,
             "uniformidad_iluminancia": 0.0
         },
         "fuentes_luz": [
@@ -540,10 +534,7 @@
         ],
         "cantidad_personas": 30,
         "area": 100.0,
-        "sugerencias": [
-            "Movilizar actividad",
-            "Pintar las paredes con colores claros"
-        ]
+        "sugerencias": []
     },
     "9": {
         "id_espacio": 9,
@@ -562,11 +553,11 @@
         },
         "habitabilidad": {
             "id_habitabilidad": 1,
-            "nivel_habitabilidad": 75,
-            "flujo_luminoso": 46000,
+            "nivel_habitabilidad": 100,
+            "flujo_luminoso": 58000,
             "coeficiente_utilizacion_luz": 0.75,
             "reduccion_luminosidad": 0.1,
-            "iluminancia_prom": 382.481490366552,
+            "iluminancia_prom": 489.58229483022586,
             "uniformidad_iluminancia": 0.0
         },
         "fuentes_luz": [
@@ -609,10 +600,7 @@
         ],
         "cantidad_personas": 30,
         "area": 85.0,
-        "sugerencias": [
-            "Movilizar actividad",
-            "Pintar las paredes con colores claros"
-        ]
+        "sugerencias": []
     },
     "10": {
         "id_espacio": 10,
@@ -631,11 +619,11 @@
         },
         "habitabilidad": {
             "id_habitabilidad": 2,
-            "nivel_habitabilidad": 50,
-            "flujo_luminoso": 5000,
+            "nivel_habitabilidad": 100,
+            "flujo_luminoso": 17000,
             "coeficiente_utilizacion_luz": 0.8,
             "reduccion_luminosidad": 0.05,
-            "iluminancia_prom": 93.92137110103718,
+            "iluminancia_prom": 280.9783390926792,
             "uniformidad_iluminancia": 0.0
         },
         "fuentes_luz": [
@@ -666,10 +654,7 @@
         ],
         "cantidad_personas": 10,
         "area": 50.0,
-        "sugerencias": [
-            "Movilizar actividad",
-            "Instalar mas luces LED"
-        ]
+        "sugerencias": []
     },
     "11": {
         "id_espacio": 11,
@@ -684,7 +669,7 @@
             "fecha_fin": "17:00",
             "espacio_id": 11,
             "luz_recomendada_min": 250,
-            "luz_recomendada_max": 550
+            "luz_recomendada_max": 650
         },
         "habitabilidad": {
             "id_habitabilidad": 2,
@@ -733,11 +718,11 @@
         },
         "habitabilidad": {
             "id_habitabilidad": 3,
-            "nivel_habitabilidad": 50,
-            "flujo_luminoso": 5000,
+            "nivel_habitabilidad": 75,
+            "flujo_luminoso": 17000,
             "coeficiente_utilizacion_luz": 0.9,
             "reduccion_luminosidad": 0.02,
-            "iluminancia_prom": 176.4,
+            "iluminancia_prom": 599.76,
             "uniformidad_iluminancia": 0.0
         },
         "fuentes_luz": [
@@ -770,7 +755,7 @@
         "area": 25.0,
         "sugerencias": [
             "Movilizar actividad",
-            "Instalar mas luces LED"
+            "Pintar las paredes con colores claros"
         ]
     },
     "13": {
@@ -791,10 +776,10 @@
         "habitabilidad": {
             "id_habitabilidad": 1,
             "nivel_habitabilidad": 75,
-            "flujo_luminoso": 46000,
+            "flujo_luminoso": 58000,
             "coeficiente_utilizacion_luz": 0.75,
             "reduccion_luminosidad": 0.1,
-            "iluminancia_prom": 340.68824286892107,
+            "iluminancia_prom": 429.59944600947057,
             "uniformidad_iluminancia": 0.0
         },
         "fuentes_luz": [
@@ -859,11 +844,11 @@
         },
         "habitabilidad": {
             "id_habitabilidad": 1,
-            "nivel_habitabilidad": 75,
-            "flujo_luminoso": 46000,
+            "nivel_habitabilidad": 100,
+            "flujo_luminoso": 58000,
             "coeficiente_utilizacion_luz": 0.75,
             "reduccion_luminosidad": 0.1,
-            "iluminancia_prom": 379.56409851414617,
+            "iluminancia_prom": 478.58081986566253,
             "uniformidad_iluminancia": 0.0
         },
         "fuentes_luz": [
@@ -906,10 +891,7 @@
         ],
         "cantidad_personas": 30,
         "area": 85.0,
-        "sugerencias": [
-            "Movilizar actividad",
-            "Pintar las paredes con colores claros"
-        ]
+        "sugerencias": []
     },
     "15": {
         "id_espacio": 15,
@@ -928,11 +910,11 @@
         },
         "habitabilidad": {
             "id_habitabilidad": 1,
-            "nivel_habitabilidad": 75,
-            "flujo_luminoso": 46000,
+            "nivel_habitabilidad": 100,
+            "flujo_luminoso": 58000,
             "coeficiente_utilizacion_luz": 0.75,
             "reduccion_luminosidad": 0.1,
-            "iluminancia_prom": 391.8410290374876,
+            "iluminancia_prom": 494.4503782703751,
             "uniformidad_iluminancia": 0.0
         },
         "fuentes_luz": [
@@ -975,10 +957,7 @@
         ],
         "cantidad_personas": 30,
         "area": 85.0,
-        "sugerencias": [
-            "Movilizar actividad",
-            "Pintar las paredes con colores claros"
-        ]
+        "sugerencias": []
     },
     "16": {
         "id_espacio": 16,
@@ -997,11 +976,11 @@
         },
         "habitabilidad": {
             "id_habitabilidad": 1,
-            "nivel_habitabilidad": 75,
-            "flujo_luminoso": 41000,
+            "nivel_habitabilidad": 100,
+            "flujo_luminoso": 53000,
             "coeficiente_utilizacion_luz": 0.75,
             "reduccion_luminosidad": 0.1,
-            "iluminancia_prom": 351.1025273215497,
+            "iluminancia_prom": 453.84712842761826,
             "uniformidad_iluminancia": 0.0
         },
         "fuentes_luz": [
@@ -1044,10 +1023,7 @@
         ],
         "cantidad_personas": 30,
         "area": 85.0,
-        "sugerencias": [
-            "Movilizar actividad",
-            "Pintar las paredes con colores claros"
-        ]
+        "sugerencias": []
     },
     "17": {
         "id_espacio": 17,
@@ -1067,10 +1043,10 @@
         "habitabilidad": {
             "id_habitabilidad": 1,
             "nivel_habitabilidad": 75,
-            "flujo_luminoso": 36000,
+            "flujo_luminoso": 48000,
             "coeficiente_utilizacion_luz": 0.75,
             "reduccion_luminosidad": 0.1,
-            "iluminancia_prom": 298.6770151966571,
+            "iluminancia_prom": 397.69882117694954,
             "uniformidad_iluminancia": 0.0
         },
         "fuentes_luz": [
@@ -1131,15 +1107,15 @@
             "fecha_fin": "17:00",
             "espacio_id": 18,
             "luz_recomendada_min": 250,
-            "luz_recomendada_max": 550
+            "luz_recomendada_max": 650
         },
         "habitabilidad": {
             "id_habitabilidad": 2,
             "nivel_habitabilidad": 75,
-            "flujo_luminoso": 45000,
+            "flujo_luminoso": 57000,
             "coeficiente_utilizacion_luz": 0.8,
             "reduccion_luminosidad": 0.05,
-            "iluminancia_prom": 684.0,
+            "iluminancia_prom": 866.4,
             "uniformidad_iluminancia": 0.0
         },
         "fuentes_luz": [
@@ -1192,11 +1168,11 @@
         },
         "habitabilidad": {
             "id_habitabilidad": 2,
-            "nivel_habitabilidad": 100,
-            "flujo_luminoso": 25000,
+            "nivel_habitabilidad": 75,
+            "flujo_luminoso": 37000,
             "coeficiente_utilizacion_luz": 0.8,
             "reduccion_luminosidad": 0.05,
-            "iluminancia_prom": 395.8748402366864,
+            "iluminancia_prom": 583.7015327810651,
             "uniformidad_iluminancia": 0.0
         },
         "fuentes_luz": [
@@ -1227,7 +1203,10 @@
         ],
         "cantidad_personas": 10,
         "area": 50.0,
-        "sugerencias": []
+        "sugerencias": [
+            "Movilizar actividad",
+            "Pintar las paredes con colores oscuros"
+        ]
     },
     "20": {
         "id_espacio": 20,
@@ -1246,11 +1225,11 @@
         },
         "habitabilidad": {
             "id_habitabilidad": 1,
-            "nivel_habitabilidad": 75,
-            "flujo_luminoso": 36000,
+            "nivel_habitabilidad": 100,
+            "flujo_luminoso": 48000,
             "coeficiente_utilizacion_luz": 0.75,
             "reduccion_luminosidad": 0.1,
-            "iluminancia_prom": 348.5431660553731,
+            "iluminancia_prom": 463.3462561965461,
             "uniformidad_iluminancia": 0.0
         },
         "fuentes_luz": [
@@ -1293,10 +1272,7 @@
         ],
         "cantidad_personas": 30,
         "area": 80.0,
-        "sugerencias": [
-            "Movilizar actividad",
-            "Pintar las paredes con colores claros"
-        ]
+        "sugerencias": []
     },
     "21": {
         "id_espacio": 21,
@@ -1315,11 +1291,11 @@
         },
         "habitabilidad": {
             "id_habitabilidad": 1,
-            "nivel_habitabilidad": 75,
-            "flujo_luminoso": 46000,
+            "nivel_habitabilidad": 100,
+            "flujo_luminoso": 58000,
             "coeficiente_utilizacion_luz": 0.75,
             "reduccion_luminosidad": 0.1,
-            "iluminancia_prom": 399.96399266728025,
+            "iluminancia_prom": 503.13522883210817,
             "uniformidad_iluminancia": 0.0
         },
         "fuentes_luz": [
@@ -1362,10 +1338,7 @@
         ],
         "cantidad_personas": 30,
         "area": 85.0,
-        "sugerencias": [
-            "Movilizar actividad",
-            "Pintar las paredes con colores claros"
-        ]
+        "sugerencias": []
     },
     "22": {
         "id_espacio": 22,
@@ -1388,7 +1361,7 @@
             "flujo_luminoso": 10000,
             "coeficiente_utilizacion_luz": 0.75,
             "reduccion_luminosidad": 0.1,
-            "iluminancia_prom": 205.88618174204248,
+            "iluminancia_prom": 217.01828381908976,
             "uniformidad_iluminancia": 0.0
         },
         "fuentes_luz": [
@@ -1430,10 +1403,10 @@
         "habitabilidad": {
             "id_habitabilidad": 2,
             "nivel_habitabilidad": 100,
-            "flujo_luminoso": 35000,
+            "flujo_luminoso": 47000,
             "coeficiente_utilizacion_luz": 0.8,
             "reduccion_luminosidad": 0.05,
-            "iluminancia_prom": 332.5,
+            "iluminancia_prom": 446.5,
             "uniformidad_iluminancia": 0.0
         },
         "fuentes_luz": [
@@ -1484,10 +1457,10 @@
         "habitabilidad": {
             "id_habitabilidad": 2,
             "nivel_habitabilidad": 100,
-            "flujo_luminoso": 35000,
+            "flujo_luminoso": 47000,
             "coeficiente_utilizacion_luz": 0.8,
             "reduccion_luminosidad": 0.05,
-            "iluminancia_prom": 332.5,
+            "iluminancia_prom": 446.5,
             "uniformidad_iluminancia": 0.0
         },
         "fuentes_luz": [
@@ -1538,10 +1511,10 @@
         "habitabilidad": {
             "id_habitabilidad": 2,
             "nivel_habitabilidad": 100,
-            "flujo_luminoso": 35000,
+            "flujo_luminoso": 47000,
             "coeficiente_utilizacion_luz": 0.8,
             "reduccion_luminosidad": 0.05,
-            "iluminancia_prom": 332.5,
+            "iluminancia_prom": 446.5,
             "uniformidad_iluminancia": 0.0
         },
         "fuentes_luz": [
@@ -1592,10 +1565,10 @@
         "habitabilidad": {
             "id_habitabilidad": 2,
             "nivel_habitabilidad": 100,
-            "flujo_luminoso": 35000,
+            "flujo_luminoso": 47000,
             "coeficiente_utilizacion_luz": 0.8,
             "reduccion_luminosidad": 0.05,
-            "iluminancia_prom": 332.5,
+            "iluminancia_prom": 446.5,
             "uniformidad_iluminancia": 0.0
         },
         "fuentes_luz": [
@@ -1646,10 +1619,10 @@
         "habitabilidad": {
             "id_habitabilidad": 2,
             "nivel_habitabilidad": 100,
-            "flujo_luminoso": 35000,
+            "flujo_luminoso": 47000,
             "coeficiente_utilizacion_luz": 0.8,
             "reduccion_luminosidad": 0.05,
-            "iluminancia_prom": 332.5,
+            "iluminancia_prom": 446.5,
             "uniformidad_iluminancia": 0.0
         },
         "fuentes_luz": [
@@ -1700,10 +1673,10 @@
         "habitabilidad": {
             "id_habitabilidad": 2,
             "nivel_habitabilidad": 100,
-            "flujo_luminoso": 35000,
+            "flujo_luminoso": 47000,
             "coeficiente_utilizacion_luz": 0.8,
             "reduccion_luminosidad": 0.05,
-            "iluminancia_prom": 332.5,
+            "iluminancia_prom": 446.5,
             "uniformidad_iluminancia": 0.0
         },
         "fuentes_luz": [
@@ -1754,10 +1727,10 @@
         "habitabilidad": {
             "id_habitabilidad": 2,
             "nivel_habitabilidad": 100,
-            "flujo_luminoso": 35000,
+            "flujo_luminoso": 47000,
             "coeficiente_utilizacion_luz": 0.8,
             "reduccion_luminosidad": 0.05,
-            "iluminancia_prom": 332.5,
+            "iluminancia_prom": 446.5,
             "uniformidad_iluminancia": 0.0
         },
         "fuentes_luz": [
@@ -1808,10 +1781,10 @@
         "habitabilidad": {
             "id_habitabilidad": 2,
             "nivel_habitabilidad": 100,
-            "flujo_luminoso": 35000,
+            "flujo_luminoso": 47000,
             "coeficiente_utilizacion_luz": 0.8,
             "reduccion_luminosidad": 0.05,
-            "iluminancia_prom": 332.5,
+            "iluminancia_prom": 446.5,
             "uniformidad_iluminancia": 0.0
         },
         "fuentes_luz": [

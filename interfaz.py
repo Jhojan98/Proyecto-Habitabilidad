@@ -11,6 +11,11 @@ from modelado.classEdificio import Edificio
 nodes_colors = []
 colors_time = ['white', 'black', '#e3e6ff']
 is_night = False  # False = día, True = noche
+
+# se crean los objetos de la clase Edificio cada vez que se ejecute el archivo
+with open('Propagacion/CreacionObjetos.py', encoding='utf-8') as f:
+    exec(f.read())
+
 edificio = Edificio.cargar_desde_json('objetos/edificio.json') # Cargar el edificio desde el archivo JSON
 
 # Leer el json y obtener los datos de los espacios
@@ -151,25 +156,28 @@ def create_figure(node_colors):
 # Crear la app de Dash para poder insertar html
 app = dash.Dash(__name__)   
 
-button_style = {
-    'backgroundColor':'#5485ff',
-    'color': 'white', 
-    'border': 'none',
-    'padding': '15px 32px', 
-    'textAlign': 'center',
-    'fontSize': '16px', 
-    'margin': '10px 10px', 
-    'cursor': 'pointer',
-    'borderRadius': '12px',
-}
-
+def get_button_style(color):
+    return {
+        'backgroundColor':color,
+        'color': 'white', 
+        'border': 'none',
+        'padding': '15px 32px', 
+        'textAlign': 'center',
+        'fontSize': '16px', 
+        'margin': '10px 10px', 
+        'cursor': 'pointer',
+        'borderRadius': '12px',
+    }
+# #5485ff
 app.layout = html.Div([
         dcc.Location(id='url', refresh=True),  # Añadir dcc.Location
         dcc.Graph(id='graph', figure=create_figure(['blue'] * len(G.nodes())), style={'height': '80vh'}),
         html.Div(
             children=[
-                html.Button('Recalcular habitabilidad', id='change-color-button', n_clicks=0, style=button_style),
-                html.Button('Cambiar tiempo', id='change-time', n_clicks=0, style=button_style)
+                html.Button('Recalcular habitabilidad', id='recalculate-habitability', n_clicks=0, style=get_button_style('#f79452')),
+                html.Button('Cambiar tiempo', id='change-time', n_clicks=0, style=get_button_style('#3e4b96')),
+                html.Button('Mejorar habitabilidad', id='improve-habitability', n_clicks=0, style=get_button_style('#5cc758')),
+                html.Button('Restaurar edificio inicial', id='restore-building', n_clicks=0, style=get_button_style('#e06e6e')),
             ],
             style={'textAlign': 'center', 'padding': '20px'}
         )
@@ -179,12 +187,12 @@ app.layout = html.Div([
 # Callback que manda el boton para cambiar el color del nodo dinámicamente
 @app.callback(
     Output('graph', 'figure', allow_duplicate=True), # componente que se va a actualizar
-    Input('change-color-button', 'n_clicks'), # componente que dispara la actualización
+    Input('recalculate-habitability', 'n_clicks'), # componente que dispara la actualización
     prevent_initial_call=True
 )
 
 # funcion llamada por el boton
-def update_color(n_clicks):
+def recalculate_habitability(n_clicks):
     edificio.calcular_habitabilidad(is_night)
     nodes_colors.clear()
 
@@ -216,6 +224,33 @@ def change_time(n_clicks):
         is_night = True
         
     return create_figure(['blue'] * len(G.nodes()))
+
+# Callback para mejorar la habitabilidad
+@app.callback(
+    Output('graph', 'figure', allow_duplicate=True),
+    Input('improve-habitability', 'n_clicks'),
+    prevent_initial_call=True
+)
+
+def improve_habitability(n_clicks):
+    edificio.calcular_habitabilidad(is_night)
+    edificio.aplicar_sugerencias()
+    return recalculate_habitability(n_clicks)
+
+# Callback para restaurar el edificio inicial
+@app.callback(
+    Output('graph', 'figure', allow_duplicate=True),
+    Input('restore-building', 'n_clicks'),
+    prevent_initial_call=True
+)
+
+def restore_building(n_clicks):
+    global edificio
+    with open('Propagacion/CreacionObjetos.py', encoding='utf-8') as f:
+        exec(f.read())
+    
+    edificio = Edificio.cargar_desde_json('objetos/edificio.json')
+    return recalculate_habitability(n_clicks)
 
 # Callback al recargar la página se resetean valores 
 @app.callback(

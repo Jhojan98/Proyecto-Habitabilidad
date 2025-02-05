@@ -40,9 +40,12 @@ class Espacios:
 
         iluminancia = self.habitabilidad.iluminancia_prom
 
+        if self.habitabilidad.nivel_habitabilidad == 100:
+            self.sugerencias = []
+        elif self.sugerencias:
+            return
+        
         if iluminancia < 0.6*self.actividad.luz_recomendada_min:
-            # print(iluminancia)
-            # print(self.actividad.luz_recomendada_min)
             self.sugerencias = sugerencias['implementables']['muy_poca_luz']
         elif iluminancia < self.actividad.luz_recomendada_min:
             self.sugerencias = sugerencias['implementables']['poca_luz']
@@ -50,11 +53,6 @@ class Espacios:
             self.sugerencias = sugerencias['implementables']['demasiada_luz']
         elif iluminancia > self.actividad.luz_recomendada_max:
             self.sugerencias = sugerencias['implementables']['mucha_luz']
-        else:
-            self.sugerencias = []
-
-    def movilizar_actividad(self) -> bool:
-        return False
 
     # Getters y Setters
     def get_id_espacio(self) -> int:

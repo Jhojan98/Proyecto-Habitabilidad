@@ -129,7 +129,7 @@
         "fecha_fin": "17:00",
         "espacio_id": 11,
         "luz_recomendada_min": 250,
-        "luz_recomendada_max": 550
+        "luz_recomendada_max": 650
     },
     "4012": {
         "id": 4012,
@@ -213,7 +213,7 @@
         "fecha_fin": "17:00",
         "espacio_id": 18,
         "luz_recomendada_min": 250,
-        "luz_recomendada_max": 550
+        "luz_recomendada_max": 650
     },
     "2019": {
         "id": 2019,
