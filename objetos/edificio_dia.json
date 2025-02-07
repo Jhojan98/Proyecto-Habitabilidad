@@ -65,10 +65,7 @@
             "cantidad_personas": 30,
             "area": 85.0,
             "sugerencias": [],
-            "sugerencias_implementadas": {
-                "dia": [],
-                "noche": []
-            }
+            "sugerencias_implementadas": []
         },
         {
             "id_espacio": 2,
@@ -135,10 +132,7 @@
             "cantidad_personas": 30,
             "area": 90.0,
             "sugerencias": [],
-            "sugerencias_implementadas": {
-                "dia": [],
-                "noche": []
-            }
+            "sugerencias_implementadas": []
         },
         {
             "id_espacio": 3,
@@ -205,10 +199,7 @@
             "cantidad_personas": 30,
             "area": 75.0,
             "sugerencias": [],
-            "sugerencias_implementadas": {
-                "dia": [],
-                "noche": []
-            }
+            "sugerencias_implementadas": []
         },
         {
             "id_espacio": 4,
@@ -275,10 +266,7 @@
             "cantidad_personas": 30,
             "area": 80.0,
             "sugerencias": [],
-            "sugerencias_implementadas": {
-                "dia": [],
-                "noche": []
-            }
+            "sugerencias_implementadas": []
         },
         {
             "id_espacio": 5,
@@ -345,10 +333,7 @@
             "cantidad_personas": 30,
             "area": 100.0,
             "sugerencias": [],
-            "sugerencias_implementadas": {
-                "dia": [],
-                "noche": []
-            }
+            "sugerencias_implementadas": []
         },
         {
             "id_espacio": 6,
@@ -415,10 +400,7 @@
             "cantidad_personas": 30,
             "area": 80.0,
             "sugerencias": [],
-            "sugerencias_implementadas": {
-                "dia": [],
-                "noche": []
-            }
+            "sugerencias_implementadas": []
         },
         {
             "id_espacio": 7,
@@ -485,10 +467,7 @@
             "cantidad_personas": 30,
             "area": 75.0,
             "sugerencias": [],
-            "sugerencias_implementadas": {
-                "dia": [],
-                "noche": []
-            }
+            "sugerencias_implementadas": []
         },
         {
             "id_espacio": 8,
@@ -555,10 +534,7 @@
             "cantidad_personas": 30,
             "area": 100.0,
             "sugerencias": [],
-            "sugerencias_implementadas": {
-                "dia": [],
-                "noche": []
-            }
+            "sugerencias_implementadas": []
         },
         {
             "id_espacio": 9,
@@ -625,10 +601,7 @@
             "cantidad_personas": 30,
             "area": 85.0,
             "sugerencias": [],
-            "sugerencias_implementadas": {
-                "dia": [],
-                "noche": []
-            }
+            "sugerencias_implementadas": []
         },
         {
             "id_espacio": 10,
@@ -683,10 +656,7 @@
             "cantidad_personas": 10,
             "area": 50.0,
             "sugerencias": [],
-            "sugerencias_implementadas": {
-                "dia": [],
-                "noche": []
-            }
+            "sugerencias_implementadas": []
         },
         {
             "id_espacio": 11,
@@ -729,10 +699,7 @@
             "cantidad_personas": 10,
             "area": 50.0,
             "sugerencias": [],
-            "sugerencias_implementadas": {
-                "dia": [],
-                "noche": []
-            }
+            "sugerencias_implementadas": []
         },
         {
             "id_espacio": 12,
@@ -787,10 +754,7 @@
             "cantidad_personas": 5,
             "area": 25.0,
             "sugerencias": [],
-            "sugerencias_implementadas": {
-                "dia": [],
-                "noche": []
-            }
+            "sugerencias_implementadas": []
         },
         {
             "id_espacio": 13,
@@ -857,10 +821,7 @@
             "cantidad_personas": 30,
             "area": 95.0,
             "sugerencias": [],
-            "sugerencias_implementadas": {
-                "dia": [],
-                "noche": []
-            }
+            "sugerencias_implementadas": []
         },
         {
             "id_espacio": 14,
@@ -927,10 +888,7 @@
             "cantidad_personas": 30,
             "area": 85.0,
             "sugerencias": [],
-            "sugerencias_implementadas": {
-                "dia": [],
-                "noche": []
-            }
+            "sugerencias_implementadas": []
         },
         {
             "id_espacio": 15,
@@ -997,10 +955,7 @@
             "cantidad_personas": 30,
             "area": 85.0,
             "sugerencias": [],
-            "sugerencias_implementadas": {
-                "dia": [],
-                "noche": []
-            }
+            "sugerencias_implementadas": []
         },
         {
             "id_espacio": 16,
@@ -1067,10 +1022,7 @@
             "cantidad_personas": 30,
             "area": 85.0,
             "sugerencias": [],
-            "sugerencias_implementadas": {
-                "dia": [],
-                "noche": []
-            }
+            "sugerencias_implementadas": []
         },
         {
             "id_espacio": 17,
@@ -1137,10 +1089,7 @@
             "cantidad_personas": 30,
             "area": 85.0,
             "sugerencias": [],
-            "sugerencias_implementadas": {
-                "dia": [],
-                "noche": []
-            }
+            "sugerencias_implementadas": []
         },
         {
             "id_espacio": 18,
@@ -1195,10 +1144,7 @@
             "cantidad_personas": 10,
             "area": 50.0,
             "sugerencias": [],
-            "sugerencias_implementadas": {
-                "dia": [],
-                "noche": []
-            }
+            "sugerencias_implementadas": []
         },
         {
             "id_espacio": 19,
@@ -1253,10 +1199,7 @@
             "cantidad_personas": 10,
             "area": 50.0,
             "sugerencias": [],
-            "sugerencias_implementadas": {
-                "dia": [],
-                "noche": []
-            }
+            "sugerencias_implementadas": []
         },
         {
             "id_espacio": 20,
@@ -1323,10 +1266,7 @@
             "cantidad_personas": 30,
             "area": 80.0,
             "sugerencias": [],
-            "sugerencias_implementadas": {
-                "dia": [],
-                "noche": []
-            }
+            "sugerencias_implementadas": []
         },
         {
             "id_espacio": 21,
@@ -1393,10 +1333,7 @@
             "cantidad_personas": 30,
             "area": 85.0,
             "sugerencias": [],
-            "sugerencias_implementadas": {
-                "dia": [],
-                "noche": []
-            }
+            "sugerencias_implementadas": []
         },
         {
             "id_espacio": 22,
@@ -1433,16 +1370,13 @@
                         "intensidad": 0.8,
                         "lumens": 5000
                     },
-                    2
+                    1
                 ]
             ],
             "cantidad_personas": 5,
             "area": 40.0,
             "sugerencias": [],
-            "sugerencias_implementadas": {
-                "dia": [],
-                "noche": []
-            }
+            "sugerencias_implementadas": []
         },
         {
             "id_espacio": 23,
@@ -1497,10 +1431,7 @@
             "cantidad_personas": 40,
             "area": 80.0,
             "sugerencias": [],
-            "sugerencias_implementadas": {
-                "dia": [],
-                "noche": []
-            }
+            "sugerencias_implementadas": []
         },
         {
             "id_espacio": 24,
@@ -1555,10 +1486,7 @@
             "cantidad_personas": 40,
             "area": 80.0,
             "sugerencias": [],
-            "sugerencias_implementadas": {
-                "dia": [],
-                "noche": []
-            }
+            "sugerencias_implementadas": []
         },
         {
             "id_espacio": 25,
@@ -1613,10 +1541,7 @@
             "cantidad_personas": 40,
             "area": 80.0,
             "sugerencias": [],
-            "sugerencias_implementadas": {
-                "dia": [],
-                "noche": []
-            }
+            "sugerencias_implementadas": []
         },
         {
             "id_espacio": 26,
@@ -1671,10 +1596,7 @@
             "cantidad_personas": 40,
             "area": 80.0,
             "sugerencias": [],
-            "sugerencias_implementadas": {
-                "dia": [],
-                "noche": []
-            }
+            "sugerencias_implementadas": []
         },
         {
             "id_espacio": 27,
@@ -1729,10 +1651,7 @@
             "cantidad_personas": 40,
             "area": 80.0,
             "sugerencias": [],
-            "sugerencias_implementadas": {
-                "dia": [],
-                "noche": []
-            }
+            "sugerencias_implementadas": []
         },
         {
             "id_espacio": 28,
@@ -1787,10 +1706,7 @@
             "cantidad_personas": 40,
             "area": 80.0,
             "sugerencias": [],
-            "sugerencias_implementadas": {
-                "dia": [],
-                "noche": []
-            }
+            "sugerencias_implementadas": []
         },
         {
             "id_espacio": 29,
@@ -1845,10 +1761,7 @@
             "cantidad_personas": 40,
             "area": 80.0,
             "sugerencias": [],
-            "sugerencias_implementadas": {
-                "dia": [],
-                "noche": []
-            }
+            "sugerencias_implementadas": []
         },
         {
             "id_espacio": 30,
@@ -1903,10 +1816,7 @@
             "cantidad_personas": 40,
             "area": 80.0,
             "sugerencias": [],
-            "sugerencias_implementadas": {
-                "dia": [],
-                "noche": []
-            }
+            "sugerencias_implementadas": []
         }
     ],
     "paredes": [
@@ -2261,6 +2171,5 @@
             "id_espacio_1": 30,
             "id_espacio_2": 31
         }
-    ],
-    "tiempo": "dia"
+    ]
 }

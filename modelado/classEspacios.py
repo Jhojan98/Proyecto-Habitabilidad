@@ -6,7 +6,7 @@ import json
 
 class Espacios:
     def __init__(self, id_espacio: int, nombre: str, actividad: Actividad, habitabilidad: Habitabilidad, 
-                 fuentes_luz: List[Tuple[FuenteLuz, int]], cantidad_personas: int, area: float, sugerencias: list = None):
+                 fuentes_luz: List[Tuple[FuenteLuz, int]], cantidad_personas: int, area: float):
         self.id_espacio = id_espacio
         self.nombre = nombre
         self.actividad = actividad
@@ -15,6 +15,7 @@ class Espacios:
         self.cantidad_personas = cantidad_personas
         self.area = area
         self.sugerencias = []
+        self.sugerencias_implementadas = []
 
     def obtener_luz_total(self) -> float:
         """Retorna la iluminancia total del espacio usando los cálculos de habitabilidad."""
@@ -30,7 +31,8 @@ class Espacios:
             "fuentes_luz": [(fuente.__dict__, cantidad) for fuente, cantidad in self.fuentes_luz],
             "cantidad_personas": self.cantidad_personas,
             "area": self.area,
-            "sugerencias": self.sugerencias
+            "sugerencias": self.sugerencias,
+            "sugerencias_implementadas": self.sugerencias_implementadas
         }
     
     # Agregar sugerencias en los nodos necesarios (naranjas y rojos)
@@ -40,19 +42,21 @@ class Espacios:
 
         iluminancia = self.habitabilidad.iluminancia_prom
 
-        if self.habitabilidad.nivel_habitabilidad == 100:
-            self.sugerencias = []
-        elif self.sugerencias:
-            return
-        
-        if iluminancia < 0.6*self.actividad.luz_recomendada_min:
+        if iluminancia < 0.8*self.actividad.luz_recomendada_min:
             self.sugerencias = sugerencias['implementables']['muy_poca_luz']
         elif iluminancia < self.actividad.luz_recomendada_min:
             self.sugerencias = sugerencias['implementables']['poca_luz']
-        elif iluminancia > 1.4*self.actividad.luz_recomendada_max:
+        elif iluminancia > 1.2*self.actividad.luz_recomendada_max:
             self.sugerencias = sugerencias['implementables']['demasiada_luz']
         elif iluminancia > self.actividad.luz_recomendada_max:
             self.sugerencias = sugerencias['implementables']['mucha_luz']
+        else:
+            self.sugerencias = []
+
+        # Eliminar las sugerencias que ya han sido implementadas
+        for sugerencia in self.sugerencias[:]: # recorrer una copia de la lista ([:])
+            if sugerencia in self.sugerencias_implementadas:
+                self.sugerencias.remove(sugerencia)
 
     # Getters y Setters
     def get_id_espacio(self) -> int:

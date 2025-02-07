@@ -16,7 +16,10 @@ is_night = False  # False = día, True = noche
 with open('Propagacion/CreacionObjetos.py', encoding='utf-8') as f:
     exec(f.read())
 
-edificio = Edificio.cargar_desde_json('objetos/edificio.json') # Cargar el edificio desde el archivo JSON
+edificio_dia = Edificio.cargar_desde_json('objetos/edificio_dia.json') # Cargar el edificio desde el archivo JSON
+edificio_noche = Edificio.cargar_desde_json('objetos/edificio_noche.json')
+
+edificio = edificio_dia
 
 # Leer el json y obtener los datos de los espacios
 def get_data():
@@ -29,7 +32,9 @@ def get_data():
             <br>luz recomendada min: {habitacion.actividad.luz_recomendada_min}
             <br>luz recomendada max: {habitacion.actividad.luz_recomendada_max}
             <br>Iluminancia: {habitacion.habitabilidad.iluminancia_prom:.2f} lux
-            {'<br>-------------------------- <br>Sugerencias: <br>- ' + '<br>- '.join(habitacion.sugerencias) if habitacion.sugerencias else ''}"""
+            {'<br>--------------------------' if habitacion.sugerencias or habitacion.sugerencias_implementadas else ''}
+            {'<br>Sugerencias: <br>- ' + '<br>- '.join(habitacion.sugerencias) if habitacion.sugerencias else ''}
+            {'<br>Sugerencias implementadas: <br>- ' + '<br>- '.join(habitacion.sugerencias_implementadas) if habitacion.sugerencias_implementadas else ''}"""
             
             for n_node, habitacion
             in zip(G.nodes(), edificio.habitaciones.values())]
@@ -139,11 +144,7 @@ def create_figure(node_colors):
             zaxis_title='',
             xaxis_visible=False,
             yaxis_visible=False,
-            # zaxis_visible=False,
             zaxis=dict(showgrid=False, showticklabels=False, zeroline=False, backgroundcolor=colors_time[2]),
-            # xaxis=dict(nticks=4),
-            # yaxis=dict(nticks=6),
-            # zaxis=dict(nticks=4),
         ),
         title='Simulación 3D, Habitabilidad y propagación de Luz, basado en el Edificio Techné UD, 3 Pisos',
         showlegend=False
@@ -168,7 +169,7 @@ def get_button_style(color):
         'cursor': 'pointer',
         'borderRadius': '12px',
     }
-# #5485ff
+
 app.layout = html.Div([
         dcc.Location(id='url', refresh=True),  # Añadir dcc.Location
         dcc.Graph(id='graph', figure=create_figure(['blue'] * len(G.nodes())), style={'height': '80vh'}),
@@ -214,14 +215,16 @@ def recalculate_habitability(n_clicks):
     prevent_initial_call=True
 )
 def change_time(n_clicks):
-    global colors_time, is_night
+    global colors_time, is_night, edificio
 
     if is_night:
         colors_time = ['white', 'black', '#e3e6ff']
         is_night = False
+        edificio = edificio_dia
     else:
         colors_time = ['#2b2e47', 'white', '#4f5582']
         is_night = True
+        edificio = edificio_noche
         
     return create_figure(['blue'] * len(G.nodes()))
 
@@ -234,7 +237,7 @@ def change_time(n_clicks):
 
 def improve_habitability(n_clicks):
     edificio.calcular_habitabilidad(is_night)
-    edificio.aplicar_sugerencias()
+    edificio.implementar_sugerencias()
     return recalculate_habitability(n_clicks)
 
 # Callback para restaurar el edificio inicial
@@ -245,11 +248,13 @@ def improve_habitability(n_clicks):
 )
 
 def restore_building(n_clicks):
-    global edificio
+    global edificio, edificio_dia, edificio_noche
     with open('Propagacion/CreacionObjetos.py', encoding='utf-8') as f:
         exec(f.read())
     
-    edificio = Edificio.cargar_desde_json('objetos/edificio.json')
+    edificio_dia = Edificio.cargar_desde_json('objetos/edificio_dia.json') 
+    edificio_noche = Edificio.cargar_desde_json('objetos/edificio_noche.json')
+    edificio = edificio_dia
     return recalculate_habitability(n_clicks)
 
 # Callback al recargar la página se resetean valores 

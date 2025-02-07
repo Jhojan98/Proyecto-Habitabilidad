@@ -2,7 +2,7 @@
     "implementables": {
         "poca_luz": [
             "Movilizar actividad",
-            "Pintar las paredes con colores claros"
+            "Usar lamparas de pie de bajo consumo"
         ],
         "muy_poca_luz": [
             "Movilizar actividad",
@@ -10,7 +10,7 @@
         ],
         "mucha_luz": [
             "Movilizar actividad",
-            "Pintar las paredes con colores oscuros"
+            "Instalar persianas semitransparentes económicas" 
         ],
         "demasiada_luz": [
             "Movilizar actividad",
@@ -20,7 +20,7 @@
     "no_implementables": {
         "poca_luz": [
             "Instalar ventanas más grandes",
-            "Usar lámparas de pie o de mesa para iluminar zonas específicas",
+            "Pintar las paredes con colores claros",
             "Colocar espejos estratégicamente para amplificar la luz natural",
             "Eliminar obstáculos que bloqueen la entrada de luz"
         ],
@@ -32,7 +32,7 @@
         ],
         "mucha_luz": [
             "Usar vegetación para filtrar la luz solar",
-            "Añadir persianas ajustables"
+            "Pintar las paredes con colores oscuros"
         ],
         "demasiada_luz": [
             "Instalar vidrios polarizados en las ventanas",

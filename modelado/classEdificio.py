@@ -8,16 +8,18 @@ from typing import List
 import json
 import pandas as pd
 import numpy as np
+import copy
 
 class Edificio:
-    def __init__(self, habitaciones: list, paredes: list, matrizConexiones: list = None, informacionNodos: str = None):
+    def __init__(self, habitaciones: list, paredes: list, ruta_archivo: str, matrizConexiones: list = None):
         self.habitaciones = {h.id_espacio: h for h in habitaciones}  # Convert to dictionary for easier access
         self.paredes = paredes
+        self.ruta_archivo = ruta_archivo
         self.matrizConexiones = pd.read_csv('objetos/adjacency_matrix.csv', header=None).values if matrizConexiones is None else matrizConexiones
-        self.informacionNodos = informacionNodos if informacionNodos is not None else ""
         
     @classmethod
-    def cargar_desde_json(cls, ruta_archivo: str = 'objetos/edificio.json'):
+    # def cargar_desde_json(cls, ruta_archivo: str = 'objetos/edificio.json'):
+    def cargar_desde_json(cls, ruta_archivo: str):
         """Carga un edificio desde un archivo JSON"""
         with open(ruta_archivo, 'r', encoding='utf-8') as f:
             data = json.load(f)
@@ -40,6 +42,8 @@ class Edificio:
             del espacio_dict['habitabilidad']
             del espacio_dict['fuentes_luz']
             del espacio_dict['actividad']
+            del espacio_dict['sugerencias']
+            del espacio_dict['sugerencias_implementadas']
             
             # Agregar la instancia de actividad al diccionario
             espacio_dict['actividad'] = actividad
@@ -57,18 +61,17 @@ class Edificio:
         return cls(
             habitaciones=espacios,
             paredes=paredes,
-            informacionNodos=data.get('informacionNodos', '')
+            ruta_archivo=ruta_archivo
         )
     
     def to_dict(self):
         return {
             "habitaciones": [habitacion.to_dict() for habitacion in self.habitaciones.values()],
-            "paredes": [pared.to_dict() for pared in self.paredes],
-            "informacionNodos": self.informacionNodos
+            "paredes": [pared.to_dict() for pared in self.paredes]
         }
     
     def __repr__(self):
-        return f"Edificio(habitaciones={self.habitaciones}, paredes={self.paredes}, matrizConexiones={self.matrizConexiones}, informacionNodos={self.informacionNodos})"
+        return f"Edificio(habitaciones={self.habitaciones}, paredes={self.paredes}, matrizConexiones={self.matrizConexiones}"
     
     def iniciar_simulacion(self):
         # metodo para iniciar la matriz 
@@ -109,6 +112,7 @@ class Edificio:
 
     def calcular_habitabilidad(self, is_night: bool):
         """Calcula la habitabilidad de todos los espacios del edificio"""
+
         # Estado inicial de los espacios
         # print("\n============================================= Estado Inicial de los Espacios ==========================================")
         for espacio in self.habitaciones.values():
@@ -147,39 +151,46 @@ class Edificio:
         with open('objetos/espacios.json', 'w', encoding="utf-8") as f:
             json.dump(espacios_dict, f, indent=4, ensure_ascii=False)
 
-        with open('objetos/edificio.json', 'w', encoding="utf-8") as f:
+        with open(self.ruta_archivo, 'w', encoding="utf-8") as f:
             json.dump(self.to_dict(), f, indent=4, ensure_ascii=False)
 
-    def aplicar_sugerencias(self):
+    def implementar_sugerencias(self):
         """Aplica las sugerencias de mejora a los espacios del edificio"""
+
         print("\n============================================= Sugerencias aplicadas ==========================================")
 
-        still_activities = ['Laboratorio', 'Monitoreo', 'Cuarto Oscuro de Fotografía']
-        espaces_to_move = []
+        still_activities = ['Monitoreo', 'Cuarto Oscuro de Fotografía'] # actividades que no se pueden mover
+        espaces_to_move = [] 
+        # encontrar espacios que se pueden mover 
         for espacio in self.habitaciones.values():
             if 'Movilizar actividad' in espacio.sugerencias and espacio.actividad.nombre not in still_activities:
                 espaces_to_move.append(espacio)
-                espacio.sugerencias.remove('Movilizar actividad')
 
-        # self.movilizar_actividades(espaces_to_move)
+        self.movilizar_actividades(espaces_to_move) if espaces_to_move else None
 
-        for espacio in self.habitaciones.values():
-            # print(espacio not in espaces_to_move)
-            if espacio.sugerencias and espacio not in espaces_to_move:
+        # aplicar sugerencias
+        for espacio in self.habitaciones.values():  
+            if espacio.sugerencias:
                 print(f"\nSugerencias para el espacio {espacio.id_espacio} - {espacio.nombre}:")
                 print("- " + "\n- ".join(espacio.sugerencias))
 
                 print('Sugerencia aplicada:')
-                if 'Pintar las paredes con colores claros' in espacio.sugerencias:
-                    print(f"Se ha pintado el espacio con colores claros")
-                    espacio.habitabilidad.coeficiente_utilizacion_luz *= 1.18 #aumentar utilizacion de luz en un 18%
-                    espacio.sugerencias.remove('Pintar las paredes con colores claros')
+                # si ya se implemento la sugerencia de movilizar actividad, no aplicar las demas sugerencias
+                if 'Movilizar actividad' in espacio.sugerencias_implementadas and espacio in espaces_to_move:
+                    print(f"Se ha movilizado la actividad a otro espacio")
+                    continue
 
-                if 'Pintar las paredes con colores oscuros' in espacio.sugerencias:
-                    print(f"Se ha pintado el espacio con colores oscuros")
+                sugerencia = ''
+
+                if 'Usar lamparas de pie de bajo consumo' in espacio.sugerencias:
+                    print(f"Se han usado lamparas de pie de bajo consumo")
+                    espacio.habitabilidad.coeficiente_utilizacion_luz *= 1.22 #aumentar utilizacion de luz en un 22%
+                    sugerencia = 'Usar lamparas de pie de bajo consumo'
+
+                if 'Instalar persianas semitransparentes económicas' in espacio.sugerencias:
+                    print(f"Se han instalado persianas semitransparentes económicas")
                     espacio.habitabilidad.coeficiente_utilizacion_luz *= 0.82 #disminuir utilizacion de luz en un 18%
-                    espacio.sugerencias.remove('Pintar las paredes con colores oscuros')
-
+                    sugerencia = 'Instalar persianas semitransparentes económicas'
 
                 if 'Instalar mas luces LED' in espacio.sugerencias:
                     print(f"Se han instalado más luces LED")
@@ -191,33 +202,82 @@ class Edificio:
                         temperatura_emitida=3500.0,
                         intensidad=0.8,
                         lumens=5000
-                    ), 2)) # agregar 2 luces LED más
-                    espacio.sugerencias.remove('Instalar mas luces LED')
+                    ), 4)) # agregar 2 luces LED más
+                    sugerencia = 'Instalar mas luces LED'
 
                 if 'Instalar cortinas blackout' in espacio.sugerencias:
-                    print(f"Se han instalado cortinas blackout") # reducir la luz en un 80%
-                    espacio.habitabilidad.reduccion_luminosidad *= 1.8 # aumentar la reducción de luminosidad en un 80%
-                    espacio.habitabilidad.coeficiente_utilizacion_luz *= 0.2 # disminuir utilizacion de luz en un 80%
-                    espacio.sugerencias.remove('Instalar cortinas blackout')
+                    print(f"Se han instalado cortinas blackout") # reducir la luz en un 60%
+                    espacio.habitabilidad.reduccion_luminosidad *= 1.4 # aumentar la reducción de luminosidad en un 40%
+                    espacio.habitabilidad.coeficiente_utilizacion_luz *= 0.6 # disminuir utilizacion de luz en un 40%
+                    sugerencia = 'Instalar cortinas blackout'
                 
+                if sugerencia != '':
+                    espacio.sugerencias_implementadas.append(sugerencia)
+
+
+    # algoritmo para mover actividades
     def movilizar_actividades(self, espaces_to_move):
         """Mueve la actividad a otro espacio"""
-        # print('Se ha movilizado la actividad a otro espacio')
-
-        space_to_move = {}
+        # encontrar todos las parejas de espacios que pueden intercambiar
+        pairs_spaces_can_switch = []
         for espacio in espaces_to_move:
-            print(f"\nEspacio {espacio.id_espacio} - {espacio.actividad.luz_recomendada_min} - {espacio.actividad.luz_recomendada_max}")
-            # for espacio_destino in espaces_to_move:
-            for espacio_destino in self.habitaciones.values():
+            # print(f"\nEspacio {espacio.id_espacio} - {espacio.actividad.luz_recomendada_min} - {espacio.actividad.luz_recomendada_max}")
+            for espacio_destino in espaces_to_move:
                 if espacio_destino.id_espacio != espacio.id_espacio:
                     iluminancia = espacio_destino.habitabilidad.iluminancia_prom
-                    print(f"Espacio destino {espacio_destino.id_espacio} - {iluminancia}")
-                    # if espacio.actividad.luz_recomendada_min <= iluminancia and espacio.actividad.luz_recomendada_max >= iluminancia:
-                    #     print(f"El espacio {espacio.id_espacio} se puede mover al espacio {espacio_destino.id_espacio}")
-                    if espacio.actividad.luz_recomendada_min <= iluminancia and espacio.actividad.luz_recomendada_max >= iluminancia and espacio_destino.actividad.luz_recomendada_min <= espacio.habitabilidad.iluminancia_prom and espacio_destino.actividad.luz_recomendada_max >= espacio.habitabilidad.iluminancia_prom:
-                        print(f"{espacio_destino.actividad.luz_recomendada_min} - {espacio.habitabilidad.iluminancia_prom} - {espacio_destino.actividad.luz_recomendada_max}")
+                    # print(f"Espacio destino {espacio_destino.id_espacio} - {iluminancia}")
+                    if espacio.actividad.luz_recomendada_min <= iluminancia and espacio.actividad.luz_recomendada_max >= iluminancia:
+                        # print(f"{espacio_destino.actividad.luz_recomendada_min} - {espacio.habitabilidad.iluminancia_prom} - {espacio_destino.actividad.luz_recomendada_max}")
                         print(f"El espacio {espacio.id_espacio} se puede mover al espacio {espacio_destino.id_espacio}")
-        return False
+                        
+                        pairs_spaces_can_switch.append((espacio, espacio_destino))
+        
+        # encontrar la mejor pareja para cambiar segun rangos de iluminancia
+        best_pairs = []
+        best_destination = (None, None, float('inf'))
+        for i, pair in enumerate(pairs_spaces_can_switch):
+            pairs_list = [pair[0].id_espacio for pair in best_pairs] + [pair[1].id_espacio for pair in best_pairs]
+
+            # si un espacio ya sera movido, no se puede mover de nuevo
+            if pair[0].id_espacio in pairs_list:
+                continue
+
+            # encontrar la menor diferencia de iluminancia entre la actual y la mejor
+            if pair[1].id_espacio not in pairs_list:
+                diff = 0
+                if pair[0].habitabilidad.iluminancia_prom > pair[1].actividad.luz_recomendada_min and pair[0].habitabilidad.iluminancia_prom < pair[1].actividad.luz_recomendada_max:
+                    best_pairs.append(pair)
+                    best_destination = (None, None, float('inf'))
+                elif pair[0].habitabilidad.iluminancia_prom < pair[1].actividad.luz_recomendada_min:
+                    diff = pair[1].actividad.luz_recomendada_min - pair[0].habitabilidad.iluminancia_prom
+                else:
+                    diff = pair[0].habitabilidad.iluminancia_prom - pair[1].actividad.luz_recomendada_max
+                
+                best_destination = (pair[0], pair[1], diff) if diff < best_destination[2] else best_destination
+
+            # si el siguiente id de espacio es diferente al actual, agregar la mejor pareja o si es la ultima pareja en la lista
+            if (i == len(pairs_spaces_can_switch) - 1) or best_destination[0] is not None and pairs_spaces_can_switch[i+1][0].id_espacio != best_destination[0].id_espacio:
+                best_pairs.append((best_destination[0], best_destination[1]))
+                best_destination =  (None, None, float('inf'))
+
+        # mover actividades y actualizar json
+        for pair in best_pairs:
+            safe_espace = copy.deepcopy(pair[0])
+            pair[0].nombre = pair[1].nombre
+            pair[0].set_actividad(pair[1].actividad)
+            pair[1].nombre = safe_espace.nombre
+            pair[1].set_actividad(safe_espace.actividad)
+
+            pair[0].sugerencias_implementadas.append('Movilizar actividad')
+            pair[1].sugerencias_implementadas.append('Movilizar actividad')
+            pair[0].sugerencias_implementadas.append(f'Intercambio con espacio {pair[1].id_espacio}')
+            pair[1].sugerencias_implementadas.append(f'Intercambio con espacio {pair[0].id_espacio}')
+
+            print(f"Se ha movido la actividad del espacio {pair[0].id_espacio} al espacio {pair[1].id_espacio}")
+
+            # actualizar json
+            with open(self.ruta_archivo, 'w', encoding="utf-8") as f:
+                json.dump(self.to_dict(), f, indent=4, ensure_ascii=False)
 
     # Getters y Setters
     def get_habitaciones(self) -> list:
@@ -238,8 +298,8 @@ class Edificio:
     def set_matrizConexiones(self, matrizConexiones: list):
         self.matrizConexiones = matrizConexiones
 
-    def get_informacionNodos(self) -> str:
-        return self.informacionNodos
+    def set_tiempo(self) -> str:
+        return self.set_tiempo
 
-    def set_informacionNodos(self, informacionNodos: str):
-        self.informacionNodos = informacionNodos
+    def set_tiempo(self, set_tiempo: str):
+        self.set_tiempo = set_tiempo
