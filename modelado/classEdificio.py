@@ -154,7 +154,7 @@ class Edificio:
         with open(self.ruta_archivo, 'w', encoding="utf-8") as f:
             json.dump(self.to_dict(), f, indent=4, ensure_ascii=False)
 
-    def implementar_sugerencias(self):
+    def implementar_sugerencias(self, edificio_2):
         """Aplica las sugerencias de mejora a los espacios del edificio"""
 
         print("\n============================================= Sugerencias aplicadas ==========================================")
@@ -166,7 +166,7 @@ class Edificio:
             if 'Movilizar actividad' in espacio.sugerencias and espacio.actividad.nombre not in still_activities:
                 espaces_to_move.append(espacio)
 
-        self.movilizar_actividades(espaces_to_move) if espaces_to_move else None
+        self.movilizar_actividades(espaces_to_move, edificio_2) if espaces_to_move else None
 
         # aplicar sugerencias
         for espacio in self.habitaciones.values():  
@@ -202,11 +202,11 @@ class Edificio:
                         temperatura_emitida=3500.0,
                         intensidad=0.8,
                         lumens=5000
-                    ), 4)) # agregar 2 luces LED más
+                    ), 4)) # agregar 4 luces LED más
                     sugerencia = 'Instalar mas luces LED'
 
                 if 'Instalar cortinas blackout' in espacio.sugerencias:
-                    print(f"Se han instalado cortinas blackout") # reducir la luz en un 60%
+                    print(f"Se han instalado cortinas blackout") # reducir la luz en un 40%
                     espacio.habitabilidad.reduccion_luminosidad *= 1.4 # aumentar la reducción de luminosidad en un 40%
                     espacio.habitabilidad.coeficiente_utilizacion_luz *= 0.6 # disminuir utilizacion de luz en un 40%
                     sugerencia = 'Instalar cortinas blackout'
@@ -216,7 +216,7 @@ class Edificio:
 
 
     # algoritmo para mover actividades
-    def movilizar_actividades(self, espaces_to_move):
+    def movilizar_actividades(self, espaces_to_move, edificio_2):
         """Mueve la actividad a otro espacio"""
         # encontrar todos las parejas de espacios que pueden intercambiar
         pairs_spaces_can_switch = []
@@ -228,7 +228,7 @@ class Edificio:
                     # print(f"Espacio destino {espacio_destino.id_espacio} - {iluminancia}")
                     if espacio.actividad.luz_recomendada_min <= iluminancia and espacio.actividad.luz_recomendada_max >= iluminancia:
                         # print(f"{espacio_destino.actividad.luz_recomendada_min} - {espacio.habitabilidad.iluminancia_prom} - {espacio_destino.actividad.luz_recomendada_max}")
-                        print(f"El espacio {espacio.id_espacio} se puede mover al espacio {espacio_destino.id_espacio}")
+                        # print(f"El espacio {espacio.id_espacio} se puede mover al espacio {espacio_destino.id_espacio}")
                         
                         pairs_spaces_can_switch.append((espacio, espacio_destino))
         
@@ -272,6 +272,20 @@ class Edificio:
             pair[1].sugerencias_implementadas.append('Movilizar actividad')
             pair[0].sugerencias_implementadas.append(f'Intercambio con espacio {pair[1].id_espacio}')
             pair[1].sugerencias_implementadas.append(f'Intercambio con espacio {pair[0].id_espacio}')
+
+            # movilizar los mismos espacios para el otro edificio
+            safe_espace = None
+            for espacio in edificio_2.habitaciones.values():
+                if espacio.id_espacio == pair[0].id_espacio:
+                    espacio.nombre = pair[0].nombre
+                    espacio.set_actividad(pair[0].actividad)
+                    espacio.sugerencias_implementadas.append('Movilizar actividad')
+                    espacio.sugerencias_implementadas.append(f'Intercambio con espacio {pair[1].id_espacio}')
+                if espacio.id_espacio == pair[1].id_espacio:
+                    espacio.nombre = pair[1].nombre
+                    espacio.set_actividad(pair[1].actividad)
+                    espacio.sugerencias_implementadas.append('Movilizar actividad')
+                    espacio.sugerencias_implementadas.append(f'Intercambio con espacio {pair[0].id_espacio}')
 
             print(f"Se ha movido la actividad del espacio {pair[0].id_espacio} al espacio {pair[1].id_espacio}")
 

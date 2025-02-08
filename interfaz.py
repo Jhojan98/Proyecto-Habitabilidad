@@ -237,7 +237,7 @@ def change_time(n_clicks):
 
 def improve_habitability(n_clicks):
     edificio.calcular_habitabilidad(is_night)
-    edificio.implementar_sugerencias()
+    edificio.implementar_sugerencias(edificio_dia) if is_night else edificio.implementar_sugerencias(edificio_noche) 
     return recalculate_habitability(n_clicks)
 
 # Callback para restaurar el edificio inicial
@@ -254,7 +254,8 @@ def restore_building(n_clicks):
     
     edificio_dia = Edificio.cargar_desde_json('objetos/edificio_dia.json') 
     edificio_noche = Edificio.cargar_desde_json('objetos/edificio_noche.json')
-    edificio = edificio_dia
+    edificio = edificio_noche if is_night else edificio_dia
+
     return recalculate_habitability(n_clicks)
 
 # Callback al recargar la página se resetean valores 
