@@ -199,9 +199,9 @@ def recalculate_habitability(n_clicks):
 
     for habitacion in edificio.habitaciones.values():
         lvl_habitability = habitacion.habitabilidad.nivel_habitabilidad
-        if lvl_habitability == 50:
+        if lvl_habitability == 50 or lvl_habitability == 150:
             nodes_colors.append('red')
-        elif lvl_habitability == 75:
+        elif lvl_habitability == 75 or lvl_habitability == 125:
             nodes_colors.append('orange')
         else:  # 100
             nodes_colors.append('green')

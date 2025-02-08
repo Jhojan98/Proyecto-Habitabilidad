@@ -52,7 +52,7 @@ class Habitabilidad:
             self.nivel_habitabilidad = 75 if iluminancia >= 0.8 * luz_recomendada_min else 50
         else:  # iluminancia > luz_recomendada_max
             # Verificar si está en rango aceptable superior (hasta 20% arriba)
-            self.nivel_habitabilidad = 75 if iluminancia <= 1.2 * luz_recomendada_max else 50
+            self.nivel_habitabilidad = 125 if iluminancia <= 1.2 * luz_recomendada_max else 150
         
         return self.nivel_habitabilidad
 

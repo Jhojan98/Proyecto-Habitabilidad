@@ -234,9 +234,9 @@ espacios_piso1 = [
 # Crear instancias de la clase Espacios para el Piso 2 (incluyendo el cuarto de fotografía)
 espacios_piso2 = [
     Espacios(13, "Laboratorio de Electromagnetismo", crear_actividad_unica(actividad_laboratorio, 13), habitabilidad1, [(fuente_luz1, 8), (fuente_luz2, 2), (fuente_luz4, 1)], 30, 95.0),
-    Espacios(14, "Laboratorio de Circuitos Eléctricos", crear_actividad_unica(actividad_laboratorio, 14), habitabilidad1, [(fuente_luz1, 8), (fuente_luz2, 2), (fuente_luz4, 1)], 30, 85.0),
+    Espacios(14, "Laboratorio de Circuitos Eléctricos", crear_actividad_unica(actividad_laboratorio, 14), habitabilidad1, [(fuente_luz1, 3), (fuente_luz2, 2), (fuente_luz4, 1)], 30, 85.0),
     Espacios(15, "Laboratorio de Electrónica 1", crear_actividad_unica(actividad_laboratorio, 15), habitabilidad1, [(fuente_luz1, 8), (fuente_luz2, 2), (fuente_luz4, 1)], 30, 85.0),
-    Espacios(16, "Laboratorio de Electrónica 2", crear_actividad_unica(actividad_laboratorio, 16), habitabilidad1, [(fuente_luz1, 7), (fuente_luz2, 2), (fuente_luz4, 1)], 30, 85.0),
+    Espacios(16, "Laboratorio de Electrónica 2", crear_actividad_unica(actividad_laboratorio, 16), habitabilidad1, [(fuente_luz1, 3), (fuente_luz2, 2), (fuente_luz4, 1)], 30, 85.0), # 3 orange
     Espacios(17, "Laboratorio de Electrónica 3", crear_actividad_unica(actividad_laboratorio, 17), habitabilidad1, [(fuente_luz1, 6), (fuente_luz2, 2), (fuente_luz4, 1)], 30, 85.0),
     Espacios(18, "Área de Almacenamiento y Taller de Mantenimiento Electrónico", crear_actividad_unica(actividad_soporte, 18), habitabilidad2, [(fuente_luz1, 9), (fuente_luz4, 1)], 10, 50.0),
     Espacios(19, "Cuarto de Atención a Estudiantes", crear_actividad_unica(actividad_oficina, 19), habitabilidad2, [(fuente_luz1, 5), (fuente_luz4, 1)], 10, 50.0),

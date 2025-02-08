@@ -38,18 +38,16 @@ class Espacios:
     # Agregar sugerencias en los nodos necesarios (naranjas y rojos)
     def agregar_sugerencia(self):
         with open("objetos/sugerencias.json", 'r', encoding='utf-8') as f:
-            sugerencias = json.load(f)
+            sugerenciasJson = json.load(f)
 
-        iluminancia = self.habitabilidad.iluminancia_prom
-
-        if iluminancia < 0.8*self.actividad.luz_recomendada_min:
-            self.sugerencias = sugerencias['implementables']['muy_poca_luz']
-        elif iluminancia < self.actividad.luz_recomendada_min:
-            self.sugerencias = sugerencias['implementables']['poca_luz']
-        elif iluminancia > 1.2*self.actividad.luz_recomendada_max:
-            self.sugerencias = sugerencias['implementables']['demasiada_luz']
-        elif iluminancia > self.actividad.luz_recomendada_max:
-            self.sugerencias = sugerencias['implementables']['mucha_luz']
+        if self.habitabilidad.nivel_habitabilidad == 50:
+            self.sugerencias = sugerenciasJson['implementables']['muy_poca_luz'].copy()
+        elif self.habitabilidad.nivel_habitabilidad == 75:
+            self.sugerencias = sugerenciasJson['implementables']['poca_luz'].copy()
+        elif self.habitabilidad.nivel_habitabilidad == 125:
+            self.sugerencias = sugerenciasJson['implementables']['mucha_luz'].copy()
+        elif self.habitabilidad.nivel_habitabilidad == 150:
+            self.sugerencias = sugerenciasJson['implementables']['demasiada_luz'].copy()
         else:
             self.sugerencias = []
 
@@ -57,6 +55,12 @@ class Espacios:
         for sugerencia in self.sugerencias[:]: # recorrer una copia de la lista ([:])
             if sugerencia in self.sugerencias_implementadas:
                 self.sugerencias.remove(sugerencia)
+
+        # Agregar sugerencias no implementables si no se pueden implementar mas sugerencias
+        ranges = [50, 75, 125, 150]
+        for index_range, tipo_sugerencia in enumerate(sugerenciasJson['no_implementables']):
+            if self.habitabilidad.nivel_habitabilidad == ranges[index_range] and sugerenciasJson['implementables'][tipo_sugerencia][1] in self.sugerencias_implementadas:
+                self.sugerencias.extend(sugerenciasJson['no_implementables'][tipo_sugerencia])
 
     # Getters y Setters
     def get_id_espacio(self) -> int:
