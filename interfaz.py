@@ -13,7 +13,7 @@ colors_time = ['white', 'black', '#e3e6ff']
 is_night = False  # False = día, True = noche
 
 # se crean los objetos de la clase Edificio cada vez que se ejecute el archivo
-with open('Propagacion/CreacionObjetos.py', encoding='utf-8') as f:
+with open('CreacionObjetos.py', encoding='utf-8') as f:
     exec(f.read())
 
 edificio_dia = Edificio.cargar_desde_json('objetos/edificio_dia.json') # Cargar el edificio desde el archivo JSON
@@ -249,7 +249,7 @@ def improve_habitability(n_clicks):
 
 def restore_building(n_clicks):
     global edificio, edificio_dia, edificio_noche
-    with open('Propagacion/CreacionObjetos.py', encoding='utf-8') as f:
+    with open('CreacionObjetos.py', encoding='utf-8') as f:
         exec(f.read())
     
     edificio_dia = Edificio.cargar_desde_json('objetos/edificio_dia.json') 
