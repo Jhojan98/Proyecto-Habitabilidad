@@ -24,19 +24,11 @@ class Habitabilidad:
                 "uniformidad_iluminancia": self.uniformidad_iluminancia
             }
 
-    def calcular_nivel_habitabilidad(self, area: float, luz_recomendada_min: float, luz_recomendada_max: float) -> float:
+    def calcular_nivel_habitabilidad(self, luz_recomendada_min: float, luz_recomendada_max: float) -> float:
         """
-        Calcula el nivel de habitabilidad del espacio usando la fórmula:
-        E = (Φ * Cu * Fm) / A
-        Donde:
-        - E: Iluminancia (lux)
-        - Φ: Flujo luminoso (lúmenes)
-        - Cu: Coeficiente de utilización
-        - Fm: Factor de mantenimiento (1 - reducción_luminosidad)
-        - A: Área del espacio (m²)
+        Calcula el nivel de habitabilidad del espacio basado en la iluminancia promedio y los valores recomendados de la actividad.
         
         Args:
-            area: Área del espacio en m²
             luz_recomendada_min: Valor mínimo de luz recomendada en lux (proporcionado por la clase Actividad)
             luz_recomendada_max: Valor máximo de luz recomendada en lux (proporcionado por la clase Actividad)
         Returns:
@@ -65,7 +57,18 @@ class Habitabilidad:
         )
 
     def calcular_iluminancia_prom(self, area: float):
-        """Calcula iluminancia inicial considerando solo fuentes propias"""
+        """Calcula iluminancia inicial considerando solo fuentes propias usando la formula:
+        E = (Φ * Cu * Fm) / A
+        Donde:
+        - E: Iluminancia (lux)
+        - Φ: Flujo luminoso (lúmenes)
+        - Cu: Coeficiente de utilización
+        - Fm: Factor de mantenimiento (1 - reducción_luminosidad)
+        - A: Área del espacio (m²)
+        
+        Args:
+            area: Área del espacio en m²
+        """
         factor_mantenimiento = 1 - self.reduccion_luminosidad
         self.iluminancia_prom = (
             self.flujo_luminoso * 

@@ -73,10 +73,6 @@ class Edificio:
     def __repr__(self):
         return f"Edificio(habitaciones={self.habitaciones}, paredes={self.paredes}, matrizConexiones={self.matrizConexiones}"
     
-    def iniciar_simulacion(self):
-        # metodo para iniciar la matriz 
-        return False
-    
     def calcular_propagacion_luz(self):
         """Calcula la propagación de luz entre espacios del edificio"""
         for origen_id, espacio_origen in self.habitaciones.items():
@@ -119,7 +115,6 @@ class Edificio:
             espacio.habitabilidad.calcular_flujo_luminoso(espacio.get_fuentes_luz(), is_night)
             espacio.habitabilidad.calcular_iluminancia_prom(espacio.get_area())
             espacio.habitabilidad.calcular_nivel_habitabilidad(
-                espacio.get_area(),
                 espacio.actividad.luz_recomendada_min,
                 espacio.actividad.luz_recomendada_max
             )
@@ -137,7 +132,6 @@ class Edificio:
             # print(f"Espacio {espacio.id_espacio} - {espacio.nombre}:")
             # print(f"  Iluminancia final: {espacio.habitabilidad.iluminancia_prom:.2f} lux")
             espacio.habitabilidad.calcular_nivel_habitabilidad(
-                espacio.get_area(),
                 espacio.actividad.luz_recomendada_min,
                 espacio.actividad.luz_recomendada_max
             )

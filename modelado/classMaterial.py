@@ -9,12 +9,6 @@ class Material:
         self.reflexion = reflexion
         self.transmision = transmision
 
-    def evaluar_resistencia():
-        """
-        Evalua la resistencia que tienen los diferentes materiales
-        """
-
-        pass
     def to_dict(self):
         return {
             "id_material": self.id_material,
@@ -25,10 +19,12 @@ class Material:
             "reflexion": self.reflexion,
             "transmision": self.transmision
         }
+    
     # Getters y Setters
     
     def set_nombre(self, nombre: str):
         self.nombre = nombre
+
     def get_id_material(self) -> int:
         return self.id_material
 

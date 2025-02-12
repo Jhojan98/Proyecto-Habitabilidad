@@ -6,14 +6,7 @@ class Pared:
         self.material = Material(**material) if isinstance(material, dict) else material
         self.id_espacio_1 = id_espacio_1
         self.id_espacio_2 = id_espacio_2
-        
-    def conectar(self):
-        """
-        Conecta dos espacios
-        """
-        return False
     
-
     def to_dict(self):
         return {
             "material": self.material.to_dict() if self.material else None,

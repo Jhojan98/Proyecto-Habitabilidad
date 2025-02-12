@@ -10,12 +10,6 @@ class FuenteLuz:
         self.temperatura_emitida = temperatura_emitida
         self.intensidad = intensidad
         self.lumens = lumens
-    
-    def calcular_impacto():
-        """
-        Calcula el impacto de la fuente de luz en el espacio
-        """
-        pass
 
     # Getters y Setters
     def get_id_fuente_luz(self) -> int:
